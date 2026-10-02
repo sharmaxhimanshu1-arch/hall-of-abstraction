@@ -5,7 +5,16 @@ import Monogram from '../../components/Monogram.astro';
 import IdeologyChip from '../../components/IdeologyChip.astro';
 import QuoteBlock from '../../components/QuoteBlock.astro';
 import ConnectionList from '../../components/ConnectionList.astro';
-import { getConnections, getIdeologyMap, getThinkers, type Thinker } from '../../lib/content';
+import ConversationList from '../../components/ConversationList.astro';
+import PageContents from '../../components/PageContents.astro';
+import {
+  getConnections,
+  getConversations,
+  getIdeologyMap,
+  getThinkers,
+  readingMinutes,
+  type Thinker,
+} from '../../lib/content';
 import { formatLifespan } from '../../lib/format';
 import { ideologyUrl, thinkerUrl, url } from '../../lib/url';
 
@@ -33,7 +42,9 @@ const ideologies = await getIdeologyMap();
 const primary = ideologies.get(d.primary.id)!;
 const tags = d.tags.map((t) => ideologies.get(t.id)!);
 const { influencedBy, influenced } = await getConnections(thinker);
-const { Content } = await render(thinker);
+const conversations = await getConversations(thinker);
+const { Content, headings } = await render(thinker);
+const minutes = readingMinutes(thinker.body);
 const [featuredQuote, ...otherQuotes] = d.quotes;
 ---
 
@@ -55,6 +66,8 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
             <span>{d.region}</span>
             <span aria-hidden="true">·</span>
             <span>{d.era}</span>
+            <span aria-hidden="true">·</span>
+            <span>{minutes} min read</span>
           </p>
           <p class="lede">{d.summary}</p>
           <div class="chips" data-pagefind-ignore>
@@ -67,6 +80,10 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
 
     <div class="container layout">
       <div class="main-col">
+        <div class="contents-mobile" data-pagefind-ignore>
+          <PageContents headings={headings} collapsible />
+        </div>
+
         {
           featuredQuote && (
             <QuoteBlock text={featuredQuote.text} source={featuredQuote.source} featured />
@@ -107,8 +124,16 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
         }
 
         <div data-pagefind-ignore>
-          <ConnectionList title="Influenced by" thinkers={influencedBy} />
-          <ConnectionList title="Influenced" thinkers={influenced} />
+          {
+            conversations.length > 0 ? (
+              <ConversationList groups={conversations} />
+            ) : (
+              <>
+                <ConnectionList title="Influenced by" thinkers={influencedBy} />
+                <ConnectionList title="Influenced" thinkers={influenced} />
+              </>
+            )
+          }
 
           <section>
             <h3 class="side-title">Sources and further reading</h3>
@@ -132,6 +157,10 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
                 : 'Draft profile: not yet reviewed by an editor. Check the sources above before citing.'
             }
           </p>
+        </div>
+
+        <div class="contents-desktop" data-pagefind-ignore>
+          <PageContents headings={headings} />
         </div>
       </aside>
     </div>
@@ -161,6 +190,40 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
     </nav>
   </article>
 </BaseLayout>
+
+<script>
+  // Highlight the section currently being read in the desktop contents list.
+  const links = new Map(
+    Array.from(document.querySelectorAll<HTMLAnchorElement>('.contents-desktop a[data-slug]')).map(
+      (a) => [a.dataset.slug!, a],
+    ),
+  );
+  const sections = Array.from(document.querySelectorAll<HTMLElement>('.prose h2[id]')).filter(
+    (h) => links.has(h.id),
+  );
+  if (sections.length) {
+    let pending = false;
+    const update = () => {
+      pending = false;
+      // The current section is the last heading above the middle of the screen.
+      const current =
+        [...sections].reverse().find((h) => h.getBoundingClientRect().top < window.innerHeight / 2)
+          ?.id ?? sections[0]!.id;
+      for (const [slug, a] of links) a.setAttribute('aria-current', String(slug === current));
+    };
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!pending) {
+          pending = true;
+          requestAnimationFrame(update);
+        }
+      },
+      { passive: true },
+    );
+    update();
+  }
+</script>
 
 <style>
   .hero {
@@ -234,10 +297,39 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
   }
 
   .side {
+    font-size: 0.92rem;
+  }
+
+  /* The sidebar stretches the full article height; the contents list sticks
+     once the reader scrolls past the sidebar's other sections. */
+  .contents-desktop {
     position: sticky;
     top: 80px;
-    align-self: start;
-    font-size: 0.92rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .contents-mobile {
+    display: none;
+  }
+
+  /* "The shift" closing section, wrapped in <div class="shift"> in Markdown. */
+  .prose :global(.shift) {
+    margin: 2.5rem 0;
+    padding: 0.5rem 1.5rem 1rem;
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--rule));
+    border-left-width: 5px;
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  }
+
+  .prose :global(.shift h2) {
+    border-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .prose :global(h2) {
+    scroll-margin-top: 80px;
   }
 
   .side-title {
@@ -333,9 +425,16 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
     }
 
     .side {
-      position: static;
       border-top: 1px solid var(--rule);
       padding-top: 1.5rem;
+    }
+
+    .contents-desktop {
+      display: none;
+    }
+
+    .contents-mobile {
+      display: block;
     }
   }
 

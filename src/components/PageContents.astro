@@ -1,0 +1,112 @@
+---
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+  /** Render as a collapsible block (used on narrow screens). */
+  collapsible?: boolean;
+}
+
+const { headings, collapsible = false } = Astro.props;
+const items = headings.filter((h) => h.depth === 2);
+---
+
+{
+  items.length > 2 &&
+    (collapsible ? (
+      <details class="contents collapsible">
+        <summary>On this page</summary>
+        <ol>
+          {items.map((h) => (
+            <li>
+              <a href={`#${h.slug}`}>{h.text}</a>
+            </li>
+          ))}
+        </ol>
+      </details>
+    ) : (
+      <nav class="contents" aria-label="On this page">
+        <h3>On this page</h3>
+        <ol>
+          {items.map((h) => (
+            <li>
+              <a href={`#${h.slug}`} data-slug={h.slug}>
+                {h.text}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+    ))
+}
+
+<style>
+  .contents {
+    font-size: 0.9rem;
+  }
+
+  h3,
+  summary {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.5rem;
+  }
+
+  summary {
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .collapsible {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+    margin-bottom: 1.5rem;
+  }
+
+  .collapsible[open] summary {
+    margin-bottom: 0.5rem;
+  }
+
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: section;
+  }
+
+  li {
+    counter-increment: section;
+  }
+
+  a {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+    color: var(--ink-soft);
+    text-decoration: none;
+    line-height: 1.35;
+  }
+
+  a::before {
+    content: counter(section);
+    flex: none;
+    width: 1.3rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  a:hover,
+  a[aria-current='true'] {
+    color: var(--ink);
+  }
+
+  a[aria-current='true'] {
+    font-weight: 600;
+  }
+</style>
