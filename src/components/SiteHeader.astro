@@ -1,0 +1,153 @@
+---
+import { url } from '../lib/url';
+
+const links = [
+  { href: url('/ideologies/'), label: 'Ideologies', match: '/ideologies/' },
+  { href: url('/thinkers/'), label: 'Thinkers', match: '/thinkers/' },
+  { href: url('/about/'), label: 'About', match: '/about/' },
+];
+
+const path = Astro.url.pathname;
+const isCurrent = (match: string) => path.startsWith(url(match));
+---
+
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href={url('/')}>
+      <svg aria-hidden="true" viewBox="0 0 64 64" width="26" height="26">
+        <path d="M14 50V22l18-10 18 10v28" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"></path>
+        <path d="M22 50V28M32 50V28M42 50V28M12 50h40" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path>
+      </svg>
+      <span>Hall of Abstraction</span>
+    </a>
+
+    <nav aria-label="Main">
+      <ul>
+        {
+          links.map((l) => (
+            <li>
+              <a href={l.href} aria-current={isCurrent(l.match) ? 'page' : undefined}>
+                {l.label}
+              </a>
+            </li>
+          ))
+        }
+        <li>
+          <a href={url('/search/')} class="icon-link" aria-label="Search" aria-current={isCurrent('/search/') ? 'page' : undefined}>
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <button type="button" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>('.theme-toggle');
+  button?.addEventListener('click', () => {
+    const root = document.documentElement;
+    const current =
+      root.dataset.theme ??
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const next = current === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem('theme', next);
+    } catch {
+      /* storage unavailable: theme still applies for this page view */
+    }
+  });
+</script>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--rule);
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 60px;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    color: var(--ink);
+    text-decoration: none;
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a,
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.65rem;
+    border-radius: 6px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  nav a:hover,
+  .theme-toggle:hover {
+    background: var(--surface-2);
+    color: var(--ink);
+  }
+
+  nav a[aria-current='page'] {
+    color: var(--ink);
+    background: var(--surface-2);
+  }
+
+  .theme-toggle {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  @media (max-width: 520px) {
+    .bar {
+      padding-block: 0.5rem;
+      justify-content: center;
+    }
+
+    nav a,
+    .theme-toggle {
+      padding: 0.35rem 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+</style>

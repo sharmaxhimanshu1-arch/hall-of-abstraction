@@ -1,0 +1,59 @@
+---
+import { url } from '../lib/url';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container inner">
+    <p class="motto">“The unexamined life is not worth living.” <span>— Socrates</span></p>
+    <nav aria-label="Footer">
+      <a href={url('/ideologies/')}>Ideologies</a>
+      <a href={url('/thinkers/')}>Thinkers</a>
+      <a href={url('/about/')}>About</a>
+      <a href={url('/search/')}>Search</a>
+    </nav>
+    <p class="small">© {year} Hall of Abstraction. Profiles are summaries for general readers; see each page’s sources for further reading.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--rule);
+    background: var(--surface-2);
+    padding: 2rem 0 2.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .inner {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .motto {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .motto span {
+    color: var(--muted);
+    font-size: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+  }
+
+  nav a {
+    color: var(--ink-soft);
+  }
+
+  .small {
+    margin: 0;
+  }
+</style>
