@@ -50,7 +50,7 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
           </p>
           <h1>{d.name}</h1>
           <p class="meta">
-            <span>{formatLifespan(d)}</span>
+            <span>{formatLifespan(d)}{d.datesNote && <em class="dates-note"> ({d.datesNote})</em>}</span>
             <span aria-hidden="true">·</span>
             <span>{d.region}</span>
             <span aria-hidden="true">·</span>
@@ -195,6 +195,10 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
     color: var(--muted);
     font-size: 0.95rem;
     margin: 0 0 1rem;
+  }
+
+  .dates-note {
+    font-style: normal;
   }
 
   .chips {

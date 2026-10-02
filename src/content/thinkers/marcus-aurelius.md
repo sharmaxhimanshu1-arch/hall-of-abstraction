@@ -17,14 +17,15 @@ quotes:
     source: Meditations VI.6 (trans. George Long)
   - text: The universe is transformation; life is opinion.
     source: Meditations IV.3 (trans. George Long)
-influencedBy: []
+influencedBy:
+  - epictetus
 sources:
   - title: Internet Encyclopedia of Philosophy, "Marcus Aurelius"
-    url: https://iep.utm.edu/marcus/
+    url: https://iep.utm.edu/marcus-aurelius/
   - title: Encyclopaedia Britannica, "Marcus Aurelius"
     url: https://www.britannica.com/biography/Marcus-Aurelius-Roman-emperor
-  - title: Meditations, trans. George Long (Project Gutenberg)
-    url: https://www.gutenberg.org/ebooks/2680
+  - title: Thoughts of Marcus Aurelius, trans. George Long (Project Gutenberg)
+    url: https://www.gutenberg.org/ebooks/15877
 reviewed: false
 ---
 

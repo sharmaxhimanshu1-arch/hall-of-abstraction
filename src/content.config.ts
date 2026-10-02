@@ -33,6 +33,8 @@ const thinkers = defineCollection({
     died: z.number().int(),
     bornCirca: z.boolean().default(false),
     diedCirca: z.boolean().default(false),
+    /** Caveat shown next to the dates, e.g. "traditional dates". */
+    datesNote: z.string().optional(),
 
     region: z.string(),
     era: z.enum(ERAS),

@@ -32,8 +32,6 @@ influencedBy:
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Plato"
     url: https://plato.stanford.edu/entries/plato/
-  - title: Internet Encyclopedia of Philosophy, "Plato"
-    url: https://iep.utm.edu/plato/
   - title: Encyclopaedia Britannica, "Plato"
     url: https://www.britannica.com/biography/Plato
 reviewed: false
