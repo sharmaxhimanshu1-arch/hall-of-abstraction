@@ -1,0 +1,98 @@
+---
+import type { Ideology, Thinker } from '../lib/content';
+import { formatLifespan } from '../lib/format';
+import { thinkerUrl } from '../lib/url';
+import { sortKey } from '../lib/content';
+import Monogram from './Monogram.astro';
+import IdeologyChip from './IdeologyChip.astro';
+
+interface Props {
+  thinker: Thinker;
+  primary: Ideology;
+  /** Show the primary-ideology chip (hidden on that ideology's own page). */
+  showIdeology?: boolean;
+}
+
+const { thinker, primary, showIdeology = true } = Astro.props;
+const { name, summary, era } = thinker.data;
+const ideologyIds = [thinker.data.primary.id, ...thinker.data.tags.map((t) => t.id)];
+---
+
+<article
+  class="card"
+  data-name={name.toLowerCase()}
+  data-sort={sortKey(thinker)}
+  data-born={thinker.data.born}
+  data-era={era}
+  data-ideologies={ideologyIds.join(' ')}
+>
+  <Monogram name={name} color={primary.data.color} />
+  <div class="body">
+    <h3><a href={thinkerUrl(thinker.id)}>{name}</a></h3>
+    <p class="dates">{formatLifespan(thinker.data)}</p>
+    <p class="summary">{summary}</p>
+    {showIdeology && <IdeologyChip ideology={primary} static />}
+  </div>
+</article>
+
+<style>
+  .card {
+    position: relative;
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    padding: 1.1rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s,
+      transform 0.15s;
+  }
+
+  .card:hover {
+    border-color: color-mix(in srgb, var(--ink) 25%, var(--rule));
+    box-shadow: var(--shadow);
+    transform: translateY(-1px);
+  }
+
+  .card[hidden] {
+    display: none;
+  }
+
+  .body {
+    min-width: 0;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  h3 a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  /* Whole card is clickable via the heading link. */
+  h3 a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+  }
+
+  .dates {
+    margin: 0.1rem 0 0.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .summary {
+    margin: 0 0 0.7rem;
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+</style>

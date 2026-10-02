@@ -1,0 +1,190 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ThinkerCard from '../../components/ThinkerCard.astro';
+import { getIdeologies, getIdeologyMap, getThinkers } from '../../lib/content';
+import { ERAS } from '../../content.config';
+
+const thinkers = await getThinkers();
+const ideologies = await getIdeologies();
+const ideologyMap = await getIdeologyMap();
+const erasPresent = ERAS.filter((era) => thinkers.some((t) => t.data.era === era));
+---
+
+<BaseLayout
+  title="All thinkers"
+  description="Browse every thinker in the Hall of Abstraction, filtered by era or school of thought."
+>
+  <div class="container">
+    <header class="page-head">
+      <p class="eyebrow">The Hall</p>
+      <h1>All thinkers</h1>
+      <p class="lede">
+        {thinkers.length} minds, from ancient Athens and China to the twentieth century. Filter by era or
+        school of thought, or sort them through time.
+      </p>
+    </header>
+
+    <form class="filters" role="search" aria-label="Filter thinkers" data-pagefind-ignore>
+      <label>
+        <span>Name</span>
+        <input type="search" name="q" placeholder="e.g. Hume" autocomplete="off" />
+      </label>
+      <label>
+        <span>Ideology</span>
+        <select name="ideology">
+          <option value="">All ideologies</option>
+          {ideologies.map((i) => <option value={i.id}>{i.data.name}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>Era</span>
+        <select name="era">
+          <option value="">All eras</option>
+          {erasPresent.map((era) => <option value={era}>{era}</option>)}
+        </select>
+      </label>
+      <label>
+        <span>Sort</span>
+        <select name="sort">
+          <option value="name">A–Z</option>
+          <option value="born">Chronological</option>
+        </select>
+      </label>
+    </form>
+
+    <p class="count" aria-live="polite" data-pagefind-ignore>
+      Showing <strong id="shown">{thinkers.length}</strong> of {thinkers.length}
+    </p>
+
+    <div class="grid" id="thinker-grid">
+      {
+        thinkers.map((t) => (
+          <ThinkerCard thinker={t} primary={ideologyMap.get(t.data.primary.id)!} />
+        ))
+      }
+    </div>
+    <p class="empty" id="empty" hidden>No thinkers match those filters.</p>
+  </div>
+</BaseLayout>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('.filters')!;
+  const grid = document.getElementById('thinker-grid')!;
+  const shown = document.getElementById('shown')!;
+  const empty = document.getElementById('empty')!;
+  const cards = Array.from(grid.querySelectorAll<HTMLElement>('.card'));
+
+  // Pre-select from the URL, e.g. /thinkers/?era=Ancient
+  const params = new URLSearchParams(location.search);
+  for (const key of ['q', 'ideology', 'era', 'sort']) {
+    const value = params.get(key);
+    const field = form.elements.namedItem(key) as HTMLInputElement | HTMLSelectElement | null;
+    if (value && field) field.value = value;
+  }
+
+  function apply() {
+    const data = new FormData(form);
+    const q = String(data.get('q') ?? '').trim().toLowerCase();
+    const ideology = String(data.get('ideology') ?? '');
+    const era = String(data.get('era') ?? '');
+    const sort = String(data.get('sort') ?? 'name');
+
+    let visible = 0;
+    for (const card of cards) {
+      const match =
+        (!q || card.dataset.name!.includes(q)) &&
+        (!ideology || card.dataset.ideologies!.split(' ').includes(ideology)) &&
+        (!era || card.dataset.era === era);
+      card.hidden = !match;
+      if (match) visible++;
+    }
+
+    const sorted = [...cards].sort((a, b) =>
+      sort === 'born'
+        ? Number(a.dataset.born) - Number(b.dataset.born)
+        : a.dataset.sort!.localeCompare(b.dataset.sort!),
+    );
+    grid.append(...sorted);
+
+    shown.textContent = String(visible);
+    empty.hidden = visible > 0;
+
+    // Keep the URL shareable without adding history entries.
+    const next = new URLSearchParams();
+    if (q) next.set('q', q);
+    if (ideology) next.set('ideology', ideology);
+    if (era) next.set('era', era);
+    if (sort !== 'name') next.set('sort', sort);
+    const qs = next.toString();
+    history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+  }
+
+  form.addEventListener('input', apply);
+  form.addEventListener('submit', (e) => e.preventDefault());
+  apply();
+</script>
+
+<style>
+  .page-head {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .filters {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 0;
+  }
+
+  label span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.95rem;
+  }
+
+  .count {
+    margin: 1.25rem 0 0.75rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .empty {
+    padding: 2rem 0;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  @media (max-width: 760px) {
+    .filters {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .filters label:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

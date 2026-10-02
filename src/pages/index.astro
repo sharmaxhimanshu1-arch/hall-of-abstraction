@@ -1,11 +1,233 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import IdeologyCard from '../components/IdeologyCard.astro';
+import QuoteBlock from '../components/QuoteBlock.astro';
+import { getCoreThinkers, getIdeologies, getIdeologyMap, getThinkers } from '../lib/content';
+import { ERAS } from '../content.config';
+import { formatYear } from '../lib/format';
+import { thinkerUrl, url } from '../lib/url';
+
+const thinkers = await getThinkers();
+const ideologies = await getIdeologies();
+const ideologyMap = await getIdeologyMap();
+const cards = await Promise.all(
+  ideologies.map(async (ideology) => ({ ideology, thinkers: await getCoreThinkers(ideology.id) })),
+);
+
+// A featured quote that changes with each daily build.
+const quoted = thinkers.filter((t) => t.data.quotes.length > 0);
+const dayIndex = Math.floor(Date.now() / 86_400_000);
+const featured = quoted.length ? quoted[dayIndex % quoted.length] : undefined;
+const featuredQuote = featured?.data.quotes[0];
+
+const byEra = ERAS.map((era) => ({
+  era,
+  thinkers: thinkers
+    .filter((t) => t.data.era === era)
+    .sort((a, b) => a.data.born - b.data.born),
+})).filter((group) => group.thinkers.length > 0);
+
+const earliest = Math.min(...thinkers.map((t) => t.data.born));
+const latest = Math.max(...thinkers.map((t) => t.data.died));
 ---
 
 <BaseLayout>
-  <section class="container">
-    <p class="eyebrow">Hall of Abstraction</p>
-    <h1>The minds that shaped how we think</h1>
-    <p class="lede">Coming soon.</p>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">A hall of great minds</p>
+      <h1>The thinkers who shaped how we reason, govern and live</h1>
+      <p class="lede">
+        Profiles of the philosophers, economists and political theorists whose ideas still frame our
+        world, arranged by the schools of thought they built.
+      </p>
+      <div class="actions">
+        <a class="button primary" href={url('/ideologies/')}>Explore ideologies</a>
+        <a class="button" href={url('/thinkers/')}>Browse all thinkers</a>
+      </div>
+      <dl class="stats">
+        <div><dt>Thinkers</dt><dd>{thinkers.length}</dd></div>
+        <div><dt>Schools of thought</dt><dd>{ideologies.length}</dd></div>
+        <div><dt>Span</dt><dd>{formatYear(earliest, false, true)} – {formatYear(latest, false, true)}</dd></div>
+      </dl>
+    </div>
   </section>
+
+  <div class="container">
+    {
+      featured && featuredQuote && (
+        <section class="featured" style={`--accent: ${ideologyMap.get(featured.data.primary.id)!.data.color}`}>
+          <QuoteBlock text={featuredQuote.text} source={featuredQuote.source} author={featured.data.name} featured />
+          <p class="featured-link">
+            <a href={thinkerUrl(featured.id)}>Read about {featured.data.name} →</a>
+          </p>
+        </section>
+      )
+    }
+
+    <section aria-labelledby="ideologies-heading">
+      <div class="section-head">
+        <h2 id="ideologies-heading">Schools of thought</h2>
+        <a href={url('/ideologies/')}>All ideologies →</a>
+      </div>
+      <div class="grid">
+        {cards.map(({ ideology, thinkers }) => <IdeologyCard ideology={ideology} thinkers={thinkers} />)}
+      </div>
+    </section>
+
+    <section aria-labelledby="eras-heading">
+      <div class="section-head">
+        <h2 id="eras-heading">Across the ages</h2>
+        <a href={url('/thinkers/?sort=born')}>Chronological list →</a>
+      </div>
+      <div class="eras">
+        {
+          byEra.map(({ era, thinkers }) => (
+            <div class="era">
+              <h3>
+                <a href={`${url('/thinkers/')}?era=${encodeURIComponent(era)}&sort=born`}>{era}</a>
+              </h3>
+              <ul>
+                {thinkers.map((t) => (
+                  <li>
+                    <span class="dot" style={`--accent: ${ideologyMap.get(t.data.primary.id)!.data.color}`} aria-hidden="true" />
+                    <a href={thinkerUrl(t.id)}>{t.data.name}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+  </div>
 </BaseLayout>
+
+<style>
+  .hero {
+    padding: 4.5rem 0 3rem;
+    border-bottom: 1px solid var(--rule);
+    background:
+      radial-gradient(1200px 400px at 10% -10%, color-mix(in srgb, #b8671f 12%, transparent), transparent),
+      var(--bg);
+  }
+
+  .hero h1 {
+    max-width: 18ch;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.75rem 0 2.25rem;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.65rem 1.1rem;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--ink);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    border-color: var(--ink-soft);
+    color: var(--ink);
+  }
+
+  .button.primary {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--bg);
+  }
+
+  .button.primary:hover {
+    background: var(--ink-soft);
+    color: var(--bg);
+  }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 3rem;
+    margin: 0;
+  }
+
+  .stats div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .stats dt {
+    color: var(--muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .stats dd {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+
+  .featured {
+    margin-top: 3rem;
+    max-width: 52rem;
+  }
+
+  .featured-link {
+    margin: 0.75rem 0 0;
+    font-size: 0.95rem;
+  }
+
+  .eras {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  }
+
+  .era {
+    padding: 1rem 1.1rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+  }
+
+  .era h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  .era h3 a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .era ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .era li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+  }
+
+  .era .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+</style>

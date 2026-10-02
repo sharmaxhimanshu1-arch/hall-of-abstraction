@@ -1,0 +1,52 @@
+---
+import type { Ideology } from '../lib/content';
+import { ideologyUrl } from '../lib/url';
+
+interface Props {
+  ideology: Ideology;
+  /** Render as plain text instead of a link (e.g. inside a card that is already a link). */
+  static?: boolean;
+}
+
+const { ideology, static: isStatic = false } = Astro.props;
+const Tag = isStatic ? 'span' : 'a';
+---
+
+<Tag
+  class="chip"
+  href={isStatic ? undefined : ideologyUrl(ideology.id)}
+  style={`--accent: ${ideology.data.color}`}
+>
+  <span class="dot" aria-hidden="true"></span>{ideology.data.name}
+</Tag>
+
+<style>
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-soft);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  a.chip:hover {
+    border-color: var(--accent);
+    color: var(--ink);
+  }
+
+  .dot {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+</style>

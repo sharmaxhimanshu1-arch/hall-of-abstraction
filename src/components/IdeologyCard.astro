@@ -1,0 +1,76 @@
+---
+import type { Ideology, Thinker } from '../lib/content';
+import { ideologyUrl } from '../lib/url';
+
+interface Props {
+  ideology: Ideology;
+  thinkers: Thinker[];
+}
+
+const { ideology, thinkers } = Astro.props;
+const names = thinkers.map((t) => t.data.name);
+---
+
+<article class="card" style={`--accent: ${ideology.data.color}`}>
+  <h3><a href={ideologyUrl(ideology.id)}>{ideology.data.name}</a></h3>
+  <p class="summary">{ideology.data.summary}</p>
+  <p class="names">
+    <span class="count">{thinkers.length} {thinkers.length === 1 ? 'thinker' : 'thinkers'}</span>
+    {names.length > 0 && <span> · {names.join(', ')}</span>}
+  </p>
+</article>
+
+<style>
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 1.25rem 1.1rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-top: 4px solid var(--accent);
+    border-radius: var(--radius);
+    transition:
+      box-shadow 0.15s,
+      transform 0.15s;
+  }
+
+  .card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-1px);
+  }
+
+  h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.45rem;
+  }
+
+  h3 a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  h3 a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  .summary {
+    flex: 1;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .names {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  .count {
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+</style>

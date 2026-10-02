@@ -1,0 +1,66 @@
+---
+import type { Thinker } from '../lib/content';
+import { formatLifespan } from '../lib/format';
+import { thinkerUrl } from '../lib/url';
+
+interface Props {
+  title: string;
+  thinkers: Thinker[];
+}
+
+const { title, thinkers } = Astro.props;
+---
+
+{
+  thinkers.length > 0 && (
+    <section class="connections">
+      <h3>{title}</h3>
+      <ul>
+        {thinkers.map((t) => (
+          <li>
+            <a href={thinkerUrl(t.id)}>{t.data.name}</a>
+            <span>{formatLifespan(t.data)}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
+
+<style>
+  h3 {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.5rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 0.75rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  a {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+  }
+
+  span {
+    color: var(--muted);
+    font-size: 0.8rem;
+    align-self: center;
+  }
+</style>

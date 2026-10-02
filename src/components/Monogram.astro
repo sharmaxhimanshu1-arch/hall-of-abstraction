@@ -1,0 +1,52 @@
+---
+interface Props {
+  name: string;
+  color: string;
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { name, color, size = 'md' } = Astro.props;
+
+// First and last capitalised words: "Simone de Beauvoir" -> "SB", "Socrates" -> "S".
+const words = name.split(/\s+/).filter((w) => /^\p{Lu}/u.test(w));
+const initials =
+  words.length > 1 ? `${words[0]![0]}${words.at(-1)![0]}` : (words[0]?.[0] ?? name[0] ?? '?');
+---
+
+<span class:list={['monogram', size]} style={`--accent: ${color}`} aria-hidden="true">
+  {initials}
+</span>
+
+<style>
+  .monogram {
+    display: inline-grid;
+    place-items: center;
+    flex: none;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    box-shadow: inset 0 0 0 3px rgb(255 255 255 / 18%);
+  }
+
+  .sm {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.95rem;
+  }
+
+  .md {
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.3rem;
+  }
+
+  .lg {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.4rem;
+    box-shadow: inset 0 0 0 5px rgb(255 255 255 / 18%);
+  }
+</style>

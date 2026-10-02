@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getIdeologies, getThinkers } from '../lib/content';
+import { url } from '../lib/url';
+
+const thinkers = await getThinkers();
+const ideologies = await getIdeologies();
+const reviewed = thinkers.filter((t) => t.data.reviewed).length;
+---
+
+<BaseLayout
+  title="About"
+  description="What the Hall of Abstraction is, how thinkers are chosen and categorised, and how profiles are written."
+>
+  <div class="container">
+    <header class="page-head">
+      <p class="eyebrow">About</p>
+      <h1>About the Hall</h1>
+    </header>
+
+    <div class="prose">
+      <p>
+        The Hall of Abstraction is a reading room for ideas. It gathers short, readable profiles of
+        the thinkers whose work changed how people reason about truth, ethics, society and
+        power, and arranges them by the schools of thought they founded or advanced.
+      </p>
+
+      <h2>Who is included</h2>
+      <p>
+        A thinker earns a place by the depth and reach of their influence: ideas that founded or
+        transformed a tradition, that are still argued over, and that shaped how later generations
+        thought and lived. The Hall currently holds {thinkers.length} thinkers across
+        {' '}{ideologies.length} schools of thought, and it is meant to grow. Many important
+        figures are not yet here, and their absence is a matter of time, not a judgement.
+      </p>
+
+      <h2>How thinkers are categorised</h2>
+      <p>
+        Few great minds fit neatly in one box. Each thinker is therefore listed under one
+        <strong>primary</strong> ideology, the tradition they are most identified with, and may be
+        <strong>tagged</strong> with others. John Locke, for example, is listed under Empiricism but
+        also appears on the Liberalism page. Each profile also records who influenced whom, so you
+        can follow ideas from one mind to the next.
+      </p>
+      <p>
+        Labels like “Rationalism” or “Existentialism” were often applied after the fact, and some
+        thinkers rejected them. Treat them as a map, not a verdict.
+      </p>
+
+      <h2>How profiles are written</h2>
+      <p>
+        Profiles are written for curious general readers, not specialists. Each one cites the
+        reference works it draws on, and quotations name their source and translation. Profiles
+        are drafted first and then fact-checked by an editor. Pages not yet reviewed say so in
+        their sidebar. So far {reviewed} of {thinkers.length} profiles have been reviewed.
+      </p>
+      <p>
+        Spotted an error or want to suggest a thinker? The project lives on
+        <a href="https://github.com/sharmaxhimanshu1-arch/hall-of-abstraction">GitHub</a>, and
+        corrections are welcome.
+      </p>
+
+      <p><a href={url('/ideologies/')}>Start exploring the ideologies →</a></p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-head {
+    padding: 3rem 0 1rem;
+  }
+</style>

@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { url } from '../lib/url';
+---
+
+<BaseLayout title="Page not found" noindex>
+  <div class="container wrap">
+    <p class="eyebrow">404</p>
+    <h1>This page is lost to history</h1>
+    <p class="lede">
+      Like many ancient manuscripts, the page you were looking for doesn’t survive, or never existed.
+    </p>
+    <p>
+      <a href={url('/')}>Return to the Hall</a> · <a href={url('/thinkers/')}>Browse thinkers</a> ·
+      <a href={url('/search/')}>Search</a>
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .wrap {
+    padding-top: 5rem;
+  }
+</style>

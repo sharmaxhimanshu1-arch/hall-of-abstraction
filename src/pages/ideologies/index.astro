@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import IdeologyCard from '../../components/IdeologyCard.astro';
+import { getCoreThinkers, getIdeologies } from '../../lib/content';
+
+const ideologies = await getIdeologies();
+const cards = await Promise.all(
+  ideologies.map(async (ideology) => ({ ideology, thinkers: await getCoreThinkers(ideology.id) })),
+);
+---
+
+<BaseLayout
+  title="Ideologies"
+  description="The schools of thought in the Hall of Abstraction, from Classical Greek philosophy to Existentialism."
+>
+  <div class="container">
+    <header class="page-head">
+      <p class="eyebrow">Schools of thought</p>
+      <h1>Ideologies</h1>
+      <p class="lede">
+        Every thinker is listed under the tradition they are most associated with. Many belong to
+        more than one, and those links appear on each ideology’s page.
+      </p>
+    </header>
+
+    <div class="grid">
+      {cards.map(({ ideology, thinkers }) => <IdeologyCard ideology={ideology} thinkers={thinkers} />)}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-head {
+    padding: 3rem 0 2rem;
+  }
+</style>

@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { url } from '../lib/url';
+
+// Pagefind writes its index and UI into dist/pagefind/ after `astro build`.
+const pagefindBase = url('/pagefind/');
+---
+
+<BaseLayout title="Search" description="Search every thinker and ideology in the Hall of Abstraction." noindex>
+  <link rel="stylesheet" href={`${pagefindBase}pagefind-ui.css`} />
+  <div class="container">
+    <header class="page-head">
+      <p class="eyebrow">Search</p>
+      <h1>Search the Hall</h1>
+      <p class="lede">Find a thinker, an idea, a book or a quotation.</p>
+    </header>
+
+    <div id="search" data-bundle={pagefindBase}></div>
+    <noscript><p>Search needs JavaScript. You can still <a href={url('/thinkers/')}>browse all thinkers</a>.</p></noscript>
+    <p id="search-unavailable" class="note" hidden>
+      Search is available in the built site (run <code>npm run build</code>, then
+      <code>npm run preview</code>). Meanwhile, <a href={url('/thinkers/')}>browse all thinkers</a>.
+    </p>
+  </div>
+</BaseLayout>
+
+<script>
+  const el = document.getElementById('search')!;
+  const bundle = el.dataset.bundle!;
+
+  const script = document.createElement('script');
+  script.src = `${bundle}pagefind-ui.js`;
+  script.onload = () => {
+    // @ts-expect-error PagefindUI is a global defined by the script above.
+    new PagefindUI({
+      element: '#search',
+      bundlePath: bundle,
+      showSubResults: true,
+      showImages: false,
+      autofocus: true,
+    });
+    const q = new URLSearchParams(location.search).get('q');
+    if (q) {
+      const input = el.querySelector<HTMLInputElement>('input');
+      if (input) {
+        input.value = q;
+        input.dispatchEvent(new Event('input'));
+      }
+    }
+  };
+  script.onerror = () => {
+    document.getElementById('search-unavailable')!.hidden = false;
+  };
+  document.head.append(script);
+</script>
+
+<style>
+  .page-head {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .note {
+    color: var(--muted);
+  }
+
+  #search {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: var(--link);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-background: var(--surface);
+    --pagefind-ui-border: var(--rule);
+    --pagefind-ui-tag: var(--surface-2);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 8px;
+    --pagefind-ui-font: var(--font-sans);
+    max-width: 52rem;
+  }
+</style>
