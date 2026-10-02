@@ -4,7 +4,7 @@ import IdeologyCard from '../components/IdeologyCard.astro';
 import QuoteBlock from '../components/QuoteBlock.astro';
 import { getCoreThinkers, getIdeologies, getIdeologyMap, getThinkers } from '../lib/content';
 import { ERAS } from '../content.config';
-import { formatYear } from '../lib/format';
+import { formatCentury } from '../lib/format';
 import { thinkerUrl, url } from '../lib/url';
 
 const thinkers = await getThinkers();
@@ -47,7 +47,7 @@ const latest = Math.max(...thinkers.map((t) => t.data.died));
       <dl class="stats">
         <div><dt>Thinkers</dt><dd>{thinkers.length}</dd></div>
         <div><dt>Schools of thought</dt><dd>{ideologies.length}</dd></div>
-        <div><dt>Span</dt><dd>{formatYear(earliest, false, true)} – {formatYear(latest, false, true)}</dd></div>
+        <div><dt>Centuries spanned</dt><dd>{formatCentury(earliest)} – {formatCentury(latest)}</dd></div>
       </dl>
     </div>
   </section>

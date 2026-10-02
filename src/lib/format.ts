@@ -31,3 +31,10 @@ export function formatLifespan({ born, died, bornCirca = false, diedCirca = fals
   const forceEra = born < 500;
   return `${formatYear(born, bornCirca, forceEra)}${dash}${formatYear(died, diedCirca, forceEra)}`;
 }
+
+/** The century containing a year, e.g. -470 -> "5th c. BCE", 1986 -> "20th c.". */
+export function formatCentury(year: number): string {
+  const n = year < 0 ? Math.ceil(-year / 100) : Math.ceil(year / 100);
+  const suffix = n % 100 >= 11 && n % 100 <= 13 ? 'th' : (['th', 'st', 'nd', 'rd'][n % 10] ?? 'th');
+  return `${n}${suffix} c.${year < 0 ? ' BCE' : ''}`;
+}
