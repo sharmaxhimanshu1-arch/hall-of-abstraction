@@ -4,6 +4,9 @@ import { z } from 'astro/zod';
 
 export const ERAS = ['Ancient', 'Medieval', 'Early Modern', 'Modern', 'Contemporary'] as const;
 
+/** Relationship of a thinker to another, from the first thinker's point of view. */
+export const STANCES = ['learned-from', 'agreed', 'challenged', 'built-on-by', 'challenged-by'] as const;
+
 /** A school of thought. File name (e.g. `stoicism.md`) is the id / URL slug. */
 const ideologies = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/ideologies' }),
@@ -54,6 +57,20 @@ const thinkers = defineCollection({
      * list is derived automatically, so each link only needs recording once.
      */
     influencedBy: z.array(reference('thinkers')).default([]),
+
+    /**
+     * How this thinker relates to others in the Hall: who they learned from,
+     * argued with, or were answered by. Shown in the sidebar with the note.
+     */
+    conversations: z
+      .array(
+        z.object({
+          thinker: reference('thinkers'),
+          stance: z.enum(STANCES),
+          note: z.string(),
+        }),
+      )
+      .default([]),
 
     /** References the profile was drafted from — used for fact-checking. */
     sources: z.array(z.object({ title: z.string(), url: z.url() })).min(1),

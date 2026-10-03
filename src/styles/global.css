@@ -224,3 +224,34 @@ hr {
 .prose em {
   font-style: italic;
 }
+
+.prose table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.prose th,
+.prose td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--surface-2);
+}
+
+/* Let wide tables scroll on small screens instead of widening the page. */
+@media (max-width: 600px) {
+  .prose table {
+    display: block;
+    overflow-x: auto;
+  }
+}

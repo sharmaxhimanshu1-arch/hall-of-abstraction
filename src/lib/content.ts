@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { STANCES } from '../content.config';
 
 export type Thinker = CollectionEntry<'thinkers'>;
 export type Ideology = CollectionEntry<'ideologies'>;
@@ -43,6 +44,12 @@ export function loadHall() {
       for (const ref of t.data.influencedBy) {
         if (!thinkerIds.has(ref.id)) errors.push(`${where}: unknown influencedBy "${ref.id}"`);
         if (ref.id === t.id) errors.push(`${where}: lists itself in influencedBy`);
+      }
+      for (const c of t.data.conversations) {
+        if (!thinkerIds.has(c.thinker.id)) {
+          errors.push(`${where}: unknown conversations thinker "${c.thinker.id}"`);
+        }
+        if (c.thinker.id === t.id) errors.push(`${where}: lists itself in conversations`);
       }
       if (t.data.died < t.data.born) errors.push(`${where}: died before born`);
     }
@@ -92,4 +99,21 @@ export async function getConnections(thinker: Thinker) {
     .filter((t) => t.data.influencedBy.some((ref) => ref.id === thinker.id))
     .sort((a, b) => a.data.born - b.data.born);
   return { influencedBy, influenced };
+}
+
+/** Resolves a thinker's `conversations`, grouped by stance in display order. */
+export async function getConversations(thinker: Thinker) {
+  const byId = new Map((await getThinkers()).map((t) => [t.id, t]));
+  return STANCES.map((stance) => ({
+    stance,
+    items: thinker.data.conversations
+      .filter((c) => c.stance === stance)
+      .map((c) => ({ thinker: byId.get(c.thinker.id)!, note: c.note })),
+  })).filter((group) => group.items.length > 0);
+}
+
+/** Approximate reading time in minutes, at 200 words a minute. */
+export function readingMinutes(text: string | undefined) {
+  const words = (text ?? '').split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
 }

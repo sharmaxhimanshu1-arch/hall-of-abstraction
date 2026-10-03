@@ -1,0 +1,103 @@
+---
+import type { Thinker } from '../lib/content';
+import type { STANCES } from '../content.config';
+import { thinkerUrl } from '../lib/url';
+
+interface Props {
+  groups: { stance: (typeof STANCES)[number]; items: { thinker: Thinker; note: string }[] }[];
+}
+
+const LABELS: Record<Props['groups'][number]['stance'], string> = {
+  'learned-from': 'Learned from',
+  agreed: 'Stood with',
+  challenged: 'Argued against',
+  'built-on-by': 'Carried forward by',
+  'challenged-by': 'Challenged by',
+};
+
+const { groups } = Astro.props;
+---
+
+{
+  groups.length > 0 && (
+    <section class="conversations">
+      <h3 class="title">In conversation</h3>
+      {groups.map((g) => (
+        <div class:list={['group', g.stance]}>
+          <h4>{LABELS[g.stance]}</h4>
+          <ul>
+            {g.items.map(({ thinker, note }) => (
+              <li>
+                <a href={thinkerUrl(thinker.id)}>{thinker.data.name}</a>
+                <p>{note}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  )
+}
+
+<style>
+  .conversations {
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.75rem;
+  }
+
+  .group {
+    margin-bottom: 1rem;
+    padding-left: 0.75rem;
+    border-left: 3px solid var(--rule);
+  }
+
+  .group.challenged,
+  .group.challenged-by {
+    border-left-style: dashed;
+  }
+
+  .group.learned-from,
+  .group.agreed,
+  .group.built-on-by {
+    border-left-color: var(--accent, var(--rule));
+  }
+
+  h4 {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    margin: 0 0 0.35rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 0.3rem 0;
+  }
+
+  a {
+    font-family: var(--font-serif);
+    font-size: 1.08rem;
+  }
+
+  p {
+    margin: 0.1rem 0 0;
+    color: var(--muted);
+    font-size: 0.84rem;
+    line-height: 1.45;
+  }
+</style>
