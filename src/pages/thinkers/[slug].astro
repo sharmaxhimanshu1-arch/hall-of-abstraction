@@ -50,6 +50,19 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
 
 <BaseLayout title={d.name} description={d.summary}>
   <article class="thinker" style={`--accent: ${primary.data.color}`}>
+    <div
+      class="read-progress"
+      role="progressbar"
+      aria-label="Reading progress"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="0"
+      data-pagefind-ignore
+    >
+      <span></span>
+    </div>
+    <div class="read-left" aria-hidden="true" data-pagefind-ignore data-minutes={minutes}></div>
+
     <header class="hero">
       <div class="container hero-inner">
         <Monogram name={d.name} color={primary.data.color} size="lg" />
@@ -201,31 +214,107 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
   const sections = Array.from(document.querySelectorAll<HTMLElement>('.prose h2[id]')).filter(
     (h) => links.has(h.id),
   );
-  if (sections.length) {
-    let pending = false;
-    const update = () => {
-      pending = false;
-      // The current section is the last heading above the middle of the screen.
-      const current =
-        [...sections].reverse().find((h) => h.getBoundingClientRect().top < window.innerHeight / 2)
-          ?.id ?? sections[0]!.id;
-      for (const [slug, a] of links) a.setAttribute('aria-current', String(slug === current));
-    };
-    window.addEventListener(
-      'scroll',
-      () => {
-        if (!pending) {
-          pending = true;
-          requestAnimationFrame(update);
-        }
-      },
-      { passive: true },
-    );
-    update();
-  }
+
+  // Reading progress, measured over the lesson text only.
+  const prose = document.querySelector<HTMLElement>('.prose');
+  const bar = document.querySelector<HTMLElement>('.read-progress');
+  const fill = bar?.querySelector<HTMLElement>('span');
+  const left = document.querySelector<HTMLElement>('.read-left');
+  const minutes = Number(left?.dataset.minutes) || 0;
+
+  const updateProgress = () => {
+    if (!prose || !bar || !fill || !left) return;
+    const rect = prose.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, (window.innerHeight - rect.top) / rect.height));
+    const pct = Math.round(p * 100);
+    fill.style.transform = `scaleX(${p})`;
+    bar.setAttribute('aria-valuenow', String(pct));
+    left.textContent =
+      pct >= 98 ? 'Done' : `${pct}% · ${Math.max(1, Math.ceil(minutes * (1 - p)))} min left`;
+    left.classList.toggle('visible', p > 0.02);
+  };
+
+  const updateSections = () => {
+    if (!sections.length) return;
+    // The current section is the last heading above the middle of the screen.
+    const current =
+      [...sections].reverse().find((h) => h.getBoundingClientRect().top < window.innerHeight / 2)
+        ?.id ?? sections[0]!.id;
+    for (const [slug, a] of links) a.setAttribute('aria-current', String(slug === current));
+  };
+
+  let pending = false;
+  const update = () => {
+    pending = false;
+    updateProgress();
+    updateSections();
+  };
+  const schedule = () => {
+    if (!pending) {
+      pending = true;
+      requestAnimationFrame(update);
+    }
+  };
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule);
+  update();
 </script>
 
 <style>
+  .read-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .read-progress span {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  .read-left {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--muted);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .read-left:global(.visible) {
+    opacity: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .read-left {
+      transition: none;
+    }
+  }
+
+  @media print {
+    .read-progress,
+    .read-left {
+      display: none;
+    }
+  }
+
   .hero {
     background: linear-gradient(
       180deg,
@@ -439,6 +528,13 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
   }
 
   @media (max-width: 600px) {
+    .read-left {
+      right: auto;
+      left: 50%;
+      bottom: 0.75rem;
+      transform: translateX(-50%);
+    }
+
     .hero {
       padding-top: 2rem;
     }
