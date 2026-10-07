@@ -41,6 +41,47 @@ conversations:
   - thinker: john-stuart-mill
     stance: challenged-by
     note: Used him as a tragic warning. The best and wisest ruler of his age still persecuted Christians, sure he was right.
+quiz:
+  - q: "What was Meditations originally?"
+    options:
+      - "A speech to the Roman Senate"
+      - "A book written for publication"
+      - "A private notebook Marcus wrote to himself"
+      - "A letter to his son"
+    answer: 2
+    why: "Marcus wrote it for himself, often on military campaigns, as reminders to practise Stoic principles. It was never meant to be published."
+  - q: "How did Marcus prepare for difficult people each morning?"
+    options:
+      - "By avoiding meetings"
+      - "By reminding himself he would meet meddling, ungrateful people, who act from ignorance of good and bad"
+      - "By ordering guards to keep them away"
+      - "By planning his revenge"
+    answer: 1
+    why: "By expecting difficult people and understanding why they act as they do, he could meet them without anger."
+  - q: "What did Marcus call 'the best revenge'?"
+    options:
+      - "To win in court"
+      - "To forgive and forget"
+      - "To humiliate the wrongdoer"
+      - "Not to become like the one who wronged you"
+    answer: 3
+    why: "Meditations VI.6: 'The best way of avenging thyself is not to become like the wrong doer.'"
+  - q: "What does 'the obstacle becomes the way' mean?"
+    options:
+      - "An obstacle to action can be turned into the material for virtuous action"
+      - "Always take the longest road"
+      - "Avoid every difficulty"
+      - "Obstacles are signs from the gods"
+    answer: 0
+    why: "'The impediment to action advances action. What stands in the way becomes the way.' Every setback is a chance to practise patience, courage or justice."
+  - q: "What did Marcus mean by 'do not be dyed purple'?"
+    options:
+      - "Avoid wearing expensive clothes"
+      - "Stay loyal to Rome"
+      - "Do not let the power of being emperor change your character"
+      - "Never paint your house"
+    answer: 2
+    why: "Purple was the imperial colour. He warned himself not to be 'Caesarified', not to let power stain who he was."
 sources:
   - title: Internet Encyclopedia of Philosophy, "Aurelius, Marcus"
     url: https://iep.utm.edu/marcus-aurelius/

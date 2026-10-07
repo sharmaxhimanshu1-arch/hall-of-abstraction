@@ -53,6 +53,47 @@ conversations:
   - thinker: karl-marx
     stance: challenged-by
     note: Called him a sycophant who, paid by the English oligarchy, romanticised the past against the French Revolution.
+quiz:
+  - q: "How did Burke describe society in Reflections on the Revolution in France?"
+    options:
+      - "A contract that each generation can tear up"
+      - "A partnership between the living, the dead and those yet to be born"
+      - "A machine to be redesigned by experts"
+      - "A market"
+    answer: 1
+    why: "We are trustees of an inheritance, not owners free to destroy it."
+  - q: "What did Burke predict about the French Revolution in 1790?"
+    options:
+      - "It would bring lasting peace"
+      - "It would make France a monarchy again within a year"
+      - "It would spread to India"
+      - "It would end in terror, disorder and rule by a popular general"
+    answer: 3
+    why: "The Terror and Napoleon's rise later made his warning look prophetic."
+  - q: "Whom did Burke spend years trying to impeach?"
+    options:
+      - "King George III"
+      - "Thomas Paine"
+      - "Warren Hastings, Governor-General of Bengal, for crimes against Indians"
+      - "Robespierre"
+    answer: 2
+    why: "Burke rejected 'geographical morality', the idea that a British governor could rule Indians by lower standards. Hastings was acquitted in 1795."
+  - q: "What did Burke tell the electors of Bristol a representative owes them?"
+    options:
+      - "His judgement, not just his work"
+      - "Obedience to every instruction"
+      - "Regular gifts"
+      - "A seat in the House of Lords"
+    answer: 0
+    why: "This is the 'trustee' model of representation: an MP should think for the good of the whole nation."
+  - q: "What does Chesterton's fence, a Burkean idea, advise?"
+    options:
+      - "Build fences to keep strangers out"
+      - "Never change anything"
+      - "Before removing something, find out why it was put there"
+      - "Tear down old institutions quickly"
+    answer: 2
+    why: "Burke was not against change, but he insisted on understanding what an institution does before destroying it."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Edmund Burke"
     url: https://plato.stanford.edu/entries/burke/

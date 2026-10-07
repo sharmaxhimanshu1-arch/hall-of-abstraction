@@ -55,6 +55,47 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: challenged-by
     note: Blamed Plato for teaching the West to despise this world in favour of an imaginary "true" one.
+quiz:
+  - q: "In the Allegory of the Cave, what do the prisoners mistake for reality?"
+    options:
+      - "The sun outside"
+      - "Shadows cast on the wall in front of them"
+      - "The fire behind them"
+      - "Their own reflections in water"
+    answer: 1
+    why: "Chained since birth, the prisoners see only shadows of objects and take them to be all that exists. Plato's point is that most of us mistake appearances for truth."
+  - q: "What are Plato's Forms?"
+    options:
+      - "Perfect, unchanging ideas, such as Justice itself, that physical things only imitate"
+      - "Official documents of the Athenian state"
+      - "The shapes of the planets"
+      - "The stages of a person's life"
+    answer: 0
+    why: "For Plato, the changing world we see copies eternal Forms that can be grasped only by reason."
+  - q: "In Plato's image of the soul as a chariot, what should drive it?"
+    options:
+      - "Appetite, the dark horse"
+      - "Spirit, the white horse"
+      - "Reason, the charioteer"
+      - "Fate, the road itself"
+    answer: 2
+    why: "Reason must guide spirit and appetite. A just soul, like a just city, has each part doing its proper job under reason."
+  - q: "Why did Plato distrust democracy?"
+    options:
+      - "He thought it gave too much power to priests"
+      - "He believed only soldiers should rule"
+      - "He wanted Athens to be ruled by Persia"
+      - "He thought crowds could be swayed by flatterers instead of guided by knowledge"
+    answer: 3
+    why: "Having watched democratic Athens put Socrates to death, he compared it to a ship whose sailors fight over the wheel while ignoring the trained navigator."
+  - q: "What does Plato's 'ladder of love' in the Symposium describe?"
+    options:
+      - "A rise from loving one beautiful body to loving Beauty itself"
+      - "The rules of marriage in Athens"
+      - "A ranking of the gods"
+      - "The steps of becoming a soldier"
+    answer: 0
+    why: "Love begins with attraction to one person and, step by step, rises to love of beautiful souls, ideas and finally Beauty itself."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Plato"
     url: https://plato.stanford.edu/entries/plato/

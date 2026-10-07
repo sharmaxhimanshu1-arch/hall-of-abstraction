@@ -53,6 +53,47 @@ conversations:
   - thinker: aristotle
     stance: challenged
     note: Quoted his claim that the female is female by a lack of qualities, as an example of how philosophers defined woman as a deficient man.
+quiz:
+  - q: "What does 'One is not born, but rather becomes, a woman' mean?"
+    options:
+      - "Biology does not exist"
+      - "Girls grow up faster than boys"
+      - "What society calls being a woman is shaped by upbringing, culture and situation, not fixed by nature"
+      - "Women choose their sex"
+    answer: 2
+    why: "Beauvoir traced how girls are taught, step by step, to see themselves as objects and to limit their ambitions."
+  - q: "What did Beauvoir mean by calling woman 'the Other'?"
+    options:
+      - "Women are mysterious"
+      - "Man has been treated as the norm, the Subject, and woman defined only in relation to him"
+      - "Women are foreigners"
+      - "Women and men are opposites"
+    answer: 1
+    why: "He is the Subject, the Absolute; she is the Other. The relationship has not been reciprocal."
+  - q: "What is the difference between immanence and transcendence in Beauvoir's work?"
+    options:
+      - "Repetitive maintenance of life versus free, creative projects in the world"
+      - "Earth versus heaven"
+      - "Body versus soul"
+      - "Youth versus old age"
+    answer: 0
+    why: "Women were confined to immanence, like housework that must be redone every day, while men were allowed transcendence."
+  - q: "Which book by Beauvoir did the Vatican place on its Index of Forbidden Books?"
+    options:
+      - "The Mandarins"
+      - "She Came to Stay"
+      - "The Coming of Age"
+      - "The Second Sex"
+    answer: 3
+    why: "Published in 1949, The Second Sex caused a scandal and later became a foundation of second-wave feminism."
+  - q: "What did Beauvoir's later book The Coming of Age argue?"
+    options:
+      - "Old age is always peaceful"
+      - "Societies that value people only as producers treat the old as Others, and much of their misery is socially made"
+      - "Old people should stop working early"
+      - "Ageing can be cured"
+    answer: 1
+    why: "She called society's treatment of the elderly a scandal that reveals what it really values."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Simone de Beauvoir"
     url: https://plato.stanford.edu/entries/beauvoir/

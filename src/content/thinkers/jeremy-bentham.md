@@ -49,6 +49,47 @@ conversations:
   - thinker: karl-marx
     stance: challenged-by
     note: Mocked him as the arch-philistine who took the English shopkeeper as the model of all humanity.
+quiz:
+  - q: "What is Bentham's principle of utility?"
+    options:
+      - "The right action or law is the one that produces the greatest happiness for all affected"
+      - "Always obey the law"
+      - "Follow tradition"
+      - "Protect natural rights above all"
+    answer: 0
+    why: "'It is the greatest happiness of the greatest number that is the measure of right and wrong.' Each person counts for one."
+  - q: "What did Bentham call natural rights?"
+    options:
+      - "The foundation of all law"
+      - "Gifts from God"
+      - "'Nonsense upon stilts'"
+      - "Rights only kings should have"
+    answer: 2
+    why: "For Bentham, rights are created by law. Rights claimed before law are rhetoric that can justify anything."
+  - q: "What was the Panopticon?"
+    options:
+      - "A telescope"
+      - "A circular prison where one guard could watch every cell without inmates knowing when they were watched"
+      - "A law code for India"
+      - "A university"
+    answer: 1
+    why: "Bentham thought it humane and efficient. Later, Foucault made it the symbol of modern surveillance."
+  - q: "Which question did Bentham ask about animals?"
+    options:
+      - "Can they reason?"
+      - "Can they talk?"
+      - "Are they useful?"
+      - "Can they suffer?"
+    answer: 3
+    why: "'The question is not, Can they reason? nor, Can they talk? but, Can they suffer?' It inspired the modern animal welfare movement."
+  - q: "What did Bentham argue about punishment?"
+    options:
+      - "All punishment is itself an evil, justified only if it prevents a greater evil"
+      - "Harsher is always better"
+      - "Punishment should be revenge"
+      - "Criminals should never be punished"
+    answer: 0
+    why: "He wanted punishment to be proportionate, certain and no harsher than needed to deter."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Jeremy Bentham"
     url: https://plato.stanford.edu/entries/bentham/

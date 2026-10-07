@@ -52,6 +52,47 @@ conversations:
   - thinker: immanuel-kant
     stance: built-on-by
     note: Credited Hume with waking him from his dogmatic slumber, then spent years trying to answer him.
+quiz:
+  - q: "What is the problem of induction?"
+    options:
+      - "We cannot rationally prove that the future will resemble the past"
+      - "Science is always wrong"
+      - "Deduction is impossible"
+      - "Memory is unreliable"
+    answer: 0
+    why: "We expect the sun to rise because it always has, but no argument shows that the past guarantees the future. Our expectation rests on habit."
+  - q: "What did Hume say we actually observe when one billiard ball hits another?"
+    options:
+      - "The force passing between them"
+      - "The cause itself"
+      - "One event followed by another, again and again"
+      - "God moving the balls"
+    answer: 2
+    why: "We never see a necessary connection, only constant conjunction. The idea of causation comes from the mind's habit of expecting."
+  - q: "What is Hume's 'bundle' theory of the self?"
+    options:
+      - "The self is a bundle of perceptions with no single unchanging thing underneath"
+      - "The self is the soul"
+      - "The self is the body"
+      - "The self is your social role"
+    answer: 0
+    why: "Looking inward, Hume found only particular thoughts and feelings, never a self apart from them. Readers often compare this with the Buddhist idea of anatta."
+  - q: "What did Hume mean by 'reason is, and ought only to be the slave of the passions'?"
+    options:
+      - "People should never think"
+      - "Emotions are always right"
+      - "Reason should control desire"
+      - "Reason can tell us how to get what we want, but desire decides what we want"
+    answer: 3
+    why: "Reason alone never moves us to act. It serves goals set by feeling."
+  - q: "What is the is–ought gap?"
+    options:
+      - "Facts are more important than values"
+      - "You cannot validly move from statements about what is to statements about what ought to be without adding a value premise"
+      - "Morality is made up"
+      - "Laws should follow nature"
+    answer: 1
+    why: "Hume noticed writers sliding from 'is' to 'ought' without explanation, a gap still central to ethics."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "David Hume"
     url: https://plato.stanford.edu/entries/hume/

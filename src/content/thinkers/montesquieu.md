@@ -44,6 +44,47 @@ conversations:
   - thinker: georg-hegel
     stance: built-on-by
     note: Praised him for seeing that laws must be understood as part of the whole character of a people and its age.
+quiz:
+  - q: "What is Montesquieu's most famous idea about government?"
+    options:
+      - "The divine right of kings"
+      - "Separating legislative, executive and judicial power so that power checks power"
+      - "Abolishing all government"
+      - "Rule by philosophers"
+    answer: 1
+    why: "In The Spirit of the Laws he argued that liberty is safest when no single person or body holds all three powers."
+  - q: "What did Montesquieu mean by the 'spirit' of a country's laws?"
+    options:
+      - "Laws come from ghosts"
+      - "Every country should copy the same laws"
+      - "Good laws must fit a people's climate, customs, religion, economy and history"
+      - "Laws should be written by poets"
+    answer: 2
+    why: "He studied many societies and concluded that no single set of laws suits everyone. Laws must fit circumstances."
+  - q: "What form did Montesquieu use to criticise French society in 1721?"
+    options:
+      - "Letters written by two imaginary Persian travellers in Paris"
+      - "A secret diary"
+      - "A play for the king"
+      - "A newspaper column"
+    answer: 0
+    why: "The Persian Letters let him mock French manners, religion and absolutism through outsiders' eyes, and became a bestseller."
+  - q: "What principle did Montesquieu say each kind of government runs on?"
+    options:
+      - "All run on money"
+      - "All run on religion"
+      - "All run on military force"
+      - "Republics on virtue, monarchies on honour, despotisms on fear"
+    answer: 3
+    why: "Each form of government depends on a particular spirit among its people. When that spirit decays, the government decays."
+  - q: "Which country's constitution did Montesquieu admire as a model of liberty?"
+    options:
+      - "England's"
+      - "Persia's"
+      - "China's"
+      - "Spain's"
+    answer: 0
+    why: "After living in England, he described its constitution as one designed for political liberty, though his account was somewhat idealised."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Montesquieu"
     url: https://plato.stanford.edu/entries/montesquieu/

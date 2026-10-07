@@ -52,6 +52,47 @@ conversations:
   - thinker: karl-marx
     stance: challenged-by
     note: Saw Locke's natural right to property as the philosophy of the rising capitalist class, not a timeless truth.
+quiz:
+  - q: "What did Locke mean by calling the newborn mind 'white paper'?"
+    options:
+      - "Children are innocent"
+      - "We are born without ideas, and all our ideas come from experience"
+      - "Education is unnecessary"
+      - "Babies cannot see colour"
+    answer: 1
+    why: "Against innate ideas, Locke argued that sensation and reflection write everything we know onto the mind."
+  - q: "According to Locke, what makes you the same person over time?"
+    options:
+      - "Your body staying the same"
+      - "Your soul"
+      - "Your name"
+      - "Your memory and consciousness of past actions"
+    answer: 3
+    why: "Personal identity, for Locke, extends as far back as consciousness and memory reach. The puzzles this raises are still debated."
+  - q: "How, according to Locke, does private property begin?"
+    options:
+      - "When a king grants land"
+      - "When people mix their labour with what nature gives"
+      - "Through inheritance only"
+      - "By force"
+    answer: 1
+    why: "Picking apples or farming land makes it yours. He added limits, such as leaving 'enough and as good' for others."
+  - q: "What did Locke say government holds its power as?"
+    options:
+      - "A trust from the people, which can be withdrawn if abused"
+      - "A gift from God to kings"
+      - "A right won by conquest"
+      - "A family inheritance"
+    answer: 0
+    why: "Governments exist to protect life, liberty and property. If they betray that trust, the people may resist and replace them."
+  - q: "What did Locke argue in A Letter Concerning Toleration?"
+    options:
+      - "Everyone must follow the state religion"
+      - "Religion should be banned"
+      - "The state should not force belief, since faith cannot be compelled"
+      - "Only scientists should be tolerated"
+    answer: 2
+    why: "Force can make people go through the motions but cannot create real belief. He sadly excluded atheists and, for political reasons, Catholics."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "John Locke"
     url: https://plato.stanford.edu/entries/locke/

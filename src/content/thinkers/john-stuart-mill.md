@@ -58,6 +58,47 @@ conversations:
   - thinker: simone-de-beauvoir
     stance: built-on-by
     note: Carried the case against women's subordination from law into culture, myth and everyday experience.
+quiz:
+  - q: "What is Mill's harm principle?"
+    options:
+      - "Society may restrict a person's liberty only to prevent harm to others"
+      - "The state should prevent people harming themselves"
+      - "Harm is always wrong"
+      - "The majority decides what is harmful"
+    answer: 0
+    why: "Over yourself, your own body and mind, you are sovereign. Your own good alone is not enough to justify coercion."
+  - q: "Why did Mill say we should not silence even a false opinion?"
+    options:
+      - "False opinions are harmless"
+      - "The government cannot tell what is false"
+      - "Without challenge, true beliefs become dead dogma held without understanding"
+      - "Everyone has a right to lie"
+    answer: 2
+    why: "Silencing an opinion loses truth if it is true, part of the truth if partly true, and a deeper understanding of the truth even if it is false."
+  - q: "What crisis did Mill suffer at twenty?"
+    options:
+      - "He went bankrupt"
+      - "He fell into depression, realising his trained intellect had left his feelings starved"
+      - "He was imprisoned"
+      - "He lost his job at the East India Company"
+    answer: 1
+    why: "He recovered partly through Wordsworth's poetry, and learned that feelings and inner culture matter as much as analysis."
+  - q: "What did Mill mean by 'better to be Socrates dissatisfied than a fool satisfied'?"
+    options:
+      - "Wise people are always unhappy"
+      - "Fools are better off"
+      - "Socrates was a fool"
+      - "Pleasures differ in quality, and higher pleasures of the mind are worth more"
+    answer: 3
+    why: "This was his revision of Bentham: some pleasures are higher, judged by those who have experienced both."
+  - q: "What did Mill propose in Parliament in 1867?"
+    options:
+      - "Abolishing the monarchy"
+      - "Replacing 'man' with 'person' in the Reform Bill, to give women the vote"
+      - "Ending the East India Company"
+      - "Banning newspapers"
+    answer: 1
+    why: "The amendment lost by 196 votes to 73, but it was the first time women's suffrage was debated in Parliament."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "John Stuart Mill"
     url: https://plato.stanford.edu/entries/mill/

@@ -7,6 +7,7 @@ import QuoteBlock from '../../components/QuoteBlock.astro';
 import ConnectionList from '../../components/ConnectionList.astro';
 import ConversationList from '../../components/ConversationList.astro';
 import PageContents from '../../components/PageContents.astro';
+import Quiz from '../../components/Quiz.astro';
 import {
   getConnections,
   getConversations,
@@ -16,6 +17,7 @@ import {
   type Thinker,
 } from '../../lib/content';
 import { formatLifespan } from '../../lib/format';
+import { getPath } from '../../lib/path';
 import { ideologyUrl, thinkerUrl, url } from '../../lib/url';
 
 export async function getStaticPaths() {
@@ -46,6 +48,7 @@ const conversations = await getConversations(thinker);
 const { Content, headings } = await render(thinker);
 const minutes = readingMinutes(thinker.body);
 const [featuredQuote, ...otherQuotes] = d.quotes;
+const path = (await getPath()).position(thinker.id);
 ---
 
 <BaseLayout title={d.name} description={d.summary}>
@@ -93,6 +96,11 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
 
     <div class="container layout">
       <div class="main-col">
+        <p class="resume" data-pagefind-ignore hidden>
+          <button type="button"></button>
+          <button type="button" class="resume-dismiss" aria-label="Dismiss">×</button>
+        </p>
+
         <div class="contents-mobile" data-pagefind-ignore>
           <a class="map-link" href={url(`/map/#${thinker.id}`)}>See {d.name} on the map →</a>
           <PageContents headings={headings} collapsible />
@@ -104,9 +112,11 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
           )
         }
 
-        <div class="prose">
+        <div class="prose" data-id={thinker.id}>
           <Content />
         </div>
+
+        <Quiz name={d.name} questions={d.quiz} />
 
         {
           otherQuotes.length > 0 && (
@@ -118,6 +128,23 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
             </section>
           )
         }
+
+        <section class="path-next" aria-label="Reading path" data-pagefind-ignore>
+          <p class="path-where">
+            Reading path · Stage {path.stageNumber}, {path.stage.title} · {path.step} of {path.total}
+          </p>
+          {
+            path.next ? (
+              <a class="path-link" href={thinkerUrl(path.next.id)}>
+                <span>Next in the path</span>
+                {path.next.data.name} →
+              </a>
+            ) : (
+              <p class="path-done">This is the last lesson in the path. You have walked through 2,500 years of ideas.</p>
+            )
+          }
+          <a class="path-all" href={url('/start/')}>See the whole reading path</a>
+        </section>
       </div>
 
       <aside class="side" aria-label="About this thinker">
@@ -260,6 +287,75 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
   window.addEventListener('scroll', schedule, { passive: true });
   window.addEventListener('resize', schedule);
   update();
+
+  // Remember how far into this lesson the reader got, on this device only.
+  const KEY = 'hall:progress';
+  const id = prose?.dataset.id;
+  const load = (): Record<string, { p: number; t: number; s?: string }> => {
+    try {
+      return JSON.parse(localStorage.getItem(KEY) ?? '{}');
+    } catch {
+      return {};
+    }
+  };
+  const progressNow = () => {
+    if (!prose) return 0;
+    const rect = prose.getBoundingClientRect();
+    return Math.min(1, Math.max(0, (window.innerHeight - rect.top) / rect.height));
+  };
+  const allSections = Array.from(document.querySelectorAll<HTMLElement>('.prose h2'));
+  const sectionNow = () =>
+    [...allSections].reverse().find((h) => h.getBoundingClientRect().top < window.innerHeight / 2)
+      ?.textContent ?? '';
+
+  if (prose && id) {
+    const saved = load()[id];
+    const resume = document.querySelector<HTMLElement>('.resume');
+    if (resume && saved && saved.p > 0.03 && saved.p < 0.97 && progressNow() < 0.02) {
+      const [go, dismiss] = resume.querySelectorAll('button');
+      go!.textContent = `Continue where you left off${saved.s ? `: ${saved.s}` : ''} (${Math.round(saved.p * 100)}%) →`;
+      go!.addEventListener('click', () => {
+        const rect = prose.getBoundingClientRect();
+        const top = window.scrollY + rect.top + saved.p * rect.height - window.innerHeight;
+        window.scrollTo({ top, behavior: 'smooth' });
+        resume.hidden = true;
+      });
+      dismiss!.addEventListener('click', () => (resume.hidden = true));
+      resume.hidden = false;
+    }
+
+    let lastSave = 0;
+    let moved = false;
+    const save = () => {
+      if (!moved) return;
+      const all = load();
+      const p = progressNow();
+      // Keep the furthest point once the lesson is finished.
+      const best = (all[id]?.p ?? 0) >= 0.98 ? Math.max(p, all[id]!.p) : p;
+      all[id] = { p: Math.round(best * 1000) / 1000, t: Date.now(), s: sectionNow() };
+      try {
+        localStorage.setItem(KEY, JSON.stringify(all));
+      } catch {
+        /* storage unavailable: nothing to remember */
+      }
+    };
+    window.addEventListener(
+      'scroll',
+      () => {
+        moved = true;
+        const now = Date.now();
+        if (now - lastSave > 1500) {
+          lastSave = now;
+          save();
+        }
+      },
+      { passive: true },
+    );
+    window.addEventListener('pagehide', save);
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') save();
+    });
+  }
 </script>
 
 <style>
@@ -279,6 +375,86 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
     background: var(--accent);
     transform: scaleX(0);
     transform-origin: left;
+  }
+
+  .resume {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0 0 1.25rem;
+    padding: 0.35rem 0.35rem 0.35rem 0.9rem;
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--rule));
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  }
+
+  .resume[hidden] {
+    display: none;
+  }
+
+  .resume button {
+    padding: 0.35rem 0.4rem;
+    border: 0;
+    background: none;
+    color: var(--ink);
+    font: 600 0.92rem var(--font-sans);
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .resume button:first-child {
+    flex: 1;
+  }
+
+  .resume .resume-dismiss {
+    color: var(--muted);
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .path-next {
+    display: grid;
+    gap: 0.4rem;
+    max-width: var(--measure);
+    margin-top: 2.5rem;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  .path-where {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .path-link {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-serif);
+    font-size: 1.45rem;
+    text-decoration: none;
+  }
+
+  .path-link span {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .path-done {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+  }
+
+  .path-all {
+    font-size: 0.88rem;
   }
 
   .read-left {

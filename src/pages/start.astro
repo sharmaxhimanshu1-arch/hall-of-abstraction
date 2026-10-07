@@ -1,0 +1,229 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Monogram from '../components/Monogram.astro';
+import { getIdeologyMap, readingMinutes } from '../lib/content';
+import { getPath } from '../lib/path';
+import { formatLifespan } from '../lib/format';
+import { thinkerUrl } from '../lib/url';
+
+const { stages, flat } = await getPath();
+const ideologies = await getIdeologyMap();
+const totalHours = Math.round(flat.reduce((sum, t) => sum + readingMinutes(t.body), 0) / 60);
+let step = 0;
+---
+
+<BaseLayout
+  title="Start here"
+  description="A suggested path through all the thinkers in the Hall, in six stages, from Socrates to Simone de Beauvoir."
+>
+  <section class="intro container">
+    <p class="eyebrow">Start here</p>
+    <h1>A reading path through the Hall</h1>
+    <p class="lede">
+      You can read the thinkers in any order, but they make most sense as a journey. This path takes
+      you through {flat.length} lessons in six stages. Each stage asks one big question, and each
+      thinker builds on, or argues with, the ones before. In all it is about {totalHours} hours of
+      reading, a lesson or two a day.
+    </p>
+    <p class="resume" data-resume hidden></p>
+  </section>
+
+  <div class="container stages">
+    {
+      stages.map((stage, s) => (
+        <section class="stage" aria-labelledby={`stage-${s + 1}`}>
+          <header>
+            <p class="stage-num">Stage {s + 1}</p>
+            <h2 id={`stage-${s + 1}`}>{stage.title}</h2>
+            <p class="question">{stage.question}</p>
+            <p class="blurb">{stage.blurb}</p>
+          </header>
+          <ol class="steps" start={step + 1}>
+            {stage.thinkers.map((t) => {
+              step++;
+              const ideology = ideologies.get(t.data.primary.id)!;
+              return (
+                <li class="step" data-id={t.id}>
+                  <a href={thinkerUrl(t.id)}>
+                    <span class="num" aria-hidden="true">{step}</span>
+                    <Monogram name={t.data.name} color={ideology.data.color} size="sm" />
+                    <span class="text">
+                      <span class="name">{t.data.name}</span>
+                      <span class="meta">
+                        {formatLifespan(t.data)} · {ideology.data.name} · {readingMinutes(t.body)} min
+                      </span>
+                      <span class="summary">{t.data.summary}</span>
+                    </span>
+                    <span class="seen" aria-hidden="true" hidden>Started</span>
+                  </a>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>
+
+<script>
+  // Mark thinkers already opened on this device, and offer to pick up the
+  // latest one. Reading positions are saved by the thinker pages.
+  const KEY = 'hall:progress';
+  let saved: Record<string, { p: number; t: number }> = {};
+  try {
+    saved = JSON.parse(localStorage.getItem(KEY) ?? '{}');
+  } catch {
+    saved = {};
+  }
+
+  let latest: { id: string; t: number; p: number } | undefined;
+  for (const li of document.querySelectorAll<HTMLElement>('.step')) {
+    const entry = saved[li.dataset.id!];
+    if (!entry) continue;
+    const badge = li.querySelector<HTMLElement>('.seen')!;
+    badge.textContent = entry.p >= 0.98 ? 'Read' : `${Math.round(entry.p * 100)}%`;
+    badge.hidden = false;
+    if (entry.p < 0.98 && (!latest || entry.t > latest.t)) latest = { id: li.dataset.id!, ...entry };
+  }
+
+  const resume = document.querySelector<HTMLElement>('[data-resume]')!;
+  if (latest) {
+    const li = document.querySelector<HTMLElement>(`.step[data-id="${latest.id}"]`)!;
+    const link = li.querySelector('a')!.cloneNode(false) as HTMLAnchorElement;
+    link.textContent = `Pick up ${li.querySelector('.name')!.textContent} where you left off (${Math.round(latest.p * 100)}%) →`;
+    resume.replaceChildren(link);
+    resume.hidden = false;
+  }
+</script>
+
+<style>
+  .intro {
+    padding-top: 2.5rem;
+  }
+
+  .intro .lede {
+    max-width: var(--measure);
+  }
+
+  .resume {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+
+  .stages {
+    display: grid;
+    gap: 2.5rem;
+    padding-top: 1rem;
+  }
+
+  .stage header {
+    max-width: var(--measure);
+    margin-bottom: 1rem;
+  }
+
+  .stage-num {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .stage h2 {
+    margin: 0.2rem 0 0.3rem;
+  }
+
+  .question {
+    margin: 0 0 0.4rem;
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  .blurb {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .step a {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .step a:hover,
+  .step a:focus-visible {
+    border-color: var(--ink-soft);
+  }
+
+  .num {
+    flex: none;
+    width: 1.6rem;
+    padding-top: 0.35rem;
+    color: var(--muted);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+
+  .text {
+    display: grid;
+    gap: 0.15rem;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .name {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  .summary {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .seen {
+    flex: none;
+    align-self: center;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    background: var(--surface-2);
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 600px) {
+    .num {
+      display: none;
+    }
+
+    .step a {
+      padding: 0.75rem;
+    }
+  }
+</style>

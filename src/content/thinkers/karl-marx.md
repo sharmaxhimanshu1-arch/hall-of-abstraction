@@ -62,6 +62,47 @@ conversations:
   - thinker: jean-paul-sartre
     stance: built-on-by
     note: Called Marxism the unsurpassable philosophy of our time, and tried to join it to existentialist freedom.
+quiz:
+  - q: "According to Marx, what is surplus value?"
+    options:
+      - "The value workers produce beyond what they are paid, which becomes profit"
+      - "Extra goods stored in warehouses"
+      - "The value of gold"
+      - "Tax revenue"
+    answer: 0
+    why: "Workers sell their labour power for a wage worth less than the value they create. The difference is the basis of profit, which Marx called exploitation."
+  - q: "What did Marx mean by alienation?"
+    options:
+      - "Living abroad"
+      - "Workers become estranged from their product, their work, other people and their own human nature"
+      - "Being a foreigner in one's own country"
+      - "Disliking one's neighbours"
+    answer: 1
+    why: "The assembly-line worker who neither designs nor owns what he makes is the classic example."
+  - q: "What does the Communist Manifesto say about all history so far?"
+    options:
+      - "It is the history of great men"
+      - "It is the history of religion"
+      - "It is the history of class struggles"
+      - "It is the history of technology"
+    answer: 2
+    why: "Free man and slave, lord and serf, capitalist and worker: oppressor and oppressed in constant opposition."
+  - q: "What did Marx mean by 'Men make their own history, but they do not make it as they please'?"
+    options:
+      - "History is entirely random"
+      - "Individuals have no power at all"
+      - "Only rulers make history"
+      - "People act and choose, but within conditions inherited from the past"
+    answer: 3
+    why: "It balances human agency with the weight of social and economic structures."
+  - q: "What did Ambedkar argue in Buddha or Karl Marx?"
+    options:
+      - "Marx was right about everything"
+      - "The Buddha's path of persuasion and democracy was better than Marx's way of violence and dictatorship"
+      - "Religion should be abolished"
+      - "Caste is just class"
+    answer: 1
+    why: "Ambedkar agreed that exploitation must end but rejected violent means. He also criticised Indian Marxists for ignoring caste."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Karl Marx"
     url: https://plato.stanford.edu/entries/marx/

@@ -5,6 +5,7 @@ import { join } from 'node:path';
 
 const DIR = new URL('../src/content/thinkers/', import.meta.url).pathname;
 const MIN_WORDS = 5000;
+const QUIZ = 5;
 const SECTIONS = [
   'Start here',
   'The world',
@@ -27,6 +28,9 @@ for (const name of (await readdir(DIR)).filter((f) => f.endsWith('.md')).sort())
   const words = body.split(/\s+/).filter(Boolean).length;
   const headings = [...body.matchAll(/^## (.+)$/gm)].map((m) => m[1]);
   const missing = SECTIONS.filter((s) => !headings.some((h) => h.startsWith(s)));
+  const frontmatter = text.split(/^---$/m)[1] ?? '';
+  const quiz = (frontmatter.match(/^\s+- q: /gm) ?? []).length;
+  if (quiz < QUIZ) missing.push(`quiz (${quiz}/${QUIZ})`);
   const ok = words >= MIN_WORDS && missing.length === 0;
   if (!ok) failures++;
   console.log(
@@ -35,5 +39,5 @@ for (const name of (await readdir(DIR)).filter((f) => f.endsWith('.md')).sort())
   );
 }
 
-console.log(`\n${failures} profile(s) still short of ${MIN_WORDS} words or the ten sections.`);
+console.log(`\n${failures} profile(s) still short of ${MIN_WORDS} words, the ten sections or a ${QUIZ}-question quiz.`);
 if (strict && failures) process.exit(1);

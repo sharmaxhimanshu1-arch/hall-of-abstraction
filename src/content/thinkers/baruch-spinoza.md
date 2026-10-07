@@ -52,6 +52,47 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: built-on-by
     note: Thrilled to discover "a precursor, and what a precursor" in Spinoza's denial of free will and of purposes in nature.
+quiz:
+  - q: "What did Spinoza mean by 'God or Nature' (Deus sive Natura)?"
+    options:
+      - "God created nature and then left it alone"
+      - "God and Nature are one and the same infinite reality"
+      - "Nature is evil and God is good"
+      - "People should worship trees"
+    answer: 1
+    why: "For Spinoza there is only one substance. God is not a person outside the world but the whole of reality itself."
+  - q: "Why was Spinoza expelled from his Jewish community in Amsterdam in 1656?"
+    options:
+      - "He refused to pay taxes"
+      - "He married outside the community"
+      - "For his radical views about God, the soul and scripture"
+      - "He moved to Spain"
+    answer: 2
+    why: "He received a cherem, an unusually harsh ban, for what the community called abominable heresies. He was twenty-three."
+  - q: "How did Spinoza explain our feeling of free will?"
+    options:
+      - "We are aware of our desires but ignorant of the causes that determine them"
+      - "God gives each soul a spark of freedom"
+      - "Free will is fully real and unlimited"
+      - "Only philosophers have free will"
+    answer: 0
+    why: "His image: a stone thrown through the air, if it could think, would believe it flew by its own choice."
+  - q: "For Spinoza, what is real freedom?"
+    options:
+      - "Doing whatever you want"
+      - "Escaping all laws"
+      - "Having great wealth"
+      - "Understanding the causes of our emotions, so they no longer rule us"
+    answer: 3
+    why: "Bondage is being pushed around by passions we don't understand. Freedom grows as reason understands them."
+  - q: "How did Spinoza earn his living?"
+    options:
+      - "As a rabbi"
+      - "As a court philosopher"
+      - "By grinding lenses for microscopes and telescopes"
+      - "As a merchant like his father"
+    answer: 2
+    why: "He lived simply, grinding lenses and refusing a professorship at Heidelberg to keep his freedom of thought."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Baruch Spinoza"
     url: https://plato.stanford.edu/entries/spinoza/

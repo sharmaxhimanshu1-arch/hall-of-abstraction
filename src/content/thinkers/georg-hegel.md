@@ -56,6 +56,47 @@ conversations:
   - thinker: simone-de-beauvoir
     stance: built-on-by
     note: Used his master-slave dialectic to explain how men made themselves the Subject and women the Other.
+quiz:
+  - q: "Hegel's dialectic is often summarised as thesis–antithesis–synthesis. What is its core idea?"
+    options:
+      - "Every idea is equally true"
+      - "Contradictions show something is false and should be dropped"
+      - "Ideas and societies develop through conflict, where opposing sides are both cancelled and preserved at a higher level"
+      - "History repeats itself in circles"
+    answer: 2
+    why: "Hegel's word aufheben means to cancel, preserve and lift up all at once. Each stage keeps what was true in the earlier ones."
+  - q: "What does the master–slave dialectic suggest?"
+    options:
+      - "Masters always win"
+      - "The slave, through work and fear, gains a deeper self-consciousness than the master"
+      - "Slavery is natural"
+      - "Recognition is unimportant"
+    answer: 1
+    why: "The master depends on the slave's recognition and labour; the slave, by shaping the world, comes to know himself."
+  - q: "What did Hegel say world history is?"
+    options:
+      - "The progress of the consciousness of freedom"
+      - "A random series of events"
+      - "The rise and fall of the same empires"
+      - "The will of great men"
+    answer: 0
+    why: "History moves from one free (the despot), to some free (Greece and Rome), to all free, in Hegel's view."
+  - q: "What does 'the owl of Minerva spreads its wings only with the falling of the dusk' mean?"
+    options:
+      - "Wisdom comes to those who stay up late"
+      - "Philosophy predicts the future"
+      - "Owls are wise"
+      - "Philosophy understands an age only when it is ending"
+    answer: 3
+    why: "We can make sense of a form of life only after it has fully developed. Philosophy comes too late to give instructions."
+  - q: "What did Hegel mean by Spirit (Geist)?"
+    options:
+      - "A ghost"
+      - "Mind as it develops collectively through human culture, institutions and history"
+      - "Alcohol"
+      - "The individual soul after death"
+    answer: 1
+    why: "Geist is shared, living mind: the language, laws, art and ideas of a people, growing over time."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Georg Wilhelm Friedrich Hegel"
     url: https://plato.stanford.edu/entries/hegel/

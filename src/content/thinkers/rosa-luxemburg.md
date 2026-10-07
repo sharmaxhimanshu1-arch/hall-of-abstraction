@@ -44,6 +44,47 @@ conversations:
   - thinker: john-stuart-mill
     stance: agreed
     note: From the opposite end of politics, she reached Mill's conclusion that freedom means freedom for the dissenter, or it means nothing.
+quiz:
+  - q: "What is Luxemburg's most famous line about freedom?"
+    options:
+      - "Freedom is for the party alone"
+      - "Freedom must wait until after the revolution"
+      - "Freedom is always and exclusively freedom for the one who thinks differently"
+      - "Freedom is an illusion"
+    answer: 2
+    why: "She wrote it in 1918, criticising the Bolsheviks for suppressing elections, the press and other parties."
+  - q: "How did Luxemburg explain imperialism in The Accumulation of Capital?"
+    options:
+      - "Capitalism must keep expanding into non-capitalist areas, such as colonies, to survive"
+      - "Empires are built by kings for glory"
+      - "Imperialism is caused by religion"
+      - "Imperialism is a natural stage of all societies"
+    answer: 0
+    why: "She described how British rule broke up India's village economies and pushed peasants into the cash economy."
+  - q: "What did Luxemburg do when the German Social Democrats voted for war in August 1914?"
+    options:
+      - "She joined the army"
+      - "She left politics"
+      - "She moved to Russia"
+      - "She opposed the war and spent most of it in prison"
+    answer: 3
+    why: "With Karl Liebknecht she founded the Spartacus League. In prison she wrote the Junius Pamphlet."
+  - q: "How did Luxemburg describe the relationship between reform and revolution?"
+    options:
+      - "Reforms betray the revolution"
+      - "The struggle for reforms is the means; social revolution is the aim"
+      - "Revolution is unnecessary if reforms succeed"
+      - "Reform and revolution are the same thing"
+    answer: 1
+    why: "Against Bernstein, she argued that reforms matter but cannot change capitalism's basic structure on their own."
+  - q: "Which line from her last article became her epitaph?"
+    options:
+      - "'Workers of the world, unite!'"
+      - "'Socialism or barbarism'"
+      - "'All power to the councils'"
+      - "'I was, I am, I shall be!'"
+    answer: 3
+    why: "She wrote it on 14 January 1919, the day before she was murdered by Freikorps soldiers in Berlin."
 sources:
   - title: Encyclopaedia Britannica, "Rosa Luxemburg"
     url: https://www.britannica.com/biography/Rosa-Luxemburg

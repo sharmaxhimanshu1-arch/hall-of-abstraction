@@ -41,6 +41,47 @@ conversations:
   - thinker: georg-hegel
     stance: challenged-by
     note: Dismissed Confucius as offering only commonplace moral advice, a judgement later scholars have rejected.
+quiz:
+  - q: "What does the Confucian virtue ren mean?"
+    options:
+      - "Ritual sacrifice"
+      - "Humaneness, a caring goodness toward others"
+      - "Loyalty to the emperor"
+      - "Military courage"
+    answer: 1
+    why: "Ren is the central virtue: genuine human-heartedness, summed up in the rule not to do to others what you would not want done to yourself."
+  - q: "Why did Confucius value li, ritual propriety?"
+    options:
+      - "Because the gods demanded it"
+      - "Because it made rulers richer"
+      - "Because rituals and manners shape character and smooth relationships"
+      - "Because it replaced the need for laws entirely"
+    answer: 2
+    why: "Li covers everything from ceremonies to everyday courtesy. Practised sincerely, it trains feeling and holds a community together."
+  - q: "How did Confucius think rulers should govern?"
+    options:
+      - "By leading through moral example rather than harsh laws and punishments"
+      - "By strict laws with heavy punishments"
+      - "By leaving people entirely alone"
+      - "By military force"
+    answer: 0
+    why: "If people are led by virtue and guided by the rules of propriety, he said, they will have a sense of shame and become good, rather than merely avoiding punishment."
+  - q: "What is the 'rectification of names'?"
+    options:
+      - "Giving children better names"
+      - "Translating texts correctly"
+      - "Changing the name of the state"
+      - "Making sure titles match reality, so a ruler truly acts as a ruler"
+    answer: 3
+    why: "If names do not match reality, speech becomes confused and nothing can be accomplished. A father must truly act as a father."
+  - q: "How did Confucius describe the relationship between learning and thinking?"
+    options:
+      - "Learning is useless"
+      - "Learning without thinking is lost; thinking without learning is dangerous"
+      - "Thinking is for kings only"
+      - "Only memory matters"
+    answer: 1
+    why: "Analects 2.15. Information without reflection is wasted, and reflection without knowledge goes astray."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Confucius"
     url: https://plato.stanford.edu/entries/confucius/
