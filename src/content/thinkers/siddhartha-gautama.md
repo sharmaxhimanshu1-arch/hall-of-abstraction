@@ -41,6 +41,9 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: challenged-by
     note: Respected Buddhism as more honest than Christianity, but saw its goal of ending desire as a tired retreat from life.
+  - thinker: br-ambedkar
+    stance: built-on-by
+    note: "Ambedkar led hundreds of thousands of people into Buddhism in 1956, reading the Dhamma as a teaching of reason, equality and compassion against caste."
 quiz:
   - q: "What does the second Noble Truth identify as the cause of suffering (dukkha)?"
     options:

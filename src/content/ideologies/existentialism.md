@@ -2,7 +2,7 @@
 name: Existentialism
 summary: The philosophy of individual existence, freedom and responsibility in a world without given meaning.
 color: '#3d3a45'
-order: 11
+order: 14
 ---
 
 Existentialism is less a doctrine than a family resemblance among thinkers who began their philosophy from the concrete situation of the individual human being: born without choosing it, facing death, and forced to decide how to live without guaranteed answers. Its nineteenth-century forerunners were **Søren Kierkegaard** and **Friedrich Nietzsche**. The movement received its name, and enormous popularity, in post-war Paris through **Jean-Paul Sartre** and **Simone de Beauvoir**.

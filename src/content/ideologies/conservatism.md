@@ -2,7 +2,7 @@
 name: Conservatism
 summary: A political outlook that prizes tradition, gradual reform and inherited institutions over abstract theory and revolutionary change.
 color: '#5a6372'
-order: 9
+order: 11
 ---
 
 Conservatism, as a self-conscious political philosophy, was born in reaction to the French Revolution. Its founding text is **Edmund Burke**'s *Reflections on the Revolution in France* (1790), which warned that sweeping away inherited institutions in the name of abstract reason would end in tyranny and bloodshed, a warning many thought confirmed by the Terror of 1793–94.

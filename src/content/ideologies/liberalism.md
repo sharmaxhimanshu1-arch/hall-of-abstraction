@@ -2,7 +2,7 @@
 name: Liberalism
 summary: The political tradition of individual rights, limited government, the rule of law and free exchange, born of the Enlightenment.
 color: '#a35324'
-order: 7
+order: 9
 ---
 
 Liberalism is the political philosophy that places individual liberty at its centre. It emerged from the religious wars and constitutional struggles of seventeenth-century Europe and matured during the Enlightenment. Its foundational thinkers include **John Locke**, who grounded government in consent and natural rights; **Montesquieu**, who analysed the separation of powers; and **Adam Smith**, who described the workings of free markets and commercial society. In the nineteenth century **John Stuart Mill** gave it its classic defence of free thought and expression.

@@ -2,7 +2,7 @@
 name: Empiricism
 summary: The philosophy that all knowledge begins in experience, a tradition that questioned grand systems and helped lay the foundations of modern science.
 color: '#2e7d5b'
-order: 5
+order: 6
 ---
 
 Empiricism holds that knowledge comes primarily, or entirely, from sensory experience. The tradition has ancient roots in Aristotle and the Epicureans, but it took definitive form in Britain in the seventeenth and eighteenth centuries with **John Locke**, **George Berkeley** and **David Hume**. Francis Bacon, who championed observation and experiment, is often counted as its forerunner.

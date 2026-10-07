@@ -62,6 +62,9 @@ conversations:
   - thinker: jean-paul-sartre
     stance: built-on-by
     note: Called Marxism the unsurpassable philosophy of our time, and tried to join it to existentialist freedom.
+  - thinker: br-ambedkar
+    stance: challenged-by
+    note: "In Buddha or Karl Marx, Ambedkar shared Marx's goal of ending exploitation but rejected violence and dictatorship, and said caste could not be reduced to class."
 quiz:
   - q: "According to Marx, what is surplus value?"
     options:

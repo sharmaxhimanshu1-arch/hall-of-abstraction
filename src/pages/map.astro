@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { STANCE_LABELS } from '../lib/content';
-import { MAP, axisBreak, getMapData, ticks } from '../lib/map';
+import { MAP, axisBreaks, getMapData, labelOffset, ticks } from '../lib/map';
 import { formatLifespan, formatYear } from '../lib/format';
 import { thinkerUrl } from '../lib/url';
 
@@ -85,10 +85,14 @@ const degree = (id: string) => edges.filter((e) => e.a === id || e.b === id).len
                 </g>
               ))
             }
-            <path
-              class="break"
-              d={`M${axisBreak.x1 + 4} ${MAP.top - 28} l5 5 l-5 5 l5 5 M${axisBreak.x2 - 9} ${MAP.top - 28} l5 5 l-5 5 l5 5`}
-            />
+            {
+              axisBreaks.map((b) => (
+                <path
+                  class="break"
+                  d={`M${b.x1 + 3} ${MAP.top - 28} l5 5 l-5 5 l5 5 M${b.x2 - 8} ${MAP.top - 28} l5 5 l-5 5 l5 5`}
+                />
+              ))
+            }
           </g>
 
           <g class="rows" aria-hidden="true">
@@ -132,7 +136,12 @@ const degree = (id: string) => edges.filter((e) => e.a === id || e.b === id).len
                 >
                   <circle class="halo" cx={n.x} cy={n.y} r="14" />
                   <circle class="dot" cx={n.x} cy={n.y} r="6.5" />
-                  <text x={n.x} y={n.labelBelow ? n.y + 22 : n.y - 13}>
+                  <text
+                    x={n.x}
+                    y={n.labelY}
+                    text-anchor={n.anchor}
+                    dx={labelOffset(n.anchor)}
+                  >
                     {n.label}
                   </text>
                 </a>
@@ -458,7 +467,6 @@ const degree = (id: string) => edges.filter((e) => e.a === id || e.b === id).len
     fill: var(--ink);
     font-size: 11.5px;
     font-weight: 500;
-    text-anchor: middle;
     paint-order: stroke;
     stroke: var(--surface);
     stroke-width: 3px;

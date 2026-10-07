@@ -47,6 +47,9 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: challenged-by
     note: Called him a symptom of decline, a man who trusted cold reason over the instincts that make life strong.
+  - thinker: mk-gandhi
+    stance: built-on-by
+    note: "Gandhi translated the Apology into Gujarati as the story of a soldier of truth, and took Socrates as a model of conscience against the state."
 quiz:
   - q: "Why did the Oracle at Delphi call Socrates the wisest man in Athens, according to his own explanation?"
     options:

@@ -1,7 +1,7 @@
 import { getThinkers, type Thinker } from './content';
 
 /**
- * The suggested reading order: six stages, each a question the thinkers in it
+ * The suggested reading order: stages, each built around a question the thinkers in it
  * try to answer. Every thinker in the Hall appears exactly once; the build
  * fails if one is missing or misspelt.
  */
@@ -40,6 +40,13 @@ export const PATH = [
     blurb:
       'Hegel sees history as freedom coming to know itself; Marx turns it into a story of class struggle; Luxemburg insists that socialism must keep freedom alive.',
     ids: ['georg-hegel', 'karl-marx', 'rosa-luxemburg'],
+  },
+  {
+    title: 'Freedom, the Indian way',
+    question: 'What does it take for a people to be truly free?',
+    blurb:
+      'Four Indians who argued about religion, nation, caste and non-violence while India fought for its freedom, and who did not agree with each other.',
+    ids: ['swami-vivekananda', 'rabindranath-tagore', 'mk-gandhi', 'br-ambedkar'],
   },
   {
     title: 'Meaning and freedom',

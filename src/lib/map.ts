@@ -10,44 +10,78 @@ export const MAP = {
   left: 34,
   right: 756,
   top: 44,
-  rowHeight: 72,
+  rowHeight: 80,
   bottom: 16,
   minGap: 36,
-  /** The ancient world is squeezed into the left part of the axis. */
-  ancient: { from: -600, to: 200, share: 0.28 },
-  breakWidth: 26,
-  modern: { from: 1550, to: 1950 },
+  breakWidth: 24,
+  /**
+   * The time axis jumps over long empty stretches. Each segment takes a share
+   * of the plot width; a zig-zag marks the jump between segments.
+   */
+  segments: [
+    { from: -600, to: 450, share: 0.27 },
+    { from: 1000, to: 1450, share: 0.15 },
+    { from: 1550, to: 1950, share: 0.58 },
+  ],
 } as const;
 
 const plotLeft = MAP.left;
-const plotWidth = MAP.right - plotLeft;
-const ancientEnd = plotLeft + plotWidth * MAP.ancient.share;
-const modernStart = ancientEnd + MAP.breakWidth;
+const usable = MAP.right - plotLeft - MAP.breakWidth * (MAP.segments.length - 1);
 
-/** Maps a year (negative = BCE) onto the two-part time axis. */
+/** Pixel span of each segment along the axis. */
+const spans = (() => {
+  let x = plotLeft;
+  return MAP.segments.map((seg) => {
+    const span = { ...seg, x1: x, x2: x + usable * seg.share };
+    x = span.x2 + MAP.breakWidth;
+    return span;
+  });
+})();
+
+/** Maps a year (negative = BCE) onto the segmented time axis. */
 export function yearToX(year: number): number {
-  const { ancient, modern } = MAP;
-  if (year <= ancient.to) {
-    const t = (year - ancient.from) / (ancient.to - ancient.from);
-    return plotLeft + Math.max(0, t) * (ancientEnd - plotLeft);
-  }
-  const t = (year - modern.from) / (modern.to - modern.from);
-  return modernStart + Math.min(1, Math.max(0, t)) * (MAP.right - modernStart);
+  const span =
+    spans.find((s) => year <= s.to) ??
+    spans.at(-1)!;
+  const t = (year - span.from) / (span.to - span.from);
+  return span.x1 + Math.min(1, Math.max(0, t)) * (span.x2 - span.x1);
 }
 
-export const axisBreak = { x1: ancientEnd, x2: modernStart };
+export const axisBreaks = spans.slice(1).map((s, i) => ({ x1: spans[i]!.x2, x2: s.x1 }));
 
 export const ticks = [
   { year: -500, label: '500 BCE' },
   { year: 1, label: '1 CE' },
+  { year: 1100, label: '1100' },
+  { year: 1300, label: '1300' },
   { year: 1600, label: '1600' },
   { year: 1700, label: '1700' },
   { year: 1800, label: '1800' },
   { year: 1900, label: '1900' },
 ].map((t) => ({ ...t, x: yearToX(t.year) }));
 
+type LabelSlot = 'below' | 'above' | 'high' | 'low';
+/** Vertical offset of each label slot from the dot's centre. */
+const SLOT_OFFSET: Record<LabelSlot, number> = { below: 22, above: -13, high: -29, low: 38 };
+
+/** Labels near the edges hang inward so they are never clipped. */
+const EDGE = 48;
+export const labelAnchor = (x: number): 'start' | 'middle' | 'end' =>
+  x > MAP.width - EDGE ? 'end' : x < EDGE ? 'start' : 'middle';
+export const labelOffset = (anchor: 'start' | 'middle' | 'end') =>
+  anchor === 'end' ? 9 : anchor === 'start' ? -9 : 0;
+
+function labelExtent(x: number, label: string, anchor: 'start' | 'middle' | 'end'): [number, number] {
+  const w = label.length * 7 + 6;
+  const at = x + labelOffset(anchor);
+  return anchor === 'middle' ? [at - w / 2, at + w / 2] : anchor === 'end' ? [at - w, at] : [at, at + w];
+}
+
 const SHORT_NAMES: Record<string, string> = {
   'siddhartha-gautama': 'Buddha',
+  'ibn-rushd': 'Ibn Rushd',
+  'ibn-khaldun': 'Ibn Khaldun',
+  'thomas-aquinas': 'Aquinas',
   'marcus-aurelius': 'Marcus Aurelius',
   'simone-de-beauvoir': 'Beauvoir',
 };
@@ -79,7 +113,8 @@ export interface MapNode {
   x: number;
   y: number;
   color: string;
-  labelBelow: boolean;
+  labelY: number;
+  anchor: 'start' | 'middle' | 'end';
   thinker: Thinker;
 }
 
@@ -118,18 +153,31 @@ export async function getMapData() {
     const overflow = (members.at(-1)?.x ?? 0) - MAP.right;
     if (overflow > 0) for (const m of members) m.x -= overflow;
 
-    let prevBelow = false;
+    // Choose a slot for each label so that labels in the same slot never
+    // overlap; widths are estimated from the label length. Busy rows can use
+    // a second line above or below the dot.
+    const placed: Record<LabelSlot, [number, number][]> = { below: [], above: [], high: [], low: [] };
+    let prevSlot: LabelSlot = 'above';
     members.forEach((m, i) => {
+      const label = shortName(m.t);
+      const anchor = labelAnchor(m.x);
+      const extent = labelExtent(m.x, label, anchor);
+      const clash = (slot: LabelSlot) =>
+        placed[slot].reduce((sum, [a, b]) => sum + Math.max(0, Math.min(b, extent[1]) - Math.max(a, extent[0])), 0);
       const close = i > 0 && m.x - members[i - 1]!.x < 78;
-      const labelBelow = close ? !prevBelow : true;
-      prevBelow = labelBelow;
+      const first: LabelSlot = close && prevSlot === 'below' ? 'above' : 'below';
+      const order: LabelSlot[] = [first, first === 'below' ? 'above' : 'below', 'high', 'low'];
+      const slot = order.find((o) => clash(o) === 0) ?? order.reduce((a, b) => (clash(b) < clash(a) ? b : a));
+      placed[slot].push(extent);
+      prevSlot = slot;
       nodes.push({
         id: m.t.id,
-        label: shortName(m.t),
+        label,
         x: m.x,
         y: row.y,
         color: row.ideology.data.color,
-        labelBelow,
+        labelY: row.y + SLOT_OFFSET[slot],
+        anchor,
         thinker: m.t,
       });
     });
