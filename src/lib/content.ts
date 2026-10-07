@@ -4,6 +4,15 @@ import { STANCES } from '../content.config';
 export type Thinker = CollectionEntry<'thinkers'>;
 export type Ideology = CollectionEntry<'ideologies'>;
 
+/** How each stance is labelled wherever conversations are shown. */
+export const STANCE_LABELS: Record<(typeof STANCES)[number], string> = {
+  'learned-from': 'Learned from',
+  agreed: 'Stood with',
+  challenged: 'Argued against',
+  'built-on-by': 'Carried forward by',
+  'challenged-by': 'Challenged by',
+};
+
 export const sortKey = (t: Thinker) =>
   (t.data.sortName ?? t.data.name.split(' ').at(-1) ?? t.data.name).toLowerCase();
 
