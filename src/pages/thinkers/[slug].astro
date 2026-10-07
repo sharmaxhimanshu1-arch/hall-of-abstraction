@@ -94,6 +94,7 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
     <div class="container layout">
       <div class="main-col">
         <div class="contents-mobile" data-pagefind-ignore>
+          <a class="map-link" href={url(`/map/#${thinker.id}`)}>See {d.name} on the map →</a>
           <PageContents headings={headings} collapsible />
         </div>
 
@@ -173,6 +174,7 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
         </div>
 
         <div class="contents-desktop" data-pagefind-ignore>
+          <a class="map-link" href={url(`/map/#${thinker.id}`)}>See {d.name} on the map →</a>
           <PageContents headings={headings} />
         </div>
       </aside>
@@ -400,6 +402,13 @@ const [featuredQuote, ...otherQuotes] = d.quotes;
 
   .contents-mobile {
     display: none;
+  }
+
+  .map-link {
+    display: block;
+    margin-bottom: 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 600;
   }
 
   /* "The shift" closing section, wrapped in <div class="shift"> in Markdown. */

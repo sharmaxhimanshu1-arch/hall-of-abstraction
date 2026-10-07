@@ -1,19 +1,11 @@
 ---
-import type { Thinker } from '../lib/content';
+import { STANCE_LABELS as LABELS, type Thinker } from '../lib/content';
 import type { STANCES } from '../content.config';
 import { thinkerUrl } from '../lib/url';
 
 interface Props {
   groups: { stance: (typeof STANCES)[number]; items: { thinker: Thinker; note: string }[] }[];
 }
-
-const LABELS: Record<Props['groups'][number]['stance'], string> = {
-  'learned-from': 'Learned from',
-  agreed: 'Stood with',
-  challenged: 'Argued against',
-  'built-on-by': 'Carried forward by',
-  'challenged-by': 'Challenged by',
-};
 
 const { groups } = Astro.props;
 ---
