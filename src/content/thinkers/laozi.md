@@ -39,6 +39,47 @@ conversations:
   - thinker: georg-hegel
     stance: challenged-by
     note: Read the Dao as an empty abstraction, "nothing", and placed Chinese thought at the beginning of philosophy's story.
+quiz:
+  - q: "How does the Tao Te Ching begin?"
+    options:
+      - "With a list of laws"
+      - "With the story of Laozi's birth"
+      - "'The Tao that can be told is not the eternal Tao'"
+      - "With a prayer to heaven"
+    answer: 2
+    why: "Its opening says that the deepest reality, the Way, cannot be captured in words or names."
+  - q: "What does wu wei mean?"
+    options:
+      - "Effortless action that goes with the grain of things, without forcing"
+      - "Doing nothing at all"
+      - "Working as hard as possible"
+      - "Following written rules exactly"
+    answer: 0
+    why: "Wu wei is not laziness but acting without strain or ego, like water finding its way."
+  - q: "Why does Laozi praise water?"
+    options:
+      - "Because it is valuable"
+      - "Because it is always cold"
+      - "Because it destroys cities"
+      - "Because it is soft and yielding, yet overcomes the hard and strong"
+    answer: 3
+    why: "Water benefits everything, does not contend, takes the low place, and still wears away rock."
+  - q: "What does the example of a bowl or a wheel's hub teach?"
+    options:
+      - "Craftsmanship matters most"
+      - "The emptiness inside things is what makes them useful"
+      - "Clay is stronger than wood"
+      - "Round shapes are perfect"
+    answer: 1
+    why: "Chapter 11: the empty space in a bowl, room or hub is what lets it work. What is absent matters as much as what is present."
+  - q: "What did Laozi advise about governing a large state?"
+    options:
+      - "Govern it like cooking a small fish, without too much poking"
+      - "Pass as many laws as possible"
+      - "Build a strong army first"
+      - "Rule through fear"
+    answer: 0
+    why: "Chapter 60. Too much interference breaks things; the best rulers are barely noticed."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Laozi"
     url: https://plato.stanford.edu/entries/laozi/

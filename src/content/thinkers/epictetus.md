@@ -40,6 +40,47 @@ conversations:
   - thinker: rene-descartes
     stance: built-on-by
     note: His third rule of life, to change his own desires rather than the order of the world, is pure Stoicism.
+quiz:
+  - q: "What is the Stoic 'dichotomy of control'?"
+    options:
+      - "Splitting your money into savings and spending"
+      - "Separating what is up to us, our judgements and choices, from what is not"
+      - "Dividing your day into work and rest"
+      - "Choosing between duty and pleasure"
+    answer: 1
+    why: "The Enchiridion opens with it: some things are up to us and some are not. Peace comes from caring about the first and accepting the second."
+  - q: "According to Epictetus, what disturbs people?"
+    options:
+      - "Events themselves"
+      - "Other people's actions"
+      - "Their judgements about events"
+      - "Bad luck"
+    answer: 2
+    why: "'Men are disturbed not by things, but by the views which they take of things.' Change the judgement and the disturbance changes."
+  - q: "What was Epictetus' life situation as a young man?"
+    options:
+      - "He was a Roman senator"
+      - "He was a rich merchant"
+      - "He was a soldier"
+      - "He was enslaved"
+    answer: 3
+    why: "Epictetus was born into slavery. His teaching that no one can enslave your mind came from lived experience."
+  - q: "What does the image of the 'two handles' teach?"
+    options:
+      - "Every situation can be picked up by a handle that helps or one that harms"
+      - "Always have a backup plan"
+      - "Treat friends and enemies differently"
+      - "Work with both hands"
+    answer: 0
+    why: "If your brother wrongs you, do not take hold of it by 'he wronged me' but by 'he is my brother, brought up with me'."
+  - q: "When you lose something, what does Epictetus suggest you say?"
+    options:
+      - "'It was stolen from me'"
+      - "'I have returned it'"
+      - "'I will get it back'"
+      - "'It was never valuable'"
+    answer: 1
+    why: "Everything is on loan from nature. Saying 'I have returned it' trains us to hold things lightly."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Epictetus"
     url: https://plato.stanford.edu/entries/epictetus/

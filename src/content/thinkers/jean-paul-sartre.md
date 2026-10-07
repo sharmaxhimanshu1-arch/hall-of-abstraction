@@ -55,6 +55,47 @@ conversations:
   - thinker: simone-de-beauvoir
     stance: agreed
     note: Lifelong partner and closest critic. She pushed him to see how situation, body and oppression limit freedom.
+quiz:
+  - q: "What does 'existence precedes essence' mean?"
+    options:
+      - "Things exist before they are named"
+      - "Humans have no fixed nature in advance; we exist first and define ourselves through our choices"
+      - "Existence is more important than truth"
+      - "God creates our essence"
+    answer: 1
+    why: "Unlike a paper-knife made to a plan, a human being has no blueprint. We are what we make of ourselves."
+  - q: "Why did Sartre say we are 'condemned' to be free?"
+    options:
+      - "Because freedom is a punishment from God"
+      - "Because only prisoners are free"
+      - "We did not create ourselves, yet we cannot escape choosing and are responsible for it"
+      - "Because the state forces freedom on us"
+    answer: 2
+    why: "Even refusing to choose is a choice."
+  - q: "What is bad faith?"
+    options:
+      - "Lying to other people for money"
+      - "Breaking a promise"
+      - "Losing religious belief"
+      - "Deceiving yourself about your own freedom, for example 'That's just how I am'"
+    answer: 3
+    why: "Sartre's café waiter playing at being a waiter pretends to be a fixed thing in order to escape the anguish of choice."
+  - q: "What did Sartre do when he was awarded the Nobel Prize in Literature in 1964?"
+    options:
+      - "He refused it"
+      - "He gave the money to charity"
+      - "He accepted it and stopped writing"
+      - "He shared it with Beauvoir"
+    answer: 0
+    why: "He said a writer should not allow himself to be turned into an institution."
+  - q: "What does 'Hell is other people' from No Exit mean?"
+    options:
+      - "Everyone is evil"
+      - "If we depend entirely on others' judgement for our sense of self, others become a torment"
+      - "Avoid all relationships"
+      - "Crowds are dangerous"
+    answer: 1
+    why: "The three dead characters torture each other simply by being one another's watching, judging gaze."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Jean-Paul Sartre"
     url: https://plato.stanford.edu/entries/sartre/

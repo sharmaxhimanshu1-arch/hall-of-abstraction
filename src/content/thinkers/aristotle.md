@@ -55,6 +55,47 @@ conversations:
   - thinker: georg-hegel
     stance: built-on-by
     note: Admired him as one of the deepest minds in history and built on his view that things develop towards their full nature.
+quiz:
+  - q: "What did Aristotle mean by eudaimonia?"
+    options:
+      - "Wealth gained through trade"
+      - "A flourishing life of living well and doing well over a whole lifetime"
+      - "Pleasure in the present moment"
+      - "Obedience to the gods"
+    answer: 1
+    why: "Often translated 'happiness', eudaimonia means flourishing: realising your human capacities, especially reason and virtue, across a complete life."
+  - q: "According to the golden mean, courage lies between which two vices?"
+    options:
+      - "Pride and humility"
+      - "Wealth and poverty"
+      - "Cowardice and recklessness"
+      - "Anger and patience"
+    answer: 2
+    why: "Each virtue sits between a vice of too little and a vice of too much. Courage sits between cowardice and recklessness."
+  - q: "How, according to Aristotle, do we become virtuous?"
+    options:
+      - "By being born into a noble family"
+      - "By reading the right books"
+      - "By praying to the gods"
+      - "By practice, doing virtuous acts until they become habits"
+    answer: 3
+    why: "'We become just by doing just acts.' Virtue is a trained habit of character, like skill in a craft."
+  - q: "What did Aristotle mean by calling the human being a 'political animal'?"
+    options:
+      - "We naturally live in communities and fulfil ourselves through them"
+      - "People are naturally greedy for power"
+      - "Politicians behave like animals"
+      - "Only citizens are truly human"
+    answer: 0
+    why: "Humans have speech and reason so that they can share ideas of justice and live well together in a polis."
+  - q: "Which of these is one of Aristotle's three tools of persuasion?"
+    options:
+      - "Volume, how loudly you speak"
+      - "Ethos, the speaker's credibility"
+      - "Bribery"
+      - "Repetition"
+    answer: 1
+    why: "Aristotle's Rhetoric names ethos (character), pathos (emotion) and logos (reasoned argument)."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Aristotle"
     url: https://plato.stanford.edu/entries/aristotle/

@@ -54,6 +54,47 @@ conversations:
   - thinker: simone-de-beauvoir
     stance: built-on-by
     note: Drew on his sense of human ambiguity and the anguish of choice in building an existentialist ethics.
+quiz:
+  - q: "What did Kierkegaard mean by 'anxiety is the dizziness of freedom'?"
+    options:
+      - "Anxiety is always a medical illness"
+      - "Free people never feel anxious"
+      - "Standing before open possibilities and having to choose produces a dizzy dread"
+      - "Heights cause fear"
+    answer: 2
+    why: "Like looking over a cliff and realising you could jump, anxiety comes from awareness that you are free and must choose."
+  - q: "What are Kierkegaard's three stages, or spheres, of life?"
+    options:
+      - "Childhood, adulthood and old age"
+      - "Aesthetic, ethical and religious"
+      - "Student, householder and renunciant"
+      - "Body, mind and spirit"
+    answer: 1
+    why: "The aesthete lives for pleasure and interest, the ethical person commits to duties, and the religious person lives in faith. Moving between them takes a leap."
+  - q: "What did Kierkegaard mean by 'the crowd is untruth'?"
+    options:
+      - "Majorities are always wrong"
+      - "In a crowd, individuals escape personal responsibility"
+      - "Cities are dishonest places"
+      - "Large churches are bad"
+    answer: 1
+    why: "A crowd lets everyone say 'everyone is doing it'. Only a single individual can take responsibility and become a self."
+  - q: "Why did Kierkegaard break off his engagement to Regine Olsen?"
+    options:
+      - "Her family forbade it"
+      - "He fell in love with someone else"
+      - "He was called up for military service"
+      - "He felt his melancholy and religious calling made him unfit for marriage"
+    answer: 3
+    why: "He tried to make her reject him so she would be free. He loved her all his life and left her his estate."
+  - q: "In Fear and Trembling, why is Abraham's faith described as terrifying?"
+    options:
+      - "Because his willingness to sacrifice Isaac goes beyond what ethics can explain or justify to others"
+      - "Because he disobeyed God"
+      - "Because he was a king"
+      - "Because he refused to pray"
+    answer: 0
+    why: "Kierkegaard calls it the 'teleological suspension of the ethical' and asks whether preachers who praise Abraham understand what they praise."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Søren Kierkegaard"
     url: https://plato.stanford.edu/entries/kierkegaard/

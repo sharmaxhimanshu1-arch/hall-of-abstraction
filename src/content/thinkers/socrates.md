@@ -47,6 +47,47 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: challenged-by
     note: Called him a symptom of decline, a man who trusted cold reason over the instincts that make life strong.
+quiz:
+  - q: "Why did the Oracle at Delphi call Socrates the wisest man in Athens, according to his own explanation?"
+    options:
+      - "He had studied more books than anyone else"
+      - "He knew that he did not know, while others thought they knew"
+      - "He could predict the future"
+      - "He had won every public debate"
+    answer: 1
+    why: "Socrates concluded that his only advantage was awareness of his own ignorance. Others believed they knew things they did not."
+  - q: "What is the Socratic method, or elenchus?"
+    options:
+      - "Memorising the answers of wise teachers"
+      - "Giving long speeches to persuade a crowd"
+      - "Asking a chain of questions that tests a belief until its contradictions show"
+      - "Writing careful books to be read later"
+    answer: 2
+    why: "Socrates questioned people's confident definitions step by step, exposing contradictions so that both sides could search for a better answer."
+  - q: "What did Socrates mean by 'no one does wrong willingly'?"
+    options:
+      - "People do wrong only because they mistake what is truly good for them"
+      - "Wrongdoers should never be punished"
+      - "Everyone is born evil"
+      - "The gods force people to do wrong"
+    answer: 0
+    why: "For Socrates, virtue is knowledge. If you truly understood what was good, you would do it, so wrongdoing comes from ignorance."
+  - q: "At his trial, what did Socrates say was the most important thing to care for?"
+    options:
+      - "Wealth and family"
+      - "Fame and honour"
+      - "The safety of the city walls"
+      - "The soul, making it as good as possible"
+    answer: 3
+    why: "He told the jury he spent his life urging people to care for their souls, their character, above money and reputation."
+  - q: "What did Socrates' inner voice, his daimonion, do?"
+    options:
+      - "Told him which side to take in elections"
+      - "Warned him against doing something, but never told him what to do"
+      - "Revealed the future of Athens"
+      - "Gave him answers to philosophical questions"
+    answer: 1
+    why: "He described it as a sign that only ever held him back. Notably, it did not stop him from going to his trial and death."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Socrates"
     url: https://plato.stanford.edu/entries/socrates/

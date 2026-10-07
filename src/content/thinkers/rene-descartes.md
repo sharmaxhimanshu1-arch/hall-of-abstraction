@@ -50,6 +50,47 @@ conversations:
   - thinker: jean-paul-sartre
     stance: built-on-by
     note: Took the cogito as the starting point of existentialism, the one truth from which every person must begin.
+quiz:
+  - q: "Why did Descartes doubt everything he could?"
+    options:
+      - "To prove that nothing can be known"
+      - "To find at least one belief so certain it could not be doubted, as a foundation for knowledge"
+      - "Because the Church ordered him to"
+      - "To win arguments with sceptics for fun"
+    answer: 1
+    why: "His doubt was a method, not a conclusion. Like emptying a basket of apples to keep only the sound ones, he cleared out every uncertain belief to rebuild on firm ground."
+  - q: "Why did 'I think, therefore I am' survive even the evil-demon doubt?"
+    options:
+      - "Because the demon could not lie about mathematics"
+      - "Because the senses are reliable"
+      - "Because even being deceived requires an 'I' that is thinking"
+      - "Because God guarantees it"
+    answer: 2
+    why: "Whatever else is false, the very act of doubting or being fooled shows that a thinking thing exists."
+  - q: "What did the melting piece of wax show Descartes?"
+    options:
+      - "That we know what the wax is through the mind's understanding, not through the senses alone"
+      - "That heat changes the nature of matter"
+      - "That bees are clever"
+      - "That nothing really exists"
+    answer: 0
+    why: "Every sensed quality changed as it melted, yet he still knew it was the same wax. So the mind, not the senses, grasps what a thing is."
+  - q: "What is Cartesian dualism?"
+    options:
+      - "The view that there are two gods"
+      - "The idea that every argument has two sides"
+      - "A method of solving equations"
+      - "The view that mind and body are two different kinds of thing"
+    answer: 3
+    why: "Mind is a thinking, non-extended thing; body is extended matter. How the two interact became one of philosophy's hardest problems."
+  - q: "Which everyday tool comes from Descartes' mathematics?"
+    options:
+      - "The calculator"
+      - "The x–y graph, joining algebra and geometry"
+      - "The pendulum clock"
+      - "The telescope"
+    answer: 1
+    why: "Cartesian coordinates let any point be written as numbers and any equation be drawn as a shape."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "René Descartes"
     url: https://plato.stanford.edu/entries/descartes/

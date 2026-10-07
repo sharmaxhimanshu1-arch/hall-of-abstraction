@@ -2,6 +2,7 @@
 import { url } from '../lib/url';
 
 const links = [
+  { href: url('/start/'), label: 'Start here', match: '/start/' },
   { href: url('/ideologies/'), label: 'Ideologies', match: '/ideologies/' },
   { href: url('/thinkers/'), label: 'Thinkers', match: '/thinkers/' },
   { href: url('/map/'), label: 'Map', match: '/map/' },
@@ -119,6 +120,7 @@ const isCurrent = (match: string) => path.startsWith(url(match));
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
+    white-space: nowrap;
   }
 
   nav a:hover,
@@ -145,10 +147,16 @@ const isCurrent = (match: string) => path.startsWith(url(match));
       justify-content: center;
     }
 
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.1rem;
+    }
+
     nav a,
     .theme-toggle {
-      padding: 0.35rem 0.5rem;
-      font-size: 0.9rem;
+      padding: 0.35rem 0.45rem;
+      font-size: 0.88rem;
     }
   }
 </style>

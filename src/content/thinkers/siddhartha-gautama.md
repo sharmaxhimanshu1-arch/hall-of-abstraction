@@ -41,6 +41,47 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: challenged-by
     note: Respected Buddhism as more honest than Christianity, but saw its goal of ending desire as a tired retreat from life.
+quiz:
+  - q: "What does the second Noble Truth identify as the cause of suffering (dukkha)?"
+    options:
+      - "The gods"
+      - "Craving, or tanha"
+      - "Bad luck"
+      - "Other people"
+    answer: 1
+    why: "Suffering arises from craving: thirst for pleasure, for existence and for non-existence. End craving and suffering ends."
+  - q: "What is the Middle Way?"
+    options:
+      - "A route between two kingdoms"
+      - "Compromise in every argument"
+      - "A path between indulgence in pleasure and harsh self-torture"
+      - "A way of dividing property"
+    answer: 2
+    why: "After years of extreme fasting failed, the Buddha found that awakening lay between luxury and self-mortification."
+  - q: "What is the 'second arrow' in the Buddha's teaching?"
+    options:
+      - "The worry, anger and blame we add on top of an unavoidable pain"
+      - "A second chance after failure"
+      - "An enemy's revenge"
+      - "The pain of physical injury"
+    answer: 0
+    why: "The first arrow is the pain itself. The second is our reaction to it, and that one we can learn not to shoot."
+  - q: "How did the Buddha define karma?"
+    options:
+      - "Fate decided at birth"
+      - "Punishment from the gods"
+      - "Your caste duty"
+      - "Intention: it is the intention behind an action that matters"
+    answer: 3
+    why: "'It is intention that I call karma.' This made ethics about choice and motive rather than ritual or birth."
+  - q: "What does the parable of the raft teach?"
+    options:
+      - "Always carry your tools with you"
+      - "Water is dangerous"
+      - "Teachings are tools for crossing over, not things to cling to once they have done their work"
+      - "Build your own boat"
+    answer: 2
+    why: "Once you have crossed the river, you do not carry the raft on your head. Even the Dhamma is to be used, not grasped."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Buddha"
     url: https://plato.stanford.edu/entries/buddha/

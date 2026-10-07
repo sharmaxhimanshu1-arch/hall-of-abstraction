@@ -60,6 +60,47 @@ conversations:
   - thinker: jean-paul-sartre
     stance: built-on-by
     note: Took the death of God as his starting point and drew the conclusion that humans must create their own values and meaning.
+quiz:
+  - q: "In The Gay Science, who announces 'God is dead' in the marketplace?"
+    options:
+      - "A priest"
+      - "A madman with a lantern"
+      - "Zarathustra on a mountain"
+      - "A scientist"
+    answer: 1
+    why: "The madman tells unbelievers that they have not grasped what losing God means for all the values built on belief."
+  - q: "What does Nietzsche's eternal recurrence thought experiment ask?"
+    options:
+      - "Whether you believe in reincarnation"
+      - "Whether time is circular"
+      - "Whether you would welcome living your life exactly as it is, again and again forever"
+      - "Whether history repeats"
+    answer: 2
+    why: "It is a test of whether you are living a life you can fully affirm."
+  - q: "What does amor fati mean?"
+    options:
+      - "Love of one's fate, including its suffering"
+      - "Fear of death"
+      - "Belief in astrology"
+      - "Love of fame"
+    answer: 0
+    why: "Not merely bearing what is necessary but loving it, as part of the whole that made you who you are."
+  - q: "Who is the 'last man' in Thus Spoke Zarathustra?"
+    options:
+      - "The final person alive on earth"
+      - "The overman"
+      - "A great hero"
+      - "A comfortable conformist who wants only safety and pleasure and 'blinks'"
+    answer: 3
+    why: "The last man is Nietzsche's warning about a culture that has given up striving and greatness."
+  - q: "Which criticism of Nietzsche does the lesson connect with Ambedkar?"
+    options:
+      - "Nietzsche praised the caste hierarchy of the Manusmriti"
+      - "Nietzsche was too religious"
+      - "Nietzsche ignored Greek philosophy"
+      - "Nietzsche supported British rule in India"
+    answer: 0
+    why: "Nietzsche admired the law book of Manu; Ambedkar, who burned the Manusmriti at Mahad in 1927, saw in it a philosophy of contempt for the many."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Friedrich Nietzsche"
     url: https://plato.stanford.edu/entries/nietzsche/

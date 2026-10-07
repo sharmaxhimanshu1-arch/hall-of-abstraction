@@ -60,6 +60,47 @@ conversations:
   - thinker: john-stuart-mill
     stance: challenged-by
     note: Argued that Kant's universal law test only works because it secretly relies on looking at consequences.
+quiz:
+  - q: "What was Kant's 'Copernican revolution' in philosophy?"
+    options:
+      - "Proving that the earth moves"
+      - "Suggesting that objects must conform to the structure of our mind, not just the mind to objects"
+      - "Rejecting all science"
+      - "Replacing reason with faith"
+    answer: 1
+    why: "Just as Copernicus moved the observer, Kant argued that space, time and categories like cause are how our minds organise experience."
+  - q: "What is the universal law test of the categorical imperative?"
+    options:
+      - "Act only on a rule you could will everyone to follow"
+      - "Do whatever produces the most happiness"
+      - "Follow the laws of your country"
+      - "Treat others as they treat you"
+    answer: 0
+    why: "If your rule, such as making false promises, would destroy itself when universalised, acting on it is wrong."
+  - q: "What does Kant's formula of humanity forbid?"
+    options:
+      - "Ever using anyone's help"
+      - "Charging money for work"
+      - "Treating a person merely as a means, a tool, rather than also as an end"
+      - "Keeping secrets"
+    answer: 2
+    why: "You may use a shopkeeper's service, but you must never treat a person as a mere object for your purposes."
+  - q: "In 'What is Enlightenment?', what was Kant's motto?"
+    options:
+      - "Know thyself"
+      - "Trust the authorities"
+      - "All is well"
+      - "Sapere aude: dare to think for yourself"
+    answer: 3
+    why: "Enlightenment is our emergence from self-imposed immaturity, the habit of letting others think for us."
+  - q: "What was controversial about Kant's answer to the 'murderer at the door'?"
+    options:
+      - "He said you should lie to save your friend"
+      - "He said you must not lie even to a murderer asking where your friend is hiding"
+      - "He said the murderer had a right to kill"
+      - "He refused to answer"
+    answer: 1
+    why: "Most readers find this too rigid. Many Kantians argue his own principles allow a better answer."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Immanuel Kant"
     url: https://plato.stanford.edu/entries/kant/

@@ -48,6 +48,47 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: challenged-by
     note: Mocked him as "the toreador of virtue", a man who performed morality with a flourish but lived for comfort.
+quiz:
+  - q: "What does Seneca call our only real possession?"
+    options:
+      - "Money"
+      - "Our reputation"
+      - "Time"
+      - "Our family name"
+    answer: 2
+    why: "In On the Shortness of Life he argues that life is long enough if well used, but we waste time as if it cost nothing."
+  - q: "What did Seneca mean when he said we suffer more in imagination than in reality?"
+    options:
+      - "Fear of what might happen often hurts more than what actually happens"
+      - "Imagination is the source of all happiness"
+      - "Dreams predict the future"
+      - "Pain is not real"
+    answer: 0
+    why: "Much of our misery comes from anticipating troubles that never arrive, or arrive smaller than we feared."
+  - q: "What did Seneca recommend practising for a few days now and then?"
+    options:
+      - "Giving speeches in the forum"
+      - "Fasting from all speech"
+      - "Spending lavishly"
+      - "Living on the cheapest food and roughest clothes"
+    answer: 3
+    why: "Rehearsing poverty shows you that what you fear is bearable, so fortune loses its power over you."
+  - q: "How did Seneca describe anger?"
+    options:
+      - "A useful force for justice"
+      - "A brief madness"
+      - "A gift from the gods"
+      - "A sign of strength"
+    answer: 1
+    why: "In On Anger he calls it a short madness that harms the angry person most, and urges delay as its best cure."
+  - q: "Which is a fair criticism of Seneca discussed in his lesson?"
+    options:
+      - "He never wrote anything down"
+      - "He refused to teach anyone"
+      - "He praised simple living while being one of the richest men in Rome and serving Nero"
+      - "He believed only Greeks could be wise"
+    answer: 2
+    why: "Critics then and now point to the gap between his teaching and his vast wealth and service to a tyrant. Seneca himself admitted he was not a wise man yet."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Seneca"
     url: https://plato.stanford.edu/entries/seneca/

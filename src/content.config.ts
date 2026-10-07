@@ -72,6 +72,25 @@ const thinkers = defineCollection({
       )
       .default([]),
 
+    /**
+     * End-of-lesson check: multiple-choice questions, each with the index of
+     * the correct option and a short explanation shown after answering.
+     */
+    quiz: z
+      .array(
+        z
+          .object({
+            q: z.string(),
+            options: z.array(z.string()).min(2).max(5),
+            answer: z.number().int().min(0),
+            why: z.string(),
+          })
+          .refine((item) => item.answer < item.options.length, {
+            message: 'quiz answer index is out of range',
+          }),
+      )
+      .default([]),
+
     /** References the profile was drafted from — used for fact-checking. */
     sources: z.array(z.object({ title: z.string(), url: z.url() })).min(1),
     /** Set to true once a human editor has fact-checked the profile. */

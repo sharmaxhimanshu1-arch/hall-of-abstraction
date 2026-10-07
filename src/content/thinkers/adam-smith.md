@@ -41,6 +41,47 @@ conversations:
   - thinker: jeremy-bentham
     stance: challenged-by
     note: Argued that Smith was inconsistent in supporting a legal cap on interest rates, and that free markets should apply there too.
+quiz:
+  - q: "What does Smith's pin-factory example show?"
+    options:
+      - "Factories are dangerous"
+      - "Dividing work into specialised tasks hugely increases productivity"
+      - "Pins are valuable"
+      - "Workers should make whole products"
+    answer: 1
+    why: "Ten workers dividing the steps could make about 48,000 pins a day, far more than each working alone. He also warned that such repetitive work could dull the mind."
+  - q: "What did Smith mean by the 'invisible hand'?"
+    options:
+      - "God's control of the economy"
+      - "Government regulation"
+      - "People pursuing their own interest in competitive markets can, unintentionally, promote the public good"
+      - "Secret deals between merchants"
+    answer: 2
+    why: "He used the phrase only rarely. It is a claim about how markets can coordinate, not a claim that markets always work perfectly."
+  - q: "What was Smith's first great book about?"
+    options:
+      - "Morality, built on sympathy and the 'impartial spectator'"
+      - "Taxation"
+      - "Agriculture"
+      - "Warfare"
+    answer: 0
+    why: "The Theory of Moral Sentiments (1759) argued that we judge ourselves by imagining a fair, impartial observer."
+  - q: "What did Smith say about people of the same trade meeting together?"
+    options:
+      - "They spread useful knowledge"
+      - "They should be paid by the state"
+      - "They should be banned from meeting"
+      - "Their talk often ends in a conspiracy against the public, or some plan to raise prices"
+    answer: 3
+    why: "Smith distrusted merchants and monopolies. Being pro-market, for him, meant being anti-monopoly."
+  - q: "What did Smith argue about the East India Company?"
+    options:
+      - "It was the best-run government in the world"
+      - "Its monopoly and rule in India were harmful, both to India and to Britain"
+      - "It should be given more power"
+      - "It had nothing to do with economics"
+    answer: 1
+    why: "He criticised a company of merchants acting as sovereign, and the misery its rule caused in Bengal."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Adam Smith's Moral and Political Philosophy"
     url: https://plato.stanford.edu/entries/smith-moral-political/

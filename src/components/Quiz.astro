@@ -1,0 +1,229 @@
+---
+interface Props {
+  name: string;
+  questions: { q: string; options: string[]; answer: number; why: string }[];
+}
+
+const { name, questions } = Astro.props;
+const letters = ['A', 'B', 'C', 'D', 'E'];
+---
+
+{
+  questions.length > 0 && (
+    <section class="quiz" aria-labelledby="quiz-title" data-pagefind-ignore>
+      <h2 id="quiz-title">Check yourself</h2>
+      <p class="intro">
+        {questions.length} quick questions on {name}. Pick an answer to see whether it's right and why.
+      </p>
+      <ol class="questions">
+        {questions.map((item) => (
+          <li class="question" data-answer={item.answer}>
+            <fieldset>
+              <legend>{item.q}</legend>
+              <div class="options">
+                {item.options.map((opt, j) => (
+                  <button type="button" class="option" data-index={j} disabled>
+                    <span class="letter" aria-hidden="true">{letters[j]}</span>
+                    <span>{opt}</span>
+                  </button>
+                ))}
+              </div>
+              <details class="reveal">
+                <summary>Show the answer</summary>
+                <p>
+                  <strong>{letters[item.answer]}. {item.options[item.answer]}</strong> {item.why}
+                </p>
+              </details>
+              <p class="feedback" aria-live="polite" hidden>
+                <strong class="verdict" />
+                <span>{item.why}</span>
+              </p>
+            </fieldset>
+          </li>
+        ))}
+      </ol>
+      <p class="score" aria-live="polite" hidden />
+    </section>
+  )
+}
+
+<script>
+  for (const quiz of document.querySelectorAll<HTMLElement>('.quiz')) {
+    const questions = Array.from(quiz.querySelectorAll<HTMLElement>('.question'));
+    const score = quiz.querySelector<HTMLElement>('.score')!;
+    let answered = 0;
+    let correct = 0;
+
+    for (const q of questions) {
+      const answer = Number(q.dataset.answer);
+      const options = Array.from(q.querySelectorAll<HTMLButtonElement>('.option'));
+      const feedback = q.querySelector<HTMLElement>('.feedback')!;
+      // With the script running, answers are chosen by tapping; hide the fallback.
+      q.querySelector<HTMLElement>('.reveal')!.hidden = true;
+
+      for (const opt of options) {
+        opt.disabled = false;
+        opt.addEventListener('click', () => {
+          const chosen = Number(opt.dataset.index);
+          const right = chosen === answer;
+          for (const o of options) {
+            o.disabled = true;
+            const idx = Number(o.dataset.index);
+            if (idx === answer) o.classList.add('correct');
+            else if (idx === chosen) o.classList.add('wrong');
+          }
+          feedback.querySelector('.verdict')!.textContent = right ? 'Right. ' : 'Not quite. ';
+          feedback.classList.toggle('is-right', right);
+          feedback.hidden = false;
+          answered++;
+          if (right) correct++;
+          if (answered === questions.length) {
+            score.textContent =
+              correct === questions.length
+                ? `You got all ${correct} right. The ideas have stuck.`
+                : `You got ${correct} of ${questions.length} right. The explanations above show what to revisit.`;
+            score.hidden = false;
+          }
+        });
+      }
+    }
+  }
+</script>
+
+<style>
+  .quiz {
+    max-width: var(--measure);
+    margin: 3rem 0 2rem;
+    padding: 1.5rem 1.5rem 1rem;
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  h2 {
+    margin: 0 0 0.25rem;
+  }
+
+  .intro {
+    margin: 0 0 1.25rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .questions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: question;
+  }
+
+  .question {
+    margin-bottom: 1.5rem;
+    counter-increment: question;
+  }
+
+  legend::before {
+    content: counter(question) '. ';
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  legend {
+    padding: 0;
+    margin-bottom: 0.6rem;
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    line-height: 1.35;
+    color: var(--ink);
+  }
+
+  .options {
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .option {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.95rem;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .option:not(:disabled):hover,
+  .option:focus-visible {
+    border-color: var(--accent, var(--ink-soft));
+  }
+
+  .option:disabled {
+    cursor: default;
+  }
+
+  .letter {
+    flex: none;
+    width: 1.4rem;
+    font-weight: 700;
+    color: var(--muted);
+  }
+
+  .option.correct {
+    border-color: #2e7d5b;
+    background: color-mix(in srgb, #2e7d5b 12%, var(--bg));
+  }
+
+  .option.wrong {
+    border-color: #a3283b;
+    background: color-mix(in srgb, #a3283b 10%, var(--bg));
+  }
+
+  .feedback,
+  .reveal p {
+    margin: 0.6rem 0 0;
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .feedback .verdict {
+    color: color-mix(in srgb, #a3283b 65%, var(--ink));
+  }
+
+  .feedback.is-right .verdict {
+    color: color-mix(in srgb, #2e7d5b 65%, var(--ink));
+  }
+
+  .reveal summary {
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .score {
+    margin: 0.5rem 0 0.5rem;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid var(--accent, var(--rule));
+    background: color-mix(in srgb, var(--accent, var(--muted)) 8%, var(--surface));
+    font-weight: 600;
+  }
+
+  @media (max-width: 600px) {
+    .quiz {
+      padding: 1.1rem 1rem 0.5rem;
+    }
+  }
+</style>

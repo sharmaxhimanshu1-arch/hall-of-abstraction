@@ -55,6 +55,47 @@ conversations:
   - thinker: immanuel-kant
     stance: built-on-by
     note: Grew up in the Leibnizian school of philosophy, then broke with it and criticised its claims to know reality by pure reason.
+quiz:
+  - q: "What is the principle of sufficient reason?"
+    options:
+      - "Nothing happens without a reason why it is so and not otherwise"
+      - "Always give reasons for your opinions"
+      - "Reason is better than emotion"
+      - "Every argument needs three premises"
+    answer: 0
+    why: "It underpins Leibniz's whole system, from his physics to his claim that God chose this world for a reason."
+  - q: "What did Leibniz mean by calling this 'the best of all possible worlds'?"
+    options:
+      - "Nothing bad ever happens"
+      - "God, being good and wise, chose the world with the best overall balance of good, even if it contains evil"
+      - "Europe was the best place to live"
+      - "People should never try to improve things"
+    answer: 1
+    why: "It is a claim about the whole, not each part. Voltaire mocked it in Candide, but Leibniz did not deny suffering."
+  - q: "What does Leibniz's 'mill' argument try to show?"
+    options:
+      - "Mills are the best machines"
+      - "Machines will one day think"
+      - "Walking inside a giant thinking machine, you would see only parts pushing parts, never a perception"
+      - "Grain is the basis of economics"
+    answer: 2
+    why: "It is an early form of the question whether matter in motion can ever explain consciousness."
+  - q: "What 'Indian surprise' does the lesson connect with Leibniz's calculus?"
+    options:
+      - "He learned calculus in India"
+      - "He corresponded with the Mughal court"
+      - "He used Sanskrit grammar to invent notation"
+      - "Kerala mathematicians such as Madhava had found infinite series for pi and trigonometry centuries earlier"
+    answer: 3
+    why: "The Kerala school found results Europeans later rediscovered. Leibniz and Newton built calculus independently, but the Kerala work came first."
+  - q: "Which modern technology rests on a number system Leibniz championed?"
+    options:
+      - "Computers, through binary 0s and 1s"
+      - "Radio, through sound waves"
+      - "Printing, through movable type"
+      - "Railways, through steam"
+    answer: 0
+    why: "Leibniz worked out binary arithmetic and dreamed of a calculating machine for reasoning itself."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Gottfried Wilhelm Leibniz"
     url: https://plato.stanford.edu/entries/leibniz/
