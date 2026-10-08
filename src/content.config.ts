@@ -5,6 +5,9 @@ import { z } from 'astro/zod';
 export const ERAS = ['Ancient', 'Medieval', 'Early Modern', 'Modern', 'Contemporary'] as const;
 
 /** Relationship of a thinker to another, from the first thinker's point of view. */
+/** How far a profile has been checked; see the `status` field below. */
+export const REVIEW_STATUSES = ['draft', 'fact-checked', 'reviewed'] as const;
+
 export const STANCES = ['learned-from', 'agreed', 'challenged', 'built-on-by', 'challenged-by'] as const;
 
 /** A school of thought. File name (e.g. `stoicism.md`) is the id / URL slug. */
@@ -93,8 +96,14 @@ const thinkers = defineCollection({
 
     /** References the profile was drafted from — used for fact-checking. */
     sources: z.array(z.object({ title: z.string(), url: z.url() })).min(1),
-    /** Set to true once a human editor has fact-checked the profile. */
-    reviewed: z.boolean().default(false),
+    /**
+     * Review stage: `draft` when first written, `fact-checked` once checked
+     * against the sources with AI assistance, `reviewed` only after a human
+     * editor has read and approved the page.
+     */
+    status: z.enum(REVIEW_STATUSES).default('draft'),
+    /** Date of the fact-check (YYYY-MM-DD); required once past draft. */
+    checked: z.coerce.date().optional(),
   }),
 });
 

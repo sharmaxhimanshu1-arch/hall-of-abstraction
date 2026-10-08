@@ -108,7 +108,7 @@ sources:
     url: https://plato.stanford.edu/entries/locke/
   - title: Encyclopaedia Britannica, "John Locke"
     url: https://www.britannica.com/biography/John-Locke
-reviewed: false
+status: draft
 ---
 
 ## Start here

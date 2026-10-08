@@ -104,7 +104,7 @@ sources:
     url: https://iep.utm.edu/hegelsoc/
   - title: Encyclopaedia Britannica, "Georg Wilhelm Friedrich Hegel"
     url: https://www.britannica.com/biography/Georg-Wilhelm-Friedrich-Hegel
-reviewed: false
+status: draft
 ---
 
 ## Start here

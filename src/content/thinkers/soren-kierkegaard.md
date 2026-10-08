@@ -111,7 +111,7 @@ sources:
     url: https://iep.utm.edu/kierkega/
   - title: Encyclopaedia Britannica, "Søren Kierkegaard"
     url: https://www.britannica.com/biography/Soren-Kierkegaard
-reviewed: false
+status: draft
 ---
 
 ## Start here

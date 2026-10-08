@@ -89,7 +89,8 @@ sources:
     url: https://www.britannica.com/biography/Ludwig-Wittgenstein
   - title: Tractatus Logico-Philosophicus, trans. C. K. Ogden (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/5740
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here

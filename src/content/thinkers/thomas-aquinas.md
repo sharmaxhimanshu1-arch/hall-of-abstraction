@@ -99,7 +99,8 @@ sources:
     url: https://www.britannica.com/biography/Saint-Thomas-Aquinas
   - title: Summa Theologica, trans. Fathers of the English Dominican Province (Christian Classics Ethereal Library)
     url: https://ccel.org/ccel/aquinas/summa.i.html
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here

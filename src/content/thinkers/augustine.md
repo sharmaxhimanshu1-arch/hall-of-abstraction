@@ -101,7 +101,8 @@ sources:
     url: https://www.britannica.com/biography/Saint-Augustine
   - title: The Confessions of Saint Augustine, trans. E. B. Pusey (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/3296
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -226,7 +227,7 @@ As bishop, he preached constantly (hundreds of his sermons survive), judged disp
 
 ### The City of God and the end
 
-After the **sack of Rome in 410**, he began ***The City of God***, which took him thirteen years. It is a vast work arguing that Rome fell not because of Christianity but because all earthly cities, built on the love of power and glory, are passing; only the "city of God" endures.
+Shaken by the **sack of Rome in 410**, he began ***The City of God*** in 413; it took him thirteen years. It is a vast work arguing that Rome fell not because of Christianity but because all earthly cities, built on the love of power and glory, are passing; only the "city of God" endures.
 
 In **430**, the **Vandals** besieged Hippo. Augustine, aged seventy-five, fell ill. He asked for the penitential psalms to be written out and fixed to the wall beside his bed, and read them, weeping. He died on **28 August 430**. Soon after, the Vandals took the city. His library, by good fortune, survived.
 
@@ -402,7 +403,7 @@ Imagine them debating:
 
 ### Descartes: the self-certain mind
 
-When **René Descartes** published "I think, therefore I am", his friend Antoine Arnauld and others pointed out that Augustine had made a similar argument. Descartes replied that he was glad to agree with Augustine, but that he had used the argument for a different purpose, to found a whole system of science on the thinking self.
+When **René Descartes** published "I think, therefore I am", the theologian Antoine Arnauld, in his objections to the *Meditations*, and others pointed out that Augustine had made a similar argument. Descartes replied that he was glad to agree with Augustine, but that he had used the argument for a different purpose, to found a whole system of science on the thinking self.
 
 ### Kierkegaard and the inward journey
 

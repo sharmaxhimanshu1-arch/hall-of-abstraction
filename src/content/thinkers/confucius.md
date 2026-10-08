@@ -89,7 +89,7 @@ sources:
     url: https://iep.utm.edu/confucius/
   - title: Encyclopaedia Britannica, "Confucius"
     url: https://www.britannica.com/biography/Confucius
-reviewed: false
+status: draft
 ---
 
 ## Start here

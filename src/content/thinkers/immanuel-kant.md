@@ -117,7 +117,7 @@ sources:
     url: https://iep.utm.edu/kantview/
   - title: Encyclopaedia Britannica, "Immanuel Kant"
     url: https://www.britannica.com/biography/Immanuel-Kant
-reviewed: false
+status: draft
 ---
 
 ## Start here

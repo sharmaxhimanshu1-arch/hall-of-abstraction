@@ -98,7 +98,7 @@ sources:
     url: https://plato.stanford.edu/entries/hume/
   - title: Encyclopaedia Britannica, "David Hume"
     url: https://www.britannica.com/biography/David-Hume
-reviewed: false
+status: draft
 ---
 
 ## Start here

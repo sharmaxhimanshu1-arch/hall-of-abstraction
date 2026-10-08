@@ -89,7 +89,7 @@ sources:
     url: https://www.britannica.com/biography/Marcus-Aurelius-Roman-emperor
   - title: Thoughts of Marcus Aurelius, trans. George Long (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/15877
-reviewed: false
+status: draft
 ---
 
 ## Start here

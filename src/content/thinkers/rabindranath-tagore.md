@@ -1,7 +1,7 @@
 ---
 name: Rabindranath Tagore
 sortName: Tagore
-summary: The poet who hated school and founded one under the trees, became the first non-European to win the Nobel Prize, gave India and Bangladesh their national anthems, gave back his knighthood after Jallianwala Bagh, and warned the world, and his friend Gandhi, that the nation must never become a god.
+summary: The poet who hated school and founded one under the trees, became the first Asian to win a Nobel Prize, gave India and Bangladesh their national anthems, gave back his knighthood after Jallianwala Bagh, and warned the world, and his friend Gandhi, that the nation must never become a god.
 born: 1861
 died: 1941
 region: Calcutta and Santiniketan, Bengal, India
@@ -89,7 +89,8 @@ sources:
     url: https://www.nobelprize.org/prizes/literature/1913/tagore/biographical/
   - title: Gitanjali (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/7164
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -100,7 +101,7 @@ The song is **"Jana Gana Mana"**, India's national anthem. Across the border, in
 
 Here is the strange part. The man who wrote the national anthems of two nations was one of the twentieth century's fiercest critics of **nationalism**. He travelled to Japan and America in the middle of the First World War and told packed halls that the worship of the nation was "a great menace", a machine that turns human beings into tools and leads to war. He argued, publicly and lovingly, with Mahatma Gandhi about whether burning foreign cloth and spinning on a charkha was the way to free India. He refused to let any loyalty, to nation, religion, caste or race, become a wall around the human spirit.
 
-His name was **Rabindranath Tagore**. He was a poet, songwriter, novelist, playwright, painter, educator, philosopher and social reformer, all at once. He wrote over two thousand songs, which Bengalis still sing every day. He was the first non-European to win the **Nobel Prize** (in 1913). He gave back the knighthood the British had given him to protest the massacre at **Jallianwala Bagh**. He founded a school under the trees, and a university whose motto was: *"where the whole world meets in a single nest"*.
+His name was **Rabindranath Tagore**. He was a poet, songwriter, novelist, playwright, painter, educator, philosopher and social reformer, all at once. He wrote over two thousand songs, which Bengalis still sing every day. He was the first Asian, and the first non-European writer, to win the **Nobel Prize** (Literature, 1913). He gave back the knighthood the British had given him to protest the massacre at **Jallianwala Bagh**. He founded a school under the trees, and a university whose motto was: *"where the whole world meets in a single nest"*.
 
 So here's the question this page will help you answer: **can you love your country without making it a god? Can you be rooted in your own culture and still belong to the whole world?** Tagore spent his life answering yes, and showing how.
 
@@ -164,7 +165,7 @@ But soon he grew uneasy. The Swadeshi movement turned violent in places; boycott
 
 In **1912**, he travelled to England with a notebook of his own English prose translations of his Bengali devotional poems. The painter **William Rothenstein** showed them to the poet **W.B. Yeats**, who was overwhelmed. Yeats wrote an introduction, and ***Gitanjali: Song Offerings*** was published in London in 1912.
 
-In **November 1913**, Tagore was awarded the **Nobel Prize in Literature**, the first non-European to receive any Nobel Prize. India was astonished; so was the world. Overnight he became a global celebrity, lecturing in Europe, America, Japan and China, hailed as a prophet from the East.
+In **November 1913**, Tagore was awarded the **Nobel Prize in Literature**, the first Asian to receive any Nobel Prize and the first non-European to win it for literature. India was astonished; so was the world. Overnight he became a global celebrity, lecturing in Europe, America, Japan and China, hailed as a prophet from the East.
 
 In **1915**, the British government gave him a **knighthood**.
 
@@ -196,7 +197,7 @@ In his late sixties, Tagore began to paint, starting from doodles in the margins
 
 In **1930**, he met **Albert Einstein** at Einstein's summer home in **Caputh**, near Berlin, and their conversation about whether truth exists independently of humanity became famous.
 
-In his last years, he watched fascism rise in Europe and Japan, and the world move toward another war. On his eightieth birthday, in **1941**, he wrote his final essay, ***Crisis in Civilisation***, expressing his bitter disappointment with the West, whose civilisation he had once admired, and with British rule in India. Yet he ended with hope: he would not commit the grievous sin of losing faith in humanity.
+In his last years, he watched fascism rise in Europe and Japan, and the world move toward another war. For the celebration of his eightieth birthday, in **April 1941**, he wrote his final essay, ***Crisis in Civilisation***, expressing his bitter disappointment with the West, whose civilisation he had once admired, and with British rule in India. Yet he ended with hope: he would not commit the grievous sin of losing faith in humanity.
 
 He died in Calcutta on **7 August 1941**, at the family home in Jorasanko where he had been born.
 
@@ -280,7 +281,7 @@ At Santiniketan, he tried the opposite:
 
 His school produced remarkable people: the filmmaker **Satyajit Ray**, the economist **Amartya Sen**, and Indira Gandhi studied there briefly.
 
-**Why it matters:** Think of India's exam pressure: coaching factories, rote memorisation, students crushed by fear of marks, suicides in coaching hubs. Tagore's vision of joyful, creative, nature-based learning is a powerful critique of this system, and has influenced progressive educators across the world. India's **National Education Policy (2020)** speaks of mother-tongue instruction, arts integration and reducing rote learning, ideas Tagore championed a century earlier.
+**Why it matters:** Think of India's exam pressure: coaching factories, rote memorisation, students crushed by fear of marks, suicides in coaching hubs. (If exam pressure is weighing on you or someone you know, India's free Tele-MANAS helpline is 14416.) Tagore's vision of joyful, creative, nature-based learning is a powerful critique of this system, and has influenced progressive educators across the world. India's **National Education Policy (2020)** speaks of mother-tongue instruction, arts integration and reducing rote learning, ideas Tagore championed a century earlier.
 
 **A common misunderstanding:** Tagore's education was not "anything goes". It had discipline, but discipline that came from love of the work and the community, not from fear.
 
@@ -436,7 +437,7 @@ A boy who gazed through windows at a garden he wasn't allowed to enter grew up t
 
 ## Quick recap
 
-- **Who:** Rabindranath Tagore (1861–1941), Bengali poet, songwriter, novelist, playwright, painter, educator and philosopher; first non-European Nobel laureate (Literature, 1913).
+- **Who:** Rabindranath Tagore (1861–1941), Bengali poet, songwriter, novelist, playwright, painter, educator and philosopher; first Asian Nobel laureate (Literature, 1913).
 - **Context:** the Tagore family and the Bengal Renaissance, British rule, the partition of Bengal and the Swadeshi movement, Gandhi's mass movements, the World Wars.
 - **Life:** hated school; Santiniketan school (1901); *Gitanjali* and the Nobel Prize; returned his knighthood after Jallianwala Bagh (1919); Visva-Bharati (1921) and Sriniketan (1922); painted in old age; *Crisis in Civilisation* (1941).
 - **Religion of Man:** the divine in the human spirit, in love, creativity and union with all.

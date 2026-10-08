@@ -103,7 +103,7 @@ sources:
     url: https://iep.utm.edu/leib-ove/
   - title: Encyclopaedia Britannica, "Gottfried Wilhelm Leibniz"
     url: https://www.britannica.com/biography/Gottfried-Wilhelm-Leibniz
-reviewed: false
+status: draft
 ---
 
 ## Start here

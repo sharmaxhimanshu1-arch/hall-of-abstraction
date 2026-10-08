@@ -107,7 +107,7 @@ sources:
     url: https://www.britannica.com/biography/Rene-Descartes
   - title: Discourse on the Method, trans. John Veitch (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/59
-reviewed: false
+status: draft
 ---
 
 ## Start here

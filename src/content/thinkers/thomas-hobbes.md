@@ -92,7 +92,8 @@ sources:
     url: https://www.britannica.com/biography/Thomas-Hobbes
   - title: Leviathan (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/3207
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -315,7 +316,7 @@ Above all, sovereignty must be **undivided**. Hobbes believed England's civil wa
 
 Hobbes preferred **monarchy**, because a single person is less likely to be torn by faction, but his argument applies to any form of sovereign: one person or an assembly. What matters is that the sovereign's power is absolute.
 
-**Why it matters:** This argument is still made, in softer forms, whenever people say: "This country needs a strong leader", "Democracy is too slow", "Courts and opposition are obstructing development", or "In an emergency, rights must be suspended." When India declared the **Emergency** in **1975** and suspended civil liberties in the name of order and stability, the logic was Hobbesian. So were the protests against it, which drew on Locke and others to argue that power without limits is itself a danger.
+**Why it matters:** This argument is still made, in softer forms, whenever people say: "This country needs a strong leader", "Democracy is too slow", "Courts and opposition are obstructing development", or "In an emergency, rights must be suspended." When India declared the **Emergency** in **1975** and suspended civil liberties in the name of order and stability, the government's justification followed the same Hobbesian logic, and critics answered with Locke's question about who guards against the guardian. So were the protests against it, which drew on Locke and others to argue that power without limits is itself a danger.
 
 **A common misunderstanding:** Hobbes's sovereign is not a tyrant in the sense of a ruler who may do whatever he likes **morally**. Hobbes said the sovereign is bound by the laws of nature and accountable to God, and that a sensible sovereign will rule well, because his strength depends on the prosperity of his people. But subjects have no right to punish or depose him for failing.
 

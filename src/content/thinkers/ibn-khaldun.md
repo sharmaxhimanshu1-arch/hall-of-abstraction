@@ -84,7 +84,8 @@ sources:
     url: https://press.princeton.edu/books/paperback/9780691166285/the-muqaddimah
   - title: Muslim Heritage, "Ibn Khaldun"
     url: https://muslimheritage.com/people/scholars/ibn-khaldun/
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -97,7 +98,7 @@ Now think of empires. The Mughals came down from the hills of Central Asia as to
 
 Why? Is it just chance, or is there a pattern?
 
-Six and a half centuries ago, a North African statesman who had served half a dozen kings, been thrown into prison, lost his parents to the plague and his wife and children to a shipwreck, retreated to a remote castle in the Algerian hills. There, in **five months**, he wrote the introduction to a history of the world. The introduction became more famous than the history. It is called the ***Muqaddimah***, and in it he tried to do something no one had done before: to find the **laws** of human society, the hidden causes behind the rise and fall of dynasties, cities and civilisations.
+Six and a half centuries ago, a North African statesman who had served half a dozen kings, been thrown into prison and lost his parents to the plague, retreated to a remote castle in the Algerian hills. There, in a few months of intense work, he wrote the introduction to a history of the world. The introduction became more famous than the history. It is called the ***Muqaddimah***, and in it he tried to do something no one had done before: to find the **laws** of human society, the hidden causes behind the rise and fall of dynasties, cities and civilisations.
 
 His name was **Abd al-Rahman ibn Khaldun**. The British historian **Arnold Toynbee** called the *Muqaddimah* "a philosophy of history which is undoubtedly the greatest work of its kind that has ever yet been created by any mind in any time or place." He is called the father of sociology, of the science of history, and even of economics. By the end of this page, you'll be able to see his patterns in families, companies, political parties, nations and your own life.
 
@@ -159,7 +160,7 @@ It was dangerous work. Rulers he served were killed. He was robbed, chased, stri
 
 In **1375**, he took his family to **Qal'at Ibn Salama**, a remote fortress in western Algeria, under the protection of a friendly tribe. He stayed there for nearly **four years**.
 
-And there, he began to write. He planned a history of the Arabs and Berbers. But first, he decided, he needed to explain **how to write history properly**: what society is, how it works, why states rise and fall, and how to tell true reports from false ones. He wrote this introduction, the *Muqaddimah*, in **five months**, finishing in **1377**. He said that ideas poured into his mind "like cream into a churn". He would keep revising it for the rest of his life.
+And there, he began to write. He planned a history of the Arabs and Berbers. But first, he decided, he needed to explain **how to write history properly**: what society is, how it works, why states rise and fall, and how to tell true reports from false ones. He wrote the first draft of this introduction, the *Muqaddimah*, in a burst of a few months (about five, by the usual account), finishing in **1377**. He later described ideas pouring into his mind faster than he could write them down. He would keep revising it for the rest of his life.
 
 ### Cairo: judge, teacher, mourner
 
@@ -452,7 +453,7 @@ Here is how everyday life starts to look different:
 - **The prestige of English or Western brands** looks like the vanquished imitating the victor.
 - **A comfortable success** carries a quiet warning: this is how decline begins.
 
-A man who lost his parents to plague and his family to the sea, who served kings and was jailed by them, who was lowered over a city wall on a rope to meet the most feared conqueror of his age, sat in a castle in the hills and tried to find the laws behind the chaos. He found some of them, and they still work.
+A man who lost his parents to plague, served kings and was jailed by them, sat in a castle in the hills and tried to find the laws behind the chaos. He would go on to lose his family to the sea and to be lowered over a city wall on a rope to meet the most feared conqueror of his age. He found some of the laws he was looking for, and they still work.
 
 </div>
 

@@ -103,7 +103,7 @@ sources:
     url: https://iep.utm.edu/spinoz-m/
   - title: Encyclopaedia Britannica, "Benedict de Spinoza"
     url: https://www.britannica.com/biography/Benedict-de-Spinoza
-reviewed: false
+status: draft
 ---
 
 ## Start here

@@ -113,7 +113,7 @@ sources:
     url: https://plato.stanford.edu/entries/aristotle/
   - title: Encyclopaedia Britannica, "Aristotle"
     url: https://www.britannica.com/biography/Aristotle
-reviewed: false
+status: draft
 ---
 
 ## Start here

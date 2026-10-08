@@ -49,6 +49,17 @@ const { Content, headings } = await render(thinker);
 const minutes = readingMinutes(thinker.body);
 const [featuredQuote, ...otherQuotes] = d.quotes;
 const path = (await getPath()).position(thinker.id);
+const checkedOn = d.checked?.toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+const statusText = {
+  draft: 'Draft profile: not yet fact-checked or reviewed by an editor. Check the sources above before citing.',
+  'fact-checked': `Fact-checked against the sources above${checkedOn ? ` on ${checkedOn}` : ''} (AI-assisted). Not yet read by a human editor.`,
+  reviewed: 'This profile has been reviewed by an editor.',
+}[d.status];
 ---
 
 <BaseLayout title={d.name} description={d.summary}>
@@ -191,13 +202,7 @@ const path = (await getPath()).position(thinker.id);
             </ul>
           </section>
 
-          <p class:list={['status', { reviewed: d.reviewed }]}>
-            {
-              d.reviewed
-                ? 'This profile has been reviewed by an editor.'
-                : 'Draft profile: not yet reviewed by an editor. Check the sources above before citing.'
-            }
-          </p>
+          <p class:list={['status', d.status]}>{statusText}</p>
         </div>
 
         <div class="contents-desktop" data-pagefind-ignore>
@@ -653,8 +658,13 @@ const path = (await getPath()).position(thinker.id);
     font-size: 0.82rem;
   }
 
+  .status.fact-checked,
   .status.reviewed {
     border-style: solid;
+  }
+
+  .status.reviewed {
+    color: var(--ink);
   }
 
   .pager {
