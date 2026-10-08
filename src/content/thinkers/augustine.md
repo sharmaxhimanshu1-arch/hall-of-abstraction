@@ -44,6 +44,15 @@ conversations:
   - thinker: soren-kierkegaard
     stance: built-on-by
     note: Kierkegaard's inward, anxious, passionate self standing before God continues the journey Augustine began in the Confessions.
+  - thinker: hannah-arendt
+    stance: built-on-by
+    note: "Arendt wrote her doctoral dissertation on love in Augustine, and turned his line \"that a beginning be made, man was created\" into her idea of natality."
+  - thinker: ludwig-wittgenstein
+    stance: challenged-by
+    note: "Wittgenstein opened the Philosophical Investigations with Augustine's account of learning words by pointing, as the picture of language he set out to overturn."
+  - thinker: albert-camus
+    stance: challenged-by
+    note: "Camus wrote his university thesis on Augustine and the Neoplatonists; he shared Augustine's honesty about suffering but refused his rest in God."
 quiz:
   - q: "Augustine's line \"our heart is restless until it rests in you\" is best understood as saying that…"
     options:

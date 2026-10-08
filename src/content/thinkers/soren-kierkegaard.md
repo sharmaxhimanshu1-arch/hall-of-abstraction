@@ -57,6 +57,12 @@ conversations:
   - thinker: augustine
     stance: learned-from
     note: "Augustine's Confessions, with its anxious, divided self standing before God, is a model for Kierkegaard's inward religious writing."
+  - thinker: ludwig-wittgenstein
+    stance: built-on-by
+    note: "Wittgenstein called him by far the most profound thinker of the nineteenth century, and shared his sense that what matters most can only be lived."
+  - thinker: albert-camus
+    stance: challenged-by
+    note: "Camus admired his honesty about despair but called his leap of faith \"philosophical suicide\"."
 quiz:
   - q: "What did Kierkegaard mean by 'anxiety is the dizziness of freedom'?"
     options:

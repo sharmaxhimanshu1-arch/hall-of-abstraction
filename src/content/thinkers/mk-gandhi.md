@@ -45,6 +45,9 @@ conversations:
   - thinker: karl-marx
     stance: challenged
     note: Rejected class war and violent revolution, proposing that the rich hold wealth as trustees for society instead.
+  - thinker: hannah-arendt
+    stance: challenged-by
+    note: "Arendt praised non-violent power, but argued that against Stalin or Hitler his strategy would have met massacre, not decolonisation."
 quiz:
   - q: "What happened to Gandhi at Pietermaritzburg station in 1893?"
     options:

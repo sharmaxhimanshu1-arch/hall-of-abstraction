@@ -31,8 +31,16 @@ export const PATH = [
     title: 'What can we really know?',
     question: 'Does knowledge come from reason, or from experience?',
     blurb:
-      'The great argument of the early modern age: rationalists who trusted reason, empiricists who trusted the senses, and Kant, who tried to settle it.',
-    ids: ['rene-descartes', 'baruch-spinoza', 'gottfried-leibniz', 'john-locke', 'david-hume', 'immanuel-kant'],
+      'The great argument of the early modern age: rationalists who trusted reason, empiricists who trusted the senses, Kant, who tried to settle it, and Wittgenstein, who asked whether the puzzles came from our words.',
+    ids: [
+      'rene-descartes',
+      'baruch-spinoza',
+      'gottfried-leibniz',
+      'john-locke',
+      'david-hume',
+      'immanuel-kant',
+      'ludwig-wittgenstein',
+    ],
   },
   {
     title: 'How should a society be run?',
@@ -53,8 +61,8 @@ export const PATH = [
     title: 'History, money and power',
     question: 'Does history have a direction, and who does it serve?',
     blurb:
-      'Hegel sees history as freedom coming to know itself; Marx turns it into a story of class struggle; Luxemburg insists that socialism must keep freedom alive.',
-    ids: ['georg-hegel', 'karl-marx', 'rosa-luxemburg'],
+      'Hegel sees history as freedom coming to know itself; Marx turns it into a story of class struggle; Luxemburg insists that socialism must keep freedom alive; Arendt asks how ordinary people came to serve totalitarian terror.',
+    ids: ['georg-hegel', 'karl-marx', 'rosa-luxemburg', 'hannah-arendt'],
   },
   {
     title: 'Freedom, the Indian way',
@@ -67,8 +75,8 @@ export const PATH = [
     title: 'Meaning and freedom',
     question: 'If no one hands us a meaning, how do we live?',
     blurb:
-      'The existentialists end the journey where you are: alone with your choices, responsible for what you make of yourself.',
-    ids: ['soren-kierkegaard', 'friedrich-nietzsche', 'jean-paul-sartre', 'simone-de-beauvoir'],
+      'The existentialists end the journey where you are: alone with your choices, responsible for what you make of yourself, and, with Camus, choosing to live fully in a world that gives no answers.',
+    ids: ['soren-kierkegaard', 'friedrich-nietzsche', 'jean-paul-sartre', 'simone-de-beauvoir', 'albert-camus'],
   },
 ] as const;
 

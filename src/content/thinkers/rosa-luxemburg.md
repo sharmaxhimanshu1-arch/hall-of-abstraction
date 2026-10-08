@@ -44,6 +44,9 @@ conversations:
   - thinker: john-stuart-mill
     stance: agreed
     note: From the opposite end of politics, she reached Mill's conclusion that freedom means freedom for the dissenter, or it means nothing.
+  - thinker: hannah-arendt
+    stance: built-on-by
+    note: "Arendt admired her faith in ordinary people's spontaneous councils and her insistence that revolution needs freedom."
 quiz:
   - q: "What is Luxemburg's most famous line about freedom?"
     options:

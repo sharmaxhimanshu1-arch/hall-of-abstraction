@@ -65,6 +65,12 @@ conversations:
   - thinker: br-ambedkar
     stance: challenged-by
     note: "In Buddha or Karl Marx, Ambedkar shared Marx's goal of ending exploitation but rejected violence and dictatorship, and said caste could not be reduced to class."
+  - thinker: albert-camus
+    stance: challenged-by
+    note: "Camus argued that sacrificing living people for a promised future in the name of history leads to terror and camps."
+  - thinker: hannah-arendt
+    stance: challenged-by
+    note: "Arendt argued that making labour the essence of humanity left no room for action, the free public life of citizens."
 quiz:
   - q: "According to Marx, what is surplus value?"
     options:

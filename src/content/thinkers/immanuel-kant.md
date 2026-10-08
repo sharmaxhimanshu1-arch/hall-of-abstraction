@@ -66,6 +66,9 @@ conversations:
   - thinker: thomas-aquinas
     stance: challenged
     note: "Kant argued that proofs of God from causes and design, like Aquinas's Five Ways, take reason beyond the limits of possible experience."
+  - thinker: hannah-arendt
+    stance: built-on-by
+    note: "Arendt built her theory of political judgment on his idea of thinking from the standpoint of others."
 quiz:
   - q: "What was Kant's 'Copernican revolution' in philosophy?"
     options:

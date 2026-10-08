@@ -56,6 +56,9 @@ conversations:
   - thinker: augustine
     stance: learned-from
     note: "Twelve centuries earlier, Augustine had argued \"if I am deceived, I exist\"; Descartes said he was glad to agree, but used the idea to found a system of science."
+  - thinker: ludwig-wittgenstein
+    stance: challenged-by
+    note: "Wittgenstein's private language argument attacks the picture of a mind that knows its inner world first and the outer world later."
 quiz:
   - q: "Why did Descartes doubt everything he could?"
     options:
