@@ -58,6 +58,15 @@ conversations:
   - thinker: thomas-hobbes
     stance: challenged-by
     note: "Hobbes denied that humans are political animals by nature, calling society an artificial creation built out of fear."
+  - thinker: ibn-rushd
+    stance: built-on-by
+    note: "Ibn Rushd explained almost all of Aristotle line by line; Latin Europe called him \"the Commentator\"."
+  - thinker: thomas-aquinas
+    stance: built-on-by
+    note: "Aquinas called him \"the Philosopher\" and joined his account of nature, the soul and virtue to Christian faith."
+  - thinker: ibn-khaldun
+    stance: built-on-by
+    note: "Ibn Khaldun began his science of society with the saying that \"man is political by nature\"."
 quiz:
   - q: "What did Aristotle mean by eudaimonia?"
     options:

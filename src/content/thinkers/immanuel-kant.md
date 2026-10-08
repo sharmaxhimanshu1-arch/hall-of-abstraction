@@ -63,6 +63,9 @@ conversations:
   - thinker: jean-jacques-rousseau
     stance: learned-from
     note: "Said Rousseau set him right, teaching him to honour ordinary people, and turned self-given law into the idea of moral autonomy."
+  - thinker: thomas-aquinas
+    stance: challenged
+    note: "Kant argued that proofs of God from causes and design, like Aquinas's Five Ways, take reason beyond the limits of possible experience."
 quiz:
   - q: "What was Kant's 'Copernican revolution' in philosophy?"
     options:

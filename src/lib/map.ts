@@ -79,6 +79,7 @@ function labelExtent(x: number, label: string, anchor: 'start' | 'middle' | 'end
 
 const SHORT_NAMES: Record<string, string> = {
   'siddhartha-gautama': 'Buddha',
+  augustine: 'Augustine',
   'ibn-rushd': 'Ibn Rushd',
   'ibn-khaldun': 'Ibn Khaldun',
   'thomas-aquinas': 'Aquinas',

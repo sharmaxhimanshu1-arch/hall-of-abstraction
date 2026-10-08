@@ -54,6 +54,9 @@ conversations:
   - thinker: simone-de-beauvoir
     stance: built-on-by
     note: Drew on his sense of human ambiguity and the anguish of choice in building an existentialist ethics.
+  - thinker: augustine
+    stance: learned-from
+    note: "Augustine's Confessions, with its anxious, divided self standing before God, is a model for Kierkegaard's inward religious writing."
 quiz:
   - q: "What did Kierkegaard mean by 'anxiety is the dizziness of freedom'?"
     options:

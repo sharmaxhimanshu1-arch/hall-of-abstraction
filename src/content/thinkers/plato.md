@@ -55,6 +55,12 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: challenged-by
     note: Blamed Plato for teaching the West to despise this world in favour of an imaginary "true" one.
+  - thinker: augustine
+    stance: built-on-by
+    note: "Through the Neoplatonists, Augustine took Plato's unchanging spiritual reality into Christianity, and called the Platonists closest to the faith."
+  - thinker: ibn-rushd
+    stance: built-on-by
+    note: "Lacking Aristotle's Politics, Ibn Rushd wrote a commentary on the Republic and applied it to the cities of Muslim Spain."
 quiz:
   - q: "In the Allegory of the Cave, what do the prisoners mistake for reality?"
     options:

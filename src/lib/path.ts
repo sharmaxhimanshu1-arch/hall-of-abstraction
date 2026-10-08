@@ -21,6 +21,13 @@ export const PATH = [
     ids: ['seneca', 'epictetus', 'marcus-aurelius'],
   },
   {
+    title: 'Faith and reason',
+    question: 'Can faith and reason live together?',
+    blurb:
+      'A North African bishop turns philosophy inward, a judge in Muslim Spain argues that scripture commands us to think, an Italian friar builds a cathedral of reason, and a statesman in Tunis finds the laws behind the rise and fall of empires.',
+    ids: ['augustine', 'ibn-rushd', 'thomas-aquinas', 'ibn-khaldun'],
+  },
+  {
     title: 'What can we really know?',
     question: 'Does knowledge come from reason, or from experience?',
     blurb:

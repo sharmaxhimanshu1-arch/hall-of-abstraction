@@ -59,6 +59,9 @@ conversations:
   - thinker: jean-jacques-rousseau
     stance: challenged-by
     note: "Rousseau saw Locke's natural right of property as the beginning of inequality, made permanent by government."
+  - thinker: thomas-aquinas
+    stance: learned-from
+    note: "Through Richard Hooker, whom he quotes again and again, Locke inherited Aquinas's natural law and turned it into natural rights."
 quiz:
   - q: "What did Locke mean by calling the newborn mind 'white paper'?"
     options:
