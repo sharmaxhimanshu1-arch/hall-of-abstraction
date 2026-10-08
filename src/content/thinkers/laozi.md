@@ -87,7 +87,8 @@ sources:
     url: https://iep.utm.edu/laozi/
   - title: Encyclopaedia Britannica, "Laozi"
     url: https://www.britannica.com/biography/Laozi
-status: draft
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here

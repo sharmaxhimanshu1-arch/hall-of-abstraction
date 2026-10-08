@@ -113,7 +113,10 @@ sources:
     url: https://plato.stanford.edu/entries/aristotle/
   - title: Encyclopaedia Britannica, "Aristotle"
     url: https://www.britannica.com/biography/Aristotle
-status: draft
+  - title: "The Ethics of Aristotle (Nicomachean Ethics), Project Gutenberg"
+    url: https://www.gutenberg.org/ebooks/8438
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here

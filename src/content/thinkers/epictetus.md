@@ -56,7 +56,7 @@ quiz:
       - "Their judgements about events"
       - "Bad luck"
     answer: 2
-    why: "'Men are disturbed not by things, but by the views which they take of things.' Change the judgement and the disturbance changes."
+    why: "'Men are disturbed not by things, but by the principles and notions which they form concerning things.' Change the judgement and the disturbance changes."
   - q: "What was Epictetus' life situation as a young man?"
     options:
       - "He was a Roman senator"
@@ -88,7 +88,8 @@ sources:
     url: https://iep.utm.edu/epictetu/
   - title: The Enchiridion, trans. T. W. Higginson (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/45109
-status: draft
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
