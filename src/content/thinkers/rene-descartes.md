@@ -50,6 +50,9 @@ conversations:
   - thinker: jean-paul-sartre
     stance: built-on-by
     note: Took the cogito as the starting point of existentialism, the one truth from which every person must begin.
+  - thinker: thomas-hobbes
+    stance: challenged-by
+    note: "Hobbes wrote the Third Objections to the Meditations, arguing that the thinking thing might be only a body in motion."
 quiz:
   - q: "Why did Descartes doubt everything he could?"
     options:

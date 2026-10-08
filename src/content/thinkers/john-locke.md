@@ -8,6 +8,7 @@ era: Early Modern
 primary: empiricism
 tags:
   - liberalism
+  - social-contract
 keyWorks:
   - title: A Letter Concerning Toleration
     year: '1689'
@@ -52,6 +53,12 @@ conversations:
   - thinker: karl-marx
     stance: challenged-by
     note: Saw Locke's natural right to property as the philosophy of the rising capitalist class, not a timeless truth.
+  - thinker: thomas-hobbes
+    stance: learned-from
+    note: "Used Hobbes's tools, a state of nature and a social contract, but rejected his absolute sovereign as a lion more dangerous than the foxes it guards against."
+  - thinker: jean-jacques-rousseau
+    stance: challenged-by
+    note: "Rousseau saw Locke's natural right of property as the beginning of inequality, made permanent by government."
 quiz:
   - q: "What did Locke mean by calling the newborn mind 'white paper'?"
     options:

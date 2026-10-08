@@ -52,6 +52,9 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: built-on-by
     note: Thrilled to discover "a precursor, and what a precursor" in Spinoza's denial of free will and of purposes in nature.
+  - thinker: thomas-hobbes
+    stance: learned-from
+    note: "Took over much of Hobbes's account of the passions and the state of nature, but argued for democracy and freedom of thought."
 quiz:
   - q: "What did Spinoza mean by 'God or Nature' (Deus sive Natura)?"
     options:

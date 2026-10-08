@@ -31,8 +31,16 @@ export const PATH = [
     title: 'How should a society be run?',
     question: 'What makes laws, markets and governments fair and free?',
     blurb:
-      'Separation of powers, free markets, the defence of tradition, the greatest happiness, and the liberty of the individual.',
-    ids: ['montesquieu', 'adam-smith', 'edmund-burke', 'jeremy-bentham', 'john-stuart-mill'],
+      'Why obey a government at all? The social contract, the separation of powers, free markets, the defence of tradition, the greatest happiness, and the liberty of the individual.',
+    ids: [
+      'thomas-hobbes',
+      'montesquieu',
+      'jean-jacques-rousseau',
+      'adam-smith',
+      'edmund-burke',
+      'jeremy-bentham',
+      'john-stuart-mill',
+    ],
   },
   {
     title: 'History, money and power',

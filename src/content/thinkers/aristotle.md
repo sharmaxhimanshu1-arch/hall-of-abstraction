@@ -55,6 +55,9 @@ conversations:
   - thinker: georg-hegel
     stance: built-on-by
     note: Admired him as one of the deepest minds in history and built on his view that things develop towards their full nature.
+  - thinker: thomas-hobbes
+    stance: challenged-by
+    note: "Hobbes denied that humans are political animals by nature, calling society an artificial creation built out of fear."
 quiz:
   - q: "What did Aristotle mean by eudaimonia?"
     options:
