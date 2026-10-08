@@ -2,7 +2,7 @@
 name: Rationalism
 summary: The early modern conviction that reason, not the senses, is the chief source of knowledge, and that the world has a deep logical order.
 color: '#4b4e8f'
-order: 4
+order: 5
 ---
 
 Rationalism is the view that reason, operating independently of sensory experience, is a primary source of knowledge, and that some of our most important knowledge is *a priori*: knowable by thought alone. The label is most closely tied to three seventeenth-century philosophers: **René Descartes**, **Baruch Spinoza** and **Gottfried Wilhelm Leibniz**. They wrote in the shadow of the Scientific Revolution, when mathematics had just shown its astonishing power to describe nature.

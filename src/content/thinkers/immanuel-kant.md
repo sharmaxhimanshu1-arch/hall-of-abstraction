@@ -60,6 +60,15 @@ conversations:
   - thinker: john-stuart-mill
     stance: challenged-by
     note: Argued that Kant's universal law test only works because it secretly relies on looking at consequences.
+  - thinker: jean-jacques-rousseau
+    stance: learned-from
+    note: "Said Rousseau set him right, teaching him to honour ordinary people, and turned self-given law into the idea of moral autonomy."
+  - thinker: thomas-aquinas
+    stance: challenged
+    note: "Kant argued that proofs of God from causes and design, like Aquinas's Five Ways, take reason beyond the limits of possible experience."
+  - thinker: hannah-arendt
+    stance: built-on-by
+    note: "Arendt built her theory of political judgment on his idea of thinking from the standpoint of others."
 quiz:
   - q: "What was Kant's 'Copernican revolution' in philosophy?"
     options:

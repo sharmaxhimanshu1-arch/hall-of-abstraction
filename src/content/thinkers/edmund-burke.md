@@ -53,6 +53,9 @@ conversations:
   - thinker: karl-marx
     stance: challenged-by
     note: Called him a sycophant who, paid by the English oligarchy, romanticised the past against the French Revolution.
+  - thinker: jean-jacques-rousseau
+    stance: challenged
+    note: "Called Rousseau the insane Socrates of the National Assembly and blamed his abstractions and vanity for the Revolution's excesses."
 quiz:
   - q: "How did Burke describe society in Reflections on the Revolution in France?"
     options:

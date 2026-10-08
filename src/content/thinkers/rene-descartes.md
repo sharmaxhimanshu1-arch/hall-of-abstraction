@@ -50,6 +50,15 @@ conversations:
   - thinker: jean-paul-sartre
     stance: built-on-by
     note: Took the cogito as the starting point of existentialism, the one truth from which every person must begin.
+  - thinker: thomas-hobbes
+    stance: challenged-by
+    note: "Hobbes wrote the Third Objections to the Meditations, arguing that the thinking thing might be only a body in motion."
+  - thinker: augustine
+    stance: learned-from
+    note: "Twelve centuries earlier, Augustine had argued \"if I am deceived, I exist\"; Descartes said he was glad to agree, but used the idea to found a system of science."
+  - thinker: ludwig-wittgenstein
+    stance: challenged-by
+    note: "Wittgenstein's private language argument attacks the picture of a mind that knows its inner world first and the outer world later."
 quiz:
   - q: "Why did Descartes doubt everything he could?"
     options:

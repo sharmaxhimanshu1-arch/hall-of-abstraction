@@ -60,6 +60,12 @@ conversations:
   - thinker: jean-paul-sartre
     stance: built-on-by
     note: Took the death of God as his starting point and drew the conclusion that humans must create their own values and meaning.
+  - thinker: br-ambedkar
+    stance: challenged-by
+    note: "Ambedkar saw in Nietzsche's praise of Manu a philosophy of the superman for the few and contempt for the many."
+  - thinker: albert-camus
+    stance: built-on-by
+    note: "Camus took up the death of God and the yes to life, but refused to let them turn into nihilism."
 quiz:
   - q: "In The Gay Science, who announces 'God is dead' in the marketplace?"
     options:

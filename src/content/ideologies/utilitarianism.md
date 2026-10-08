@@ -2,7 +2,7 @@
 name: Utilitarianism
 summary: The ethical theory that the right action is the one that produces the greatest happiness for the greatest number.
 color: '#2f7f86'
-order: 8
+order: 10
 ---
 
 Utilitarianism is a moral theory with a deceptively simple principle: actions are right insofar as they promote happiness, and wrong insofar as they produce the reverse. It was systematised by the English reformer **Jeremy Bentham** in the late eighteenth century and refined by **John Stuart Mill** in the nineteenth. It remains one of the most influential and most debated approaches to ethics and public policy.

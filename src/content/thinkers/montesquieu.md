@@ -44,6 +44,12 @@ conversations:
   - thinker: georg-hegel
     stance: built-on-by
     note: Praised him for seeing that laws must be understood as part of the whole character of a people and its age.
+  - thinker: jean-jacques-rousseau
+    stance: built-on-by
+    note: "Rousseau took from him the idea that laws must suit a people's size, climate and customs, and that small republics suit liberty best."
+  - thinker: ibn-khaldun
+    stance: agreed
+    note: "Four centuries earlier and unknown to him, Ibn Khaldun had argued that climate and way of life shape a people's character and laws."
 quiz:
   - q: "What is Montesquieu's most famous idea about government?"
     options:

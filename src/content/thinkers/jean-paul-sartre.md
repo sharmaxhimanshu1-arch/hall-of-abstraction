@@ -55,6 +55,12 @@ conversations:
   - thinker: simone-de-beauvoir
     stance: agreed
     note: Lifelong partner and closest critic. She pushed him to see how situation, body and oppression limit freedom.
+  - thinker: albert-camus
+    stance: challenged-by
+    note: "Friends in the Resistance years, they broke publicly in 1952 over The Rebel, the Soviet camps and whether history can justify violence."
+  - thinker: hannah-arendt
+    stance: challenged-by
+    note: "Arendt attacked his preface to Fanon's The Wretched of the Earth for glorifying violence."
 quiz:
   - q: "What does 'existence precedes essence' mean?"
     options:

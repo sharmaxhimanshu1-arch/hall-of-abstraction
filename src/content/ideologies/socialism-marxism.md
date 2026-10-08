@@ -2,7 +2,7 @@
 name: Socialism & Marxism
 summary: The critique of capitalism and the movement for collective ownership, equality and the emancipation of workers.
 color: '#a3283b'
-order: 10
+order: 12
 ---
 
 Socialism is a family of political and economic ideas united by the conviction that the means of production, such as land, factories and capital, should be owned or controlled collectively rather than privately, so that society's wealth serves everyone rather than a propertied few. Early socialists such as Robert Owen, Charles Fourier and Henri de Saint-Simon imagined cooperative communities. In the mid-nineteenth century **Karl Marx** and Friedrich Engels transformed socialism into a comprehensive theory of history, economics and revolution, and their followers, including **Rosa Luxemburg**, debated how that theory should be put into practice.

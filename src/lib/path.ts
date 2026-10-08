@@ -1,7 +1,7 @@
 import { getThinkers, type Thinker } from './content';
 
 /**
- * The suggested reading order: six stages, each a question the thinkers in it
+ * The suggested reading order: stages, each built around a question the thinkers in it
  * try to answer. Every thinker in the Hall appears exactly once; the build
  * fails if one is missing or misspelt.
  */
@@ -21,32 +21,62 @@ export const PATH = [
     ids: ['seneca', 'epictetus', 'marcus-aurelius'],
   },
   {
+    title: 'Faith and reason',
+    question: 'Can faith and reason live together?',
+    blurb:
+      'A North African bishop turns philosophy inward, a judge in Muslim Spain argues that scripture commands us to think, an Italian friar builds a cathedral of reason, and a statesman in Tunis finds the laws behind the rise and fall of empires.',
+    ids: ['augustine', 'ibn-rushd', 'thomas-aquinas', 'ibn-khaldun'],
+  },
+  {
     title: 'What can we really know?',
     question: 'Does knowledge come from reason, or from experience?',
     blurb:
-      'The great argument of the early modern age: rationalists who trusted reason, empiricists who trusted the senses, and Kant, who tried to settle it.',
-    ids: ['rene-descartes', 'baruch-spinoza', 'gottfried-leibniz', 'john-locke', 'david-hume', 'immanuel-kant'],
+      'The great argument of the early modern age: rationalists who trusted reason, empiricists who trusted the senses, Kant, who tried to settle it, and Wittgenstein, who asked whether the puzzles came from our words.',
+    ids: [
+      'rene-descartes',
+      'baruch-spinoza',
+      'gottfried-leibniz',
+      'john-locke',
+      'david-hume',
+      'immanuel-kant',
+      'ludwig-wittgenstein',
+    ],
   },
   {
     title: 'How should a society be run?',
     question: 'What makes laws, markets and governments fair and free?',
     blurb:
-      'Separation of powers, free markets, the defence of tradition, the greatest happiness, and the liberty of the individual.',
-    ids: ['montesquieu', 'adam-smith', 'edmund-burke', 'jeremy-bentham', 'john-stuart-mill'],
+      'Why obey a government at all? The social contract, the separation of powers, free markets, the defence of tradition, the greatest happiness, and the liberty of the individual.',
+    ids: [
+      'thomas-hobbes',
+      'montesquieu',
+      'jean-jacques-rousseau',
+      'adam-smith',
+      'edmund-burke',
+      'jeremy-bentham',
+      'john-stuart-mill',
+    ],
   },
   {
     title: 'History, money and power',
     question: 'Does history have a direction, and who does it serve?',
     blurb:
-      'Hegel sees history as freedom coming to know itself; Marx turns it into a story of class struggle; Luxemburg insists that socialism must keep freedom alive.',
-    ids: ['georg-hegel', 'karl-marx', 'rosa-luxemburg'],
+      'Hegel sees history as freedom coming to know itself; Marx turns it into a story of class struggle; Luxemburg insists that socialism must keep freedom alive; Arendt asks how ordinary people came to serve totalitarian terror.',
+    ids: ['georg-hegel', 'karl-marx', 'rosa-luxemburg', 'hannah-arendt'],
+  },
+  {
+    title: 'Freedom, the Indian way',
+    question: 'What does it take for a people to be truly free?',
+    blurb:
+      'Four Indians who argued about religion, nation, caste and non-violence while India fought for its freedom, and who did not agree with each other.',
+    ids: ['swami-vivekananda', 'rabindranath-tagore', 'mk-gandhi', 'br-ambedkar'],
   },
   {
     title: 'Meaning and freedom',
     question: 'If no one hands us a meaning, how do we live?',
     blurb:
-      'The existentialists end the journey where you are: alone with your choices, responsible for what you make of yourself.',
-    ids: ['soren-kierkegaard', 'friedrich-nietzsche', 'jean-paul-sartre', 'simone-de-beauvoir'],
+      'The existentialists end the journey where you are: alone with your choices, responsible for what you make of yourself, and, with Camus, choosing to live fully in a world that gives no answers.',
+    ids: ['soren-kierkegaard', 'friedrich-nietzsche', 'jean-paul-sartre', 'simone-de-beauvoir', 'albert-camus'],
   },
 ] as const;
 

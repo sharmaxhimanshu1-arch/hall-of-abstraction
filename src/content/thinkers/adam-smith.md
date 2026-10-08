@@ -41,6 +41,9 @@ conversations:
   - thinker: jeremy-bentham
     stance: challenged-by
     note: Argued that Smith was inconsistent in supporting a legal cap on interest rates, and that free markets should apply there too.
+  - thinker: ibn-khaldun
+    stance: agreed
+    note: "Without knowing it, Smith repeated Ibn Khaldun's points on the division of labour, labour as the source of value, and the harm of high taxes."
 quiz:
   - q: "What does Smith's pin-factory example show?"
     options:

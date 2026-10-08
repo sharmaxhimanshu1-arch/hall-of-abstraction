@@ -47,6 +47,15 @@ conversations:
   - thinker: friedrich-nietzsche
     stance: challenged-by
     note: Called him a symptom of decline, a man who trusted cold reason over the instincts that make life strong.
+  - thinker: mk-gandhi
+    stance: built-on-by
+    note: "Gandhi translated the Apology into Gujarati as the story of a soldier of truth, and took Socrates as a model of conscience against the state."
+  - thinker: ludwig-wittgenstein
+    stance: challenged-by
+    note: "Wittgenstein answered the Socratic demand for one definition with family resemblance: many words have no single essence."
+  - thinker: hannah-arendt
+    stance: built-on-by
+    note: "Arendt took Socrates as her model of thinking: a silent dialogue with oneself that makes us unwilling to do wrong."
 quiz:
   - q: "Why did the Oracle at Delphi call Socrates the wisest man in Athens, according to his own explanation?"
     options:

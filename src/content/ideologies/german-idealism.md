@@ -2,7 +2,7 @@
 name: German Idealism
 summary: The ambitious philosophical movement from Kant to Hegel that placed the active, structuring mind at the centre of reality, freedom and history.
 color: '#6b4c8a'
-order: 6
+order: 8
 ---
 
 German Idealism is the name for an extraordinarily fertile period of German philosophy, from the 1780s to the 1840s. It began with **Immanuel Kant**'s "Copernican revolution" in philosophy and was carried forward by Fichte and Schelling, culminating in the vast system of **G. W. F. Hegel**. Few movements have been as demanding to read or as influential to inherit.
