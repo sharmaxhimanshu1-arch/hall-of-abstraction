@@ -107,7 +107,10 @@ sources:
     url: https://plato.stanford.edu/entries/plato/
   - title: Encyclopaedia Britannica, "Plato"
     url: https://www.britannica.com/biography/Plato
-status: draft
+  - title: "The Republic of Plato, trans. Benjamin Jowett (Project Gutenberg)"
+    url: https://www.gutenberg.org/ebooks/55201
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here

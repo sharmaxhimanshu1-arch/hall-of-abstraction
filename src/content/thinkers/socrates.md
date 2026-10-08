@@ -104,7 +104,8 @@ sources:
     url: https://www.britannica.com/biography/Socrates
   - title: Plato, Apology, trans. Benjamin Jowett (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/1656
-status: draft
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here

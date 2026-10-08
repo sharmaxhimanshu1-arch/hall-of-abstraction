@@ -92,7 +92,8 @@ sources:
     url: https://www.britannica.com/biography/Buddha-founder-of-Buddhism
   - title: The Dhammapada, trans. F. Max Müller (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/2017
-status: draft
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -389,7 +390,7 @@ In a world where the varna system determined so much, the Buddha said: "Not by b
 
 He admitted people of all castes into the sangha. Within the order, seniority depended on when you were ordained, not on your birth. That is why the Shakya princes had to bow to Upali the barber. Another monk, **Sunita**, is said to have been a sweeper of the lowest status before he joined.
 
-**Why it matters.** This made the Buddha's teaching attractive to many who were excluded from Brahmanical ritual life. Over two thousand years later, **Dr. B. R. Ambedkar**, who was born into an "untouchable" caste and fought all his life against caste discrimination, studied many religions and chose Buddhism. On 14 October 1956, at Nagpur, he and a very large number of his followers, often estimated at around half a million, took the Buddhist refuges. Ambedkar wrote *The Buddha and His Dhamma*, presenting the Buddha's teaching as rational, ethical and egalitarian. His movement is one of the most important religious and social events in modern Indian history.
+**Why it matters.** This made the Buddha's teaching attractive to many who were excluded from Brahmanical ritual life. Over two thousand years later, **Dr. B. R. Ambedkar**, who was born into an "untouchable" caste and fought all his life against caste discrimination, studied many religions and chose Buddhism. On 14 October 1956, at Nagpur, he and a very large number of his followers (estimates range from about 200,000 to half a million) took the Buddhist refuges. Ambedkar wrote *The Buddha and His Dhamma*, presenting the Buddha's teaching as rational, ethical and egalitarian. His movement is one of the most important religious and social events in modern Indian history.
 
 **A careful note.** Historians point out that the early sangha did not abolish caste in wider society, and Buddhist societies later developed their own hierarchies. The Buddha's challenge to caste was spiritual and within his community, rather than a political programme. Ambedkar himself read the Buddha's teaching as a social revolution, and that reading has been hugely influential.
 
@@ -451,7 +452,7 @@ For **Dr. B. R. Ambedkar**, the Buddha was above all a teacher of reason, morali
 
 ### The modern West
 
-Buddhism reached the West through scholars like F. Max Müller, philosophers like Arthur Schopenhauer, and, in the twentieth century, through Japanese Zen teachers, Tibetan lamas who fled after 1959 (including the **Dalai Lama**, who has lived in Dharamshala, India, since then), and South-East Asian meditation teachers. Today, Buddhist ideas influence psychology, neuroscience, the mindfulness movement and popular culture worldwide.
+Buddhism reached the West through scholars like F. Max Müller, philosophers like Arthur Schopenhauer, and, in the twentieth century, through Japanese Zen teachers, Tibetan lamas who fled after 1959 (including the **Dalai Lama**, who has lived in India since then, at Dharamshala from 1960), and South-East Asian meditation teachers. Today, Buddhist ideas influence psychology, neuroscience, the mindfulness movement and popular culture worldwide.
 
 ## See it around you
 
