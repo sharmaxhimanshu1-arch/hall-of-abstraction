@@ -92,7 +92,8 @@ sources:
     url: https://plato.stanford.edu/entries/ibn-rushd-natural/
   - title: Encyclopaedia Britannica, "Averroës"
     url: https://www.britannica.com/biography/Averroes
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here

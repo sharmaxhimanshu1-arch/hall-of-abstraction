@@ -95,7 +95,8 @@ sources:
     url: https://ccnmtl.columbia.edu/projects/mmt/ambedkar/about.html
   - title: "Supreme Court Observer, \"The Doctor's wise words on 25 November 1949\""
     url: https://www.scobserver.in/journal/the-doctors-wise-words-on-25-november-1949/
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -218,7 +219,7 @@ In **1936**, he founded the **Independent Labour Party**, campaigning for worker
 
 ### Architect of the Constitution
 
-When India became independent in **1947**, Nehru invited Ambedkar, a fierce critic of the Congress, to join the first cabinet as **Law Minister**. On **29 August 1947**, he was made **Chairman of the Drafting Committee** of the Constituent Assembly.
+When India became independent in **1947**, Nehru invited Ambedkar, a fierce critic of the Congress, to join the first cabinet as **Law Minister**. When the Constituent Assembly set up its **Drafting Committee** on **29 August 1947**, he became its **Chairman**.
 
 Over the next two years, he steered the draft through the Assembly, defending it clause by clause in long debates. The Constitution, adopted on **26 November 1949** and in force from **26 January 1950**:
 

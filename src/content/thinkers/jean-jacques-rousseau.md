@@ -1,7 +1,7 @@
 ---
 name: Jean-Jacques Rousseau
 sortName: Rousseau
-summary: The self-taught watchmaker's son from Geneva who ran away at sixteen, became the most celebrated and most hunted writer in Europe, and argued that civilisation had made us unequal, vain and unfree, that "man is born free, and everywhere he is in chains", and that only a people governing itself can be free.
+summary: The self-taught watchmaker's son from Geneva who ran away at fifteen, became the most celebrated and most hunted writer in Europe, and argued that civilisation had made us unequal, vain and unfree, that "man is born free, and everywhere he is in chains", and that only a people governing itself can be free.
 born: 1712
 died: 1778
 region: Geneva, Switzerland; Paris and Ermenonville, France
@@ -100,7 +100,8 @@ sources:
     url: https://www.britannica.com/biography/Jean-Jacques-Rousseau
   - title: The Social Contract and Discourses, trans. G. D. H. Cole (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/46333
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -155,7 +156,7 @@ He was apprenticed to an engraver who beat him. He learned, he said, to lie and 
 
 ### Locked out of the city
 
-In **1728**, aged sixteen, returning late from a Sunday walk in the countryside, he found Geneva's gates already shut for the night. It had happened before, and he had been punished. This time he decided not to go back. He walked away from his city, his apprenticeship and his religion, with nothing.
+In **March 1728**, aged fifteen, returning late from a Sunday walk in the countryside, he found Geneva's gates already shut for the night. It had happened before, and he had been punished. This time he decided not to go back. He walked away from his city, his apprenticeship and his religion, with nothing.
 
 ### Madame de Warens
 
@@ -201,7 +202,7 @@ In **1762**, the Parlement of Paris condemned *Emile* and ordered Rousseau's arr
 
 ### The quarrel with Hume
 
-In **1766**, the Scottish philosopher **David Hume** invited him to England and found him a house in Derbyshire. Within months, Rousseau became convinced that Hume was part of a plot to dishonour him, and accused him publicly. Hume, deeply hurt, published an account of the quarrel. It became a scandal across Europe. Rousseau's suspicion of persecution, partly justified by real persecution, was turning into something close to paranoia.
+In **1766**, the Scottish philosopher **David Hume** invited him to England and found him a house at Wootton, in Staffordshire. Within months, Rousseau became convinced that Hume was part of a plot to dishonour him, and accused him publicly. Hume, deeply hurt, published an account of the quarrel. It became a scandal across Europe. Rousseau's suspicion of persecution, partly justified by real persecution, was turning into something close to paranoia.
 
 ### The last years
 
@@ -496,7 +497,7 @@ Here is how everyday life starts to look different:
 - **"The will of the people"** in a politician's mouth makes you ask who is being forced to be free.
 - **A child learning by doing** looks like Emile in the forest.
 
-A boy locked out of his city at sixteen spent his life asking how human beings could be free again. His answer was beautiful and dangerous, and his question, why are we born free and everywhere in chains, still burns.
+A boy locked out of his city at fifteen spent his life asking how human beings could be free again. His answer was beautiful and dangerous, and his question, why are we born free and everywhere in chains, still burns.
 
 </div>
 
@@ -504,7 +505,7 @@ A boy locked out of his city at sixteen spent his life asking how human beings c
 
 - **Who:** Jean-Jacques Rousseau (1712–1778), Genevan-born philosopher, novelist, composer and educational theorist.
 - **Context:** the small republic of Geneva, absolutist France, the Enlightenment and the philosophes, the social contract debate of Hobbes and Locke.
-- **Life:** mother died at his birth; left Geneva at sixteen; Madame de Warens; Paris and Diderot; five children left at a foundling hospital; the illumination on the road to Vincennes (1749); *First Discourse* (1750); *Discourse on Inequality* (1755); *Julie*, *The Social Contract* and *Emile* (1761–62); books burned, hunted across Europe; quarrel with Hume; *Confessions*; died 1778; Panthéon 1794.
+- **Life:** mother died at his birth; left Geneva at fifteen (1728); Madame de Warens; Paris and Diderot; five children left at a foundling hospital; the illumination on the road to Vincennes (1749); *First Discourse* (1750); *Discourse on Inequality* (1755); *Julie*, *The Social Contract* and *Emile* (1761–62); books burned, hunted across Europe; quarrel with Hume; *Confessions*; died 1778; Panthéon 1794.
 - **Natural goodness:** natural man is peaceful, moved by self-love and pity; society corrupts.
 - **Inequality:** natural inequality is small; moral inequality is made by property, comparison and law.
 - **Amour-propre:** self-love that depends on others' opinion and comparison.

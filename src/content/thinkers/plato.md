@@ -107,7 +107,7 @@ sources:
     url: https://plato.stanford.edu/entries/plato/
   - title: Encyclopaedia Britannica, "Plato"
     url: https://www.britannica.com/biography/Plato
-reviewed: false
+status: draft
 ---
 
 ## Start here

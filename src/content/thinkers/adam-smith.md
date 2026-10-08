@@ -92,7 +92,7 @@ sources:
     url: https://www.britannica.com/biography/Adam-Smith
   - title: The Wealth of Nations (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/3300
-reviewed: false
+status: draft
 ---
 
 ## Start here

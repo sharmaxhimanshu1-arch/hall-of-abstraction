@@ -30,7 +30,7 @@ quotes:
   - text: Education is the manifestation of the perfection already in man.
     source: Complete Works, vol. 4, "Writings, Prose and Poems"
   - text: Arise, awake, and stop not till the goal is reached.
-    source: Lectures from Colombo to Almora (after the Katha Upanishad)
+    source: His rendering of the Katha Upanishad (1.3.14), repeated in many lectures
 influencedBy:
   - siddhartha-gautama
 conversations:
@@ -92,7 +92,8 @@ sources:
     url: https://www.britannica.com/biography/Vivekananda
   - title: The Complete Works of Swami Vivekananda (Wikisource transcription)
     url: https://en.wikisource.org/wiki/The_Complete_Works_of_Swami_Vivekananda
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -197,7 +198,7 @@ And he ended with a warning that sounded across the twentieth century:
 
 "Sectarianism, bigotry, and its horrible descendant, fanaticism, have long possessed this beautiful earth. They have filled the earth with violence, drenched it often and often with human blood, destroyed civilisation and sent whole nations to despair."
 
-He became the star of the Parliament. American newspapers called him an "orator by divine right". He was invited to lecture across the United States.
+He became the star of the Parliament. One American paper is reported to have called him "an orator by divine right", and the press nicknamed him the "cyclonic monk from India". He was invited to lecture across the United States.
 
 ### Teaching the West
 
@@ -251,7 +252,7 @@ Vivekananda was impatient with a certain kind of Indian religiosity: passive, fa
 
 He told young men in Madras that what India needed was "muscles of iron and nerves of steel". He even said, provocatively, that they would understand the Gita better with strong bodies, and that playing football would bring them closer to heaven than studying the Gita. He was not mocking the Gita; he was saying that a weak, frightened person cannot understand a teaching of courage.
 
-Remember Krishna's first words of real teaching to Arjuna in the Gita: "Yield not to unmanliness... cast off this mean faint-heartedness and arise." Vivekananda saw this as the message India needed.
+Remember Krishna's first words to the despairing Arjuna in the Gita: "Yield not to unmanliness... cast off this mean faint-heartedness and arise." Vivekananda saw this as the message India needed.
 
 Think about a student who keeps telling herself, "I'm not good enough, I can't do maths, I'm not the type to speak in public." Vivekananda would say: these thoughts are the real enemy. They are false, because your true nature is infinite. Stop rehearsing your weakness.
 
@@ -275,7 +276,7 @@ And when someone asked him about spiritual teaching for a starving people, his a
 
 Think of a langar at a gurudwara, where anyone, of any religion or caste, can sit and eat. Or the work of organisations that run free hospitals and schools. Vivekananda wanted Hindu monks to do this kind of work, and he founded the Ramakrishna Mission to do it. Today the Mission runs hospitals, schools, colleges and disaster relief across India.
 
-**Why it matters:** This turned spirituality outward. Instead of escaping the world, the monk was to serve it. This idea influenced Gandhi deeply (he too spoke of serving "Daridra Narayan") and shaped India's tradition of service organisations.
+**Why it matters:** This turned spirituality outward. Instead of escaping the world, the monk was to serve it. Gandhi later made the phrase "Daridra Narayan" famous across India, and the idea shaped India's tradition of service organisations.
 
 **A common misunderstanding:** Service, for Vivekananda, was not charity from above. He warned against the attitude of "I am helping these poor people". He said we should be grateful to the poor for giving us the chance to serve God in them. The helper should feel humble, not superior.
 

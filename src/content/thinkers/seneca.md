@@ -96,7 +96,7 @@ sources:
     url: https://iep.utm.edu/seneca/
   - title: Encyclopaedia Britannica, "Lucius Annaeus Seneca"
     url: https://www.britannica.com/biography/Lucius-Annaeus-Seneca-Roman-philosopher-and-statesman
-reviewed: false
+status: draft
 ---
 
 ## Start here

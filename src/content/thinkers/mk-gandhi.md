@@ -96,7 +96,8 @@ sources:
     url: https://scalar.lehigh.edu/literature-of-colonial-south-asia/mohandas-k-gandhi-indian-home-rule-hind-swaraj-1909-full-text
   - title: Gandhi, Hind Swaraj and Other Writings, ed. Anthony J. Parel (Cambridge University Press)
     url: https://www.cambridge.org/core/books/gandhi-hind-swaraj-and-other-writings/7CD5389A37B295F8A91F123B85B1B380
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -155,7 +156,7 @@ He was called to the bar in **1891** and returned to India, where he failed as a
 
 ### South Africa: the train at Pietermaritzburg
 
-In **1893**, he took a job with an Indian trading firm in **South Africa**. A week after arriving, travelling by train from Durban to Pretoria with a first-class ticket, he was ordered by a white passenger and an official to move to the third-class van, because Indians ("coolies") were not allowed in first class. He refused. At **Pietermaritzburg** station, on a cold winter night, he was thrown off the train with his luggage.
+In **1893**, he took a job with an Indian trading firm in **South Africa**. Soon after arriving, travelling by train from Durban to Pretoria with a first-class ticket, he was ordered by a white passenger and an official to move to the third-class van, because Indians ("coolies") were not allowed in first class. He refused. At **Pietermaritzburg** station, on a cold winter night, he was thrown off the train with his luggage.
 
 He sat shivering in the waiting room all night, thinking: should he go back to India? Or stay and fight? He decided to stay. He later called this the most creative experience of his life.
 

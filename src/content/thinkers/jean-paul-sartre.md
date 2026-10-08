@@ -109,7 +109,7 @@ sources:
     url: https://iep.utm.edu/sartre-ex/
   - title: Encyclopaedia Britannica, "Jean-Paul Sartre"
     url: https://www.britannica.com/biography/Jean-Paul-Sartre
-reviewed: false
+status: draft
 ---
 
 ## Start here

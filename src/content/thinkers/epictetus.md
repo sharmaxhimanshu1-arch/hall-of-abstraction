@@ -88,7 +88,7 @@ sources:
     url: https://iep.utm.edu/epictetu/
   - title: The Enchiridion, trans. T. W. Higginson (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/45109
-reviewed: false
+status: draft
 ---
 
 ## Start here

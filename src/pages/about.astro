@@ -5,7 +5,7 @@ import { url } from '../lib/url';
 
 const thinkers = await getThinkers();
 const ideologies = await getIdeologies();
-const reviewed = thinkers.filter((t) => t.data.reviewed).length;
+const count = (status: string) => thinkers.filter((t) => t.data.status === status).length;
 ---
 
 <BaseLayout
@@ -50,9 +50,26 @@ const reviewed = thinkers.filter((t) => t.data.reviewed).length;
       <h2>How profiles are written</h2>
       <p>
         Profiles are written for curious general readers, not specialists. Each one cites the
-        reference works it draws on, and quotations name their source and translation. Profiles
-        are drafted first and then fact-checked by an editor. Pages not yet reviewed say so in
-        their sidebar. So far {reviewed} of {thinkers.length} profiles have been reviewed.
+        reference works it draws on, and quotations name their source and translation.
+      </p>
+      <p>Every profile goes through three stages, and its sidebar says which one it has reached:</p>
+      <ol>
+        <li>
+          <strong>Draft.</strong> The lesson is written with AI assistance from the cited
+          sources.
+        </li>
+        <li>
+          <strong>Fact-checked.</strong> Dates, events, quotations, translations and sources are
+          checked against reference works, again with AI assistance, and errors are corrected.
+        </li>
+        <li>
+          <strong>Reviewed.</strong> The site's editor has read the whole page and approved it.
+        </li>
+      </ol>
+      <p>
+        So far, of {thinkers.length} profiles, {count('reviewed')} have been reviewed by the
+        editor, {count('fact-checked')} are fact-checked and awaiting review, and
+        {' '}{count('draft')} are drafts.
       </p>
       <p>
         Spotted an error or want to suggest a thinker? The project lives on

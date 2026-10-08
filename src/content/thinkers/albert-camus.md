@@ -94,7 +94,8 @@ sources:
     url: https://www.britannica.com/biography/Albert-Camus
   - title: The Nobel Prize in Literature 1957, Albert Camus, biographical
     url: https://www.nobelprize.org/prizes/literature/1957/camus/biographical/
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here

@@ -119,7 +119,7 @@ sources:
     url: https://www.marxists.org/archive/marx/
   - title: Encyclopaedia Britannica, "Karl Marx"
     url: https://www.britannica.com/biography/Karl-Marx
-reviewed: false
+status: draft
 ---
 
 ## Start here

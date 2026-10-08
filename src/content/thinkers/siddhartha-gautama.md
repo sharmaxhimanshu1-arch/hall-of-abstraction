@@ -92,7 +92,7 @@ sources:
     url: https://www.britannica.com/biography/Buddha-founder-of-Buddhism
   - title: The Dhammapada, trans. F. Max Müller (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/2017
-reviewed: false
+status: draft
 ---
 
 ## Start here

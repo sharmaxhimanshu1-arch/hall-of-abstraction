@@ -112,7 +112,7 @@ sources:
     url: https://plato.stanford.edu/entries/nietzsche/
   - title: Encyclopaedia Britannica, "Friedrich Nietzsche"
     url: https://www.britannica.com/biography/Friedrich-Nietzsche
-reviewed: false
+status: draft
 ---
 
 ## Start here

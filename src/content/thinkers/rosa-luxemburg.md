@@ -95,7 +95,7 @@ sources:
     url: https://www.marxists.org/archive/luxemburg/
   - title: Stanford Encyclopedia of Philosophy, "Karl Marx" (for the tradition she worked in)
     url: https://plato.stanford.edu/entries/marx/
-reviewed: false
+status: draft
 ---
 
 ## Start here

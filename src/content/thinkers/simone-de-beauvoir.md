@@ -101,7 +101,7 @@ sources:
     url: https://iep.utm.edu/simone-de-beauvoir/
   - title: Encyclopaedia Britannica, "Simone de Beauvoir"
     url: https://www.britannica.com/biography/Simone-de-Beauvoir
-reviewed: false
+status: draft
 ---
 
 ## Start here

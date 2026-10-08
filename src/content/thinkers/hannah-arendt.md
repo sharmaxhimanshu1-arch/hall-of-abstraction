@@ -102,7 +102,8 @@ sources:
     url: https://www.britannica.com/biography/Hannah-Arendt
   - title: The Hannah Arendt Papers (Library of Congress)
     url: https://www.loc.gov/collections/hannah-arendt-papers/
-reviewed: false
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
