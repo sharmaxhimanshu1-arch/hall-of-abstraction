@@ -83,13 +83,14 @@ quiz:
     answer: 2
     why: "Purple was the imperial colour. He warned himself not to be 'Caesarified', not to let power stain who he was."
 sources:
-  - title: Internet Encyclopedia of Philosophy, "Aurelius, Marcus"
-    url: https://iep.utm.edu/marcus-aurelius/
+  - title: Stanford Encyclopedia of Philosophy, "Marcus Aurelius"
+    url: https://plato.stanford.edu/entries/marcus-aurelius/
   - title: Encyclopaedia Britannica, "Marcus Aurelius"
     url: https://www.britannica.com/biography/Marcus-Aurelius-Roman-emperor
   - title: Thoughts of Marcus Aurelius, trans. George Long (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/15877
-status: draft
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here

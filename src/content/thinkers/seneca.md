@@ -96,7 +96,10 @@ sources:
     url: https://iep.utm.edu/seneca/
   - title: Encyclopaedia Britannica, "Lucius Annaeus Seneca"
     url: https://www.britannica.com/biography/Lucius-Annaeus-Seneca-Roman-philosopher-and-statesman
-status: draft
+  - title: "Ad Lucilium Epistulae Morales, vol. 1, trans. Richard M. Gummere (Loeb, 1917; Internet Archive)"
+    url: https://archive.org/details/adluciliumepistu01sene
+status: fact-checked
+checked: 2026-10-08
 ---
 
 ## Start here
@@ -320,7 +323,7 @@ That is exactly what Seneca's own death showed. Nero could order him to die. He 
 
 **The Indian echo.** The Bhagavad Gita's teaching that the self is not born and does not die, and that the wise do not grieve for the living or the dead, comes from a very different metaphysics. But its practical message to Arjuna, that the fear of death should not paralyse one's duty, is close to Seneca's.
 
-**A careful note.** The Stoics, Seneca included, also held that a person may choose to end their own life in certain situations, such as unbearable illness or to avoid being forced into a shameful act. They called this the "open door". This is very different from how we approach these questions today, and it should not be read as advice. If you, or someone you know, is struggling with thoughts of ending their life, please reach out to someone you trust or to a mental health helpline. Seneca himself, in his youth, chose to live for the sake of someone who loved him, and called that choice courage.
+**A careful note.** The Stoics, Seneca included, also held that a person may choose to end their own life in certain situations, such as unbearable illness or to avoid being forced into a shameful act. They called this the "open door". This is very different from how we approach these questions today, and it should not be read as advice. If you, or someone you know, is struggling with thoughts of ending their life, please reach out to someone you trust or to a mental health helpline (in India, Tele-MANAS on 14416, free and open 24 hours). Seneca himself, in his youth, chose to live for the sake of someone who loved him, and called that choice courage.
 
 ### Idea 8: We are all members of one body
 
