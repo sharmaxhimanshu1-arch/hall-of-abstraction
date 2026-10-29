@@ -84,7 +84,7 @@ quiz:
       - "It should be given more power"
       - "It had nothing to do with economics"
     answer: 1
-    why: "He criticised a company of merchants acting as sovereign, and the misery its rule caused in Bengal."
+    why: "He criticised a company of merchants acting as sovereign, and the harm its rule did in Bengal."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Adam Smith's Moral and Political Philosophy"
     url: https://plato.stanford.edu/entries/smith-moral-political/
@@ -92,7 +92,8 @@ sources:
     url: https://www.britannica.com/biography/Adam-Smith
   - title: The Wealth of Nations (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/3300
-status: draft
+status: fact-checked
+checked: 2026-10-29
 ---
 
 ## Start here
@@ -360,7 +361,7 @@ And about proposals for new laws coming from merchants and manufacturers, he war
 
 In *The Wealth of Nations*, Smith wrote at length about the **East India Company**. He argued that its monopoly on trade harmed British consumers and that, as a ruler of Indian territories, it was disastrous. A company of merchants, he said, is incapable of being a good sovereign: it treats its subjects as sources of profit, not as people whose welfare it should protect. Its servants (employees) in India pursued their own private trade and enrichment, and the interests of the Company and its servants were opposed to those of the country they governed.
 
-He linked the Company's policies to the devastating **Bengal famine** of 1770, writing that the misrule of the Company had turned a scarcity into a famine, for instance by interfering with the rice trade.
+He also discussed the devastating **Bengal famine** of 1770, writing that the dearth had probably been turned into a famine by injudicious restraints that the Company's servants placed on the rice trade. Historians still debate the famine's causes and its death toll, but Smith's point, that a monopolist ruler had little reason to protect the people it governed, fits his wider argument.
 
 He concluded that the government of an exclusive company of merchants is perhaps the worst of all governments for any country whatever.
 

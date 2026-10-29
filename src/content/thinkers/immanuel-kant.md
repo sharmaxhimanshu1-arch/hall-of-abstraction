@@ -113,11 +113,12 @@ quiz:
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Immanuel Kant"
     url: https://plato.stanford.edu/entries/kant/
-  - title: Internet Encyclopedia of Philosophy, "Kant, Immanuel"
-    url: https://iep.utm.edu/kantview/
   - title: Encyclopaedia Britannica, "Immanuel Kant"
     url: https://www.britannica.com/biography/Immanuel-Kant
-status: draft
+  - title: "The Critique of Pure Reason, trans. J. M. D. Meiklejohn (Project Gutenberg)"
+    url: https://www.gutenberg.org/ebooks/4280
+status: fact-checked
+checked: 2026-10-29
 ---
 
 ## Start here
@@ -452,7 +453,7 @@ We began with this. In his 1797 essay "**On a Supposed Right to Lie from Philant
 
 **The idea in one line:** Enlightenment means growing up intellectually: having the courage to use your own reason without depending on others to think for you.
 
-In 1784, a Berlin newspaper asked: "What is Enlightenment?" Kant's answer begins:
+In 1783, a Berlin monthly magazine posed the question "What is Enlightenment?" Kant's answer, published in 1784, begins:
 
 "Enlightenment is man's emergence from his **self-incurred immaturity**. Immaturity is the inability to use one's own understanding without the guidance of another. This immaturity is self-incurred if its cause is not lack of understanding, but lack of resolution and courage to use it without the guidance of another. The motto of enlightenment is therefore: ***Sapere aude!*** **Have courage to use your own understanding!**"
 
