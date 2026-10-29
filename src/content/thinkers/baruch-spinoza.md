@@ -99,11 +99,10 @@ quiz:
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Baruch Spinoza"
     url: https://plato.stanford.edu/entries/spinoza/
-  - title: Internet Encyclopedia of Philosophy, "Spinoza, Benedict de - Metaphysics"
-    url: https://iep.utm.edu/spinoz-m/
   - title: Encyclopaedia Britannica, "Benedict de Spinoza"
     url: https://www.britannica.com/biography/Benedict-de-Spinoza
-status: draft
+status: fact-checked
+checked: 2026-10-29
 ---
 
 ## Start here
@@ -138,7 +137,7 @@ By the late sixteenth and early seventeenth centuries, many of these families fl
 
 But think about what this meant for the community's identity. These were people whose grandparents had been forced to live as Catholics. Many had little knowledge of Jewish law or tradition. Their leaders worked hard to rebuild a strong, orthodox Jewish identity, and to maintain good relations with the Dutch authorities, who tolerated them on the condition that they did not cause scandal. Heresy within the community was not just a religious problem; it was a threat to their fragile security.
 
-There had already been a tragic case. **Uriel da Costa**, a member of the community, questioned the immortality of the soul and the authority of rabbinic tradition. He was excommunicated twice, publicly humiliated and whipped in the synagogue, and in 1640, when Spinoza was a boy of about eight, he took his own life. Spinoza grew up in a community that had seen what happened to dissenters.
+There had already been a tragic case. **Uriel da Costa**, a member of the community, questioned the immortality of the soul and the authority of rabbinic tradition. He was excommunicated twice, publicly humiliated and whipped in the synagogue, and in 1640, when Spinoza was a boy of seven, he took his own life. Spinoza grew up in a community that had seen what happened to dissenters.
 
 ### The Dutch Golden Age
 

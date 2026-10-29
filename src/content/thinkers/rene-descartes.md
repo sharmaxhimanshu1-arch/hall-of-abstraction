@@ -43,7 +43,7 @@ conversations:
     note: Kept his rationalism but rejected his physics and his account of how mind and body interact.
   - thinker: john-locke
     stance: challenged-by
-    note: Credited Descartes with waking his interest in philosophy, then denied that we are born with any ideas at all.
+    note: By early biographers' account, Descartes's books first gave him a taste for philosophy; he then denied that we are born with any ideas at all.
   - thinker: david-hume
     stance: challenged-by
     note: Looked inside for the thinking self Descartes was so sure of, and found only a stream of perceptions.
@@ -107,7 +107,8 @@ sources:
     url: https://www.britannica.com/biography/Rene-Descartes
   - title: Discourse on the Method, trans. John Veitch (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/59
-status: draft
+status: fact-checked
+checked: 2026-10-29
 ---
 
 ## Start here
@@ -138,7 +139,7 @@ Descartes was born in 1596 in France. To understand why he wanted to doubt every
 
 **Religion was at war.** The Protestant Reformation, begun by Martin Luther in 1517, had split Western Christianity. Catholics and Protestants each claimed to have the truth and accused the other of heresy. Religious wars tore Europe apart. The **Thirty Years' War** (1618–1648), which Descartes saw firsthand, devastated much of central Europe. If two sides could be equally certain and equally willing to kill, how could anyone know who was right?
 
-**Scepticism was fashionable.** Ancient Greek sceptical texts had been rediscovered and printed. The French essayist **Michel de Montaigne**, who died when Descartes was a baby, had popularised a gentle scepticism with his motto *Que sais-je?*, "What do I know?". Many educated people were concluding that certainty was impossible.
+**Scepticism was fashionable.** Ancient Greek sceptical texts had been rediscovered and printed. The French essayist **Michel de Montaigne**, who died in 1592, four years before Descartes was born, had popularised a gentle scepticism with his motto *Que sais-je?*, "What do I know?". Many educated people were concluding that certainty was impossible.
 
 ### The universities: still teaching Aristotle
 
