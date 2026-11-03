@@ -99,11 +99,10 @@ quiz:
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Gottfried Wilhelm Leibniz"
     url: https://plato.stanford.edu/entries/leibniz/
-  - title: Internet Encyclopedia of Philosophy, "Leibniz, Gottfried Wilhelm"
-    url: https://iep.utm.edu/leib-ove/
   - title: Encyclopaedia Britannica, "Gottfried Wilhelm Leibniz"
     url: https://www.britannica.com/biography/Gottfried-Wilhelm-Leibniz
-status: draft
+status: fact-checked
+checked: 2026-10-29
 ---
 
 ## Start here

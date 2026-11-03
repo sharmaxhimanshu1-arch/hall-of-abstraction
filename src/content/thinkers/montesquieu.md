@@ -96,7 +96,8 @@ sources:
     url: https://plato.stanford.edu/entries/montesquieu/
   - title: Encyclopaedia Britannica, "Montesquieu"
     url: https://www.britannica.com/biography/Montesquieu
-status: draft
+status: fact-checked
+checked: 2026-10-29
 ---
 
 ## Start here

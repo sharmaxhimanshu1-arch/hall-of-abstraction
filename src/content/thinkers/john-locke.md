@@ -108,7 +108,10 @@ sources:
     url: https://plato.stanford.edu/entries/locke/
   - title: Encyclopaedia Britannica, "John Locke"
     url: https://www.britannica.com/biography/John-Locke
-status: draft
+  - title: "An Essay Concerning Humane Understanding, vol. 1 (Project Gutenberg)"
+    url: https://www.gutenberg.org/ebooks/10615
+status: fact-checked
+checked: 2026-10-29
 ---
 
 ## Start here

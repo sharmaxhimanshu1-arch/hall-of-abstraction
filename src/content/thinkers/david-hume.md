@@ -98,7 +98,10 @@ sources:
     url: https://plato.stanford.edu/entries/hume/
   - title: Encyclopaedia Britannica, "David Hume"
     url: https://www.britannica.com/biography/David-Hume
-status: draft
+  - title: "A Treatise of Human Nature (Project Gutenberg)"
+    url: https://www.gutenberg.org/ebooks/62856
+status: fact-checked
+checked: 2026-10-29
 ---
 
 ## Start here
@@ -109,7 +112,7 @@ Every morning, the farmer comes out, opens the gate and throws grain. Day after 
 
 Then one morning the farmer comes out, picks the chicken up, and wrings its neck.
 
-(This story was told by the philosopher Bertrand Russell in 1912, to illustrate an idea that was first set out, sharply and unforgettably, by a Scotsman nearly two hundred years earlier.)
+(This story was told by the philosopher Bertrand Russell in 1912, to illustrate an idea that was first set out, sharply and unforgettably, by a Scotsman some 170 years earlier.)
 
 Now let's turn it on ourselves. You are completely sure the sun will rise tomorrow. You are sure that if you drop your phone, it will fall, not float. You are sure that bread will nourish you and not poison you, that water boils when heated, that the medicine your doctor gives you will work as it did for thousands of others.
 

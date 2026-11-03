@@ -104,7 +104,8 @@ sources:
     url: https://www.britannica.com/biography/Edmund-Burke-British-philosopher-and-statesman
   - title: Reflections on the Revolution in France (Standard Ebooks)
     url: https://standardebooks.org/ebooks/edmund-burke/reflections-on-the-revolution-in-france
-status: draft
+status: fact-checked
+checked: 2026-10-29
 ---
 
 ## Start here
@@ -213,7 +214,7 @@ Burke was horrified, almost from the start.
 
 In November 1789, a dissenting minister, **Richard Price**, preached a sermon in London praising the Revolution and suggesting Britain should follow France's principles. Burke responded with a book in the form of a long letter to a young Frenchman: ***Reflections on the Revolution in France***, published in **November 1790**.
 
-It was a sensation. It sold some 30,000 copies within a couple of years, an enormous number for the time. It provoked dozens of replies, the most famous being **Thomas Paine's** *Rights of Man* (1791) and **Mary Wollstonecraft's** *A Vindication of the Rights of Men* (1790).
+It was a sensation. It sold tens of thousands of copies within a few years, an enormous number for the time. It provoked dozens of replies, the most famous being **Thomas Paine's** *Rights of Man* (1791) and **Mary Wollstonecraft's** *A Vindication of the Rights of Men* (1790).
 
 What made the *Reflections* so remarkable was its prophecy. In 1790, the Revolution still looked moderate: the King was alive, the constitution was being written, and the bloodshed seemed limited. Burke predicted that the Revolution, having destroyed all traditional sources of authority, would descend into violence, confiscation, persecution and war, and would end with a popular **general** seizing power. Over the next decade came the **execution of the King** (1793), the **Reign of Terror** (1793–94) with tens of thousands killed, wars across Europe, and in **1799** the rise of **Napoleon Bonaparte**.
 
@@ -261,7 +262,7 @@ Burke thought this was madness. Not because reason is bad, but because **politic
 
 He wrote that the "**metaphysic rights**" of the revolutionaries, entering into common life, are like rays of light which pierce into a dense medium and are "refracted from their straight line". Real human rights are always bent by circumstances.
 
-What politics needs instead is **prudence**: the practical wisdom of the experienced statesman who knows how things actually work, weighs circumstances, and acts cautiously. Burke called prudence "the god of this lower world". It is the same virtue Aristotle called *phronesis*.
+What politics needs instead is **prudence**: the practical wisdom of the experienced statesman who knows how things actually work, weighs circumstances, and acts cautiously. Burke ranked prudence first among the political virtues, calling it, in a line often quoted, "the god of this lower world". It is the same virtue Aristotle called *phronesis*.
 
 Think of medicine. A medical student knows all the theory. But an experienced doctor knows that each patient is different, that textbook symptoms don't always appear, that the strongest drug may kill the patient. Good doctors are cautious, attentive and practical. So, Burke says, should statesmen be.
 
