@@ -98,15 +98,14 @@ quiz:
       - "Ending the East India Company"
       - "Banning newspapers"
     answer: 1
-    why: "The amendment lost by 196 votes to 73, but it was the first time women's suffrage was debated in Parliament."
+    why: "The amendment lost by 196 votes to 73, but it was the first time women's suffrage was put to a vote in Parliament."
 sources:
   - title: Stanford Encyclopedia of Philosophy, "John Stuart Mill"
     url: https://plato.stanford.edu/entries/mill/
-  - title: Internet Encyclopedia of Philosophy, "John Stuart Mill"
-    url: https://iep.utm.edu/milljs/
   - title: On Liberty (Project Gutenberg)
     url: https://www.gutenberg.org/ebooks/34901
-status: draft
+status: fact-checked
+checked: 2026-11-03
 ---
 
 ## Start here
@@ -217,7 +216,7 @@ Mill claimed that much of his work was really their joint work, that Harriet was
 
 ### On Liberty and the death of Harriet
 
-In **1858**, the East India Company was abolished after the great uprising of 1857, and its government of India was transferred to the British Crown. Mill had written the Company's defence, arguing against the transfer. He retired with a pension.
+In **1858**, after the great uprising of 1857, the East India Company's government of India was transferred to the British Crown (the Company itself was dissolved in 1874). Mill had written the Company's defence, arguing against the transfer. He retired with a pension.
 
 That same year, while travelling in France, Harriet died suddenly in **Avignon**. Mill was devastated. He bought a house near the cemetery where she was buried, and spent much of the rest of his life there, with Harriet's daughter **Helen Taylor**, who became his companion, secretary and collaborator.
 
@@ -240,7 +239,7 @@ In **1865**, voters in **Westminster** asked him to stand for Parliament. He agr
 
 In Parliament (1865–68), he:
 
-- Proposed, on **20 May 1867**, an amendment to the Reform Bill to replace the word "**man**" with "**person**", which would have given women the vote on the same terms as men. It was defeated, **196 to 73**, but it was the first time women's suffrage was debated in the British Parliament, and it launched the organised suffrage movement.
+- Proposed, on **20 May 1867**, an amendment to the Reform Bill to replace the word "**man**" with "**person**", which would have given women the vote on the same terms as men. It was defeated, **196 to 73**, but it was the first time women's suffrage was put to a vote in the British Parliament, and it helped launch the organised suffrage movement.
 - Pressed for land reform in **Ireland**.
 - Led the campaign to prosecute **Governor Edward Eyre** of Jamaica, who had brutally suppressed a rebellion in 1865, including the execution of hundreds of people. Mill believed that colonial officials must be subject to the law.
 - Spoke for proportional representation and many radical causes, and, surprisingly, against abolishing the death penalty (more on that under his flaws).
@@ -288,7 +287,7 @@ Mill gives a famous example. Suppose you see someone about to cross a bridge you
 - Should consenting adults be punished for their private relationships?
 - Should **suicide** be a crime?
 
-Look at India. Until recently, attempting suicide was a crime under **Section 309** of the IPC. The **Mental Healthcare Act, 2017** effectively decriminalised it, presuming severe stress and requiring care instead of punishment. The Supreme Court's decisions in ***Navtej Singh Johar*** (2018, decriminalising homosexuality) and ***Joseph Shine*** (2018, striking down the adultery law) both rest partly on the idea that the state should not punish private conduct between consenting adults. Justice Chandrachud and others discussed individual autonomy in terms that Mill would recognise.
+Look at India. Until recently, attempting suicide was a crime under **Section 309** of the IPC. The **Mental Healthcare Act, 2017** effectively decriminalised it, presuming severe stress and requiring care instead of punishment. (If you or someone you know is struggling with thoughts of suicide, India's free Tele-MANAS helpline is 14416, open 24 hours.) The Supreme Court's decisions in ***Navtej Singh Johar*** (2018, decriminalising homosexuality) and ***Joseph Shine*** (2018, striking down the adultery law) both rest partly on the idea that the state should not punish private conduct between consenting adults. Justice Chandrachud and others discussed individual autonomy in terms that Mill would recognise.
 
 **A common misunderstanding:** "So Mill says you can do anything you want." No. First, harm to **others** is a serious limit; almost everything we do affects someone. Second, Mill applies the principle only to adults "in the maturity of their faculties", not to children. Third, he thought we have positive duties to others, like giving evidence in court or contributing to common defence. And fourth, the principle doesn't stop people from **criticising** or **avoiding** you; it stops them from **coercing** you.
 

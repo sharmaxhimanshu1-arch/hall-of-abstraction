@@ -107,11 +107,12 @@ quiz:
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Søren Kierkegaard"
     url: https://plato.stanford.edu/entries/kierkegaard/
-  - title: Internet Encyclopedia of Philosophy, "Søren Kierkegaard"
-    url: https://iep.utm.edu/kierkega/
   - title: Encyclopaedia Britannica, "Søren Kierkegaard"
     url: https://www.britannica.com/biography/Soren-Kierkegaard
-status: draft
+  - title: "Selections from the Writings of Kierkegaard (Project Gutenberg)"
+    url: https://www.gutenberg.org/ebooks/60333
+status: fact-checked
+checked: 2026-11-03
 ---
 
 ## Start here
@@ -186,11 +187,11 @@ His father died in **August 1838**. Søren, reconciled with him shortly before, 
 
 ### Regine
 
-In **1837**, Søren met **Regine Olsen**, a fourteen-year-old girl from a respectable Copenhagen family. He was twenty-four. He waited, and in **September 1840**, when she was eighteen, he proposed. She accepted.
+In **1837**, Søren met **Regine Olsen**, a fifteen-year-old girl from a respectable Copenhagen family. He was twenty-four. He waited, and in **September 1840**, when she was eighteen, he proposed. She accepted.
 
 Almost immediately, he regretted it.
 
-Why? He never fully explained. He wrote that he was "a thousand years too old" for her. He felt his melancholy, his secret guilt, his sense of a religious calling made him unfit for marriage. He couldn't share his inner life with her. He feared he would make her miserable.
+Why? He never fully explained. He felt his melancholy, his secret guilt, his sense of a religious calling made him unfit for marriage. He couldn't share his inner life with her. He feared he would make her miserable.
 
 So he did something cruel in order, he thought, to be kind. He tried to make her **break off** the engagement by behaving coldly, so that she would hate him and be free of him. She didn't. She begged him to stay. In **October 1841**, he returned her ring. Her father begged him to reconsider. He refused. He then fled to Berlin.
 

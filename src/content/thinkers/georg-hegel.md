@@ -100,11 +100,12 @@ quiz:
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Georg Wilhelm Friedrich Hegel"
     url: https://plato.stanford.edu/entries/hegel/
-  - title: "Internet Encyclopedia of Philosophy, \"Hegel: Social and Political Thought\""
-    url: https://iep.utm.edu/hegelsoc/
+  - title: Stanford Encyclopedia of Philosophy, "Hegel's Social and Political Philosophy"
+    url: https://plato.stanford.edu/entries/hegel-social-political/
   - title: Encyclopaedia Britannica, "Georg Wilhelm Friedrich Hegel"
     url: https://www.britannica.com/biography/Georg-Wilhelm-Friedrich-Hegel
-status: draft
+status: fact-checked
+checked: 2026-11-03
 ---
 
 ## Start here

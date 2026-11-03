@@ -119,7 +119,8 @@ sources:
     url: https://www.marxists.org/archive/marx/
   - title: Encyclopaedia Britannica, "Karl Marx"
     url: https://www.britannica.com/biography/Karl-Marx
-status: draft
+status: fact-checked
+checked: 2026-11-03
 ---
 
 ## Start here
@@ -210,7 +211,7 @@ Marx and Engels became the most famous intellectual partnership in history. Enge
 
 Expelled from Paris in **1845** at the request of the Prussian government, Marx moved to **Brussels**. There, with Engels, he wrote *The German Ideology* and developed his theory of history.
 
-In **1847**, a small group of radical workers, the **Communist League**, asked Marx and Engels to write a statement of their principles. The result, published in London in **February 1848**, was ***The Manifesto of the Communist Party***, a pamphlet of about forty pages. It opened with an image of fear: "A spectre is haunting Europe—the spectre of Communism."
+In **1847**, a small group of radical workers, the **Communist League**, asked Marx and Engels to write a statement of their principles. The result, published in London in **February 1848**, was ***The Manifesto of the Communist Party***, a short pamphlet of only a few dozen pages. It opened with an image of fear: "A spectre is haunting Europe—the spectre of Communism."
 
 Within weeks, revolutions broke out across Europe: in France, the German states, Austria, Italy. The Manifesto had nothing to do with starting them (it was barely noticed at first), but Marx rushed back to Germany and ran a radical newspaper in Cologne. By **1849**, the revolutions had been crushed. Marx was expelled again.
 

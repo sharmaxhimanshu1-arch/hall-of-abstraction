@@ -109,7 +109,8 @@ sources:
     url: https://iep.utm.edu/sartre-ex/
   - title: Encyclopaedia Britannica, "Jean-Paul Sartre"
     url: https://www.britannica.com/biography/Jean-Paul-Sartre
-status: draft
+status: fact-checked
+checked: 2026-11-03
 ---
 
 ## Start here
@@ -262,7 +263,7 @@ Compare this with the ideas of **svabhava** and **svadharma** in the Bhagavad Gi
 
 "**Man is condemned to be free.** Condemned, because he did not create himself, yet is nevertheless at liberty, and from the moment that he is thrown into this world he is responsible for everything he does."
 
-Why "condemned"? Because freedom isn't something we chose. We're thrown into it. And we can't escape it. Even when we refuse to choose, we've chosen not to choose. Even when we obey orders, we've chosen to obey. Even suicide is a choice.
+Why "condemned"? Because freedom isn't something we chose. We're thrown into it. And we can't escape it. Even when we refuse to choose, we've chosen not to choose. Even when we obey orders, we've chosen to obey.
 
 Sartre took this to extreme lengths. He argued that even in prison, under torture, a person is free: free to decide how to respond, whether to give in or resist. He said that the soldier who goes to war has chosen the war, in a sense, since he could have deserted or killed himself. These claims sound extreme, and he later modified them. But the core point is powerful: **you are always choosing**, even when you tell yourself you aren't.
 

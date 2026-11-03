@@ -97,11 +97,10 @@ quiz:
 sources:
   - title: Stanford Encyclopedia of Philosophy, "Simone de Beauvoir"
     url: https://plato.stanford.edu/entries/beauvoir/
-  - title: Internet Encyclopedia of Philosophy, "Simone de Beauvoir"
-    url: https://iep.utm.edu/simone-de-beauvoir/
   - title: Encyclopaedia Britannica, "Simone de Beauvoir"
     url: https://www.britannica.com/biography/Simone-de-Beauvoir
-status: draft
+status: fact-checked
+checked: 2026-11-03
 ---
 
 ## Start here

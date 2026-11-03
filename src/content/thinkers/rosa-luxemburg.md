@@ -95,7 +95,8 @@ sources:
     url: https://www.marxists.org/archive/luxemburg/
   - title: Stanford Encyclopedia of Philosophy, "Karl Marx" (for the tradition she worked in)
     url: https://plato.stanford.edu/entries/marx/
-status: draft
+status: fact-checked
+checked: 2026-11-03
 ---
 
 ## Start here
@@ -192,7 +193,7 @@ From **1907** to **1914**, she taught **economics and economic history** at the 
 
 On **4 August 1914**, as the First World War began, the SPD deputies in the German parliament voted **for war credits**, money to fund the war. Socialists across Europe, who had promised for decades that workers of all countries would never fight each other for their capitalist rulers, lined up behind their own governments.
 
-Rosa was devastated. She reportedly considered suicide. Then she fought back. With a small group, including **Karl Liebknecht**, the only SPD deputy who voted against further war credits in December 1914, she formed what became the **Spartacus League**, named after the leader of a slave revolt in ancient Rome.
+Rosa was devastated. She reportedly considered suicide. (If you or someone you know is struggling with such thoughts, India's free Tele-MANAS helpline is 14416, open 24 hours.) Then she fought back. With a small group, including **Karl Liebknecht**, the only SPD deputy who voted against further war credits in December 1914, she formed what became the **Spartacus League**, named after the leader of a slave revolt in ancient Rome.
 
 She spent most of the war in **prison**, from 1915 to November 1918, with a short break, convicted for inciting soldiers to disobey and then held in "protective custody" without trial. In prison she wrote the ***Junius Pamphlet*** (1916), a ferocious attack on the war and on the socialist leaders who supported it. "Socialism or barbarism", she said, was the choice before humanity.
 

@@ -112,7 +112,10 @@ sources:
     url: https://plato.stanford.edu/entries/nietzsche/
   - title: Encyclopaedia Britannica, "Friedrich Nietzsche"
     url: https://www.britannica.com/biography/Friedrich-Nietzsche
-status: draft
+  - title: "Thus Spake Zarathustra, trans. Thomas Common (Project Gutenberg)"
+    url: https://www.gutenberg.org/ebooks/1998
+status: fact-checked
+checked: 2026-11-03
 ---
 
 ## Start here
@@ -496,7 +499,7 @@ Imagine them meeting:
 - **Sigmund Freud** said Nietzsche had a more penetrating knowledge of himself than any man who ever lived, or was likely to live.
 - **Martin Heidegger** gave long lectures interpreting Nietzsche as the last metaphysician.
 - **Michel Foucault** used Nietzsche's genealogy to study the history of madness, prisons and sexuality.
-- **Muhammad Iqbal**, the poet-philosopher of South Asia, was fascinated and troubled by Nietzsche; his idea of **khudi** (selfhood) and the perfect human has been compared to Nietzsche's, though Iqbal rooted it in faith in God. In his *Javid Nama* (1932), Iqbal places Nietzsche beyond the heavenly spheres, and elsewhere he wrote that Nietzsche's heart was a believer while his mind was an unbeliever.
+- **Muhammad Iqbal**, the poet-philosopher of South Asia, was fascinated and troubled by Nietzsche; his idea of **khudi** (selfhood) and the perfect human has been compared to Nietzsche's, though Iqbal rooted it in faith in God. In his *Javid Nama* (1932), a visionary journey through the heavens, Iqbal gives Nietzsche a place among its characters, and he is quoted as saying that Nietzsche's heart was a believer's but his mind an unbeliever's.
 - **B.R. Ambedkar** saw Nietzsche's admiration for hierarchy as dangerous, and pointed out that Nietzsche had praised the *Manusmriti*, the law book that enforced caste. We'll come back to this.
 
 ## See it around you

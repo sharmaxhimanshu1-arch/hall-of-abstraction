@@ -97,7 +97,8 @@ sources:
     url: https://iep.utm.edu/history-of-utilitarianism/
   - title: UCL Bentham Project
     url: https://www.ucl.ac.uk/bentham-project/
-status: draft
+status: fact-checked
+checked: 2026-11-03
 ---
 
 ## Start here
